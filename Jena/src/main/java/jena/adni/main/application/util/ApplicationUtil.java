@@ -1,6 +1,7 @@
 package jena.adni.main.application.util;
 
 import java.awt.BorderLayout;
+import java.awt.Font;
 import java.awt.GridBagLayout;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -80,6 +81,9 @@ public class ApplicationUtil {
 			}
 
 			JTable csvAdniTable = new JTable(tableModel);
+			csvAdniTable.setFont(new Font("", Font.ITALIC, 20));
+			csvAdniTable.setRowHeight(20);
+			
 			container.add(csvAdniTable,BorderLayout.CENTER);
 			frame.getContentPane().add(scrPane,BorderLayout.CENTER);
 			frame.setVisible( true );

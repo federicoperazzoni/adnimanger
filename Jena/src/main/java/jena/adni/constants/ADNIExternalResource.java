@@ -14,7 +14,7 @@ public class ADNIExternalResource {
 		return prefix;
 	}
 
-	private String ADNI_HOME = "C:\\Users\\Federico Perazzoni\\ADNI_HOME";
+	private String ADNI_HOME = "C:\\Users\\itagile-admin\\ADNI_HOME";
 
 	public static ADNIExternalResource getInstance() {
 		

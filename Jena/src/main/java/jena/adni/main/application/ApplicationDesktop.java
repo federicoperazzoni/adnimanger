@@ -133,7 +133,7 @@ public class ApplicationDesktop {
 		
 		jaJPanel4.setBorder(new EmptyBorder(10, 10, 10, 10));
 		
-		frameMainAdniManager.setSize(1000,350);
+		frameMainAdniManager.setSize(1000,400);
 		frameMainAdniManager.setVisible(true);
 	} 	
 }  
