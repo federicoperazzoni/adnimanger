@@ -36,7 +36,7 @@ public class MMSEBean extends ADNIBean {
 	//MMRECALL
 	private String Mm_Recall;
 	
-	//Number of trials AH (34)
+	//Number of trials number of trials AH (34)
 	//MMTRIALS
 	private String Mm_Trials;
 	
@@ -67,4 +67,76 @@ public class MMSEBean extends ADNIBean {
 	//Naming - Watch 0= Incorrect; 1= Correct (48)
 	//MMWATCH
 	private String Mm_Watch;
+	
+	//Repetition of a sentence 0= Incorrect; 1= Correct (50)
+	//MMREPEAT
+	private String Mm_Repeat;
+	
+	//Writing a sentence 0= Incorrect; 1= Correct (55)
+	//MMWRITE
+	private String Mm_Write;
+	
+	//Immediate Recall - Ball / Apple 1= Incorrect; 2= Correct (31)
+	//MMBALL
+	private String Mm_Ball;
+	
+	//Immediate Recall - Flag / Penny 1= Incorrect; 2= Correct (32)
+	//MMFLAG
+	private String Mm_Flag;
+	
+	//Immediate Recall - Tree / Table 1= Incorrect; 2= Correct (33)
+	//MMTREE
+	private String Mm_Tree;
+	
+	//Immediate Recall - Ball / Apple 0= Incorrect; 1= Correct (66)
+	//WORD1
+	private String Word1;
+	
+	//Immediate Recall - Flag / Penny 0= Incorrect; 1= Correct (68)
+	//WORD2
+	private String Word2;
+	
+	//Immediate Recall - Tree / Table 0= Incorrect; 1= Correct (70)
+	//WORD3
+	private String Word3;
+	
+	//Delayed Recall - Ball / Apple 1= Incorrect; 2= Correct (45)
+	//MMBALLDL
+	private String Mm_Ball_Dl;
+	
+	//Delayed Recall - Flag / Penny 1= Incorrect; 2= Correct (46)
+	//MMFLAGDL
+	private String Mm_Flag_Dl;
+	
+	//Delayed Recall - Tree / Table 1= Incorrect; 2= Correct (47)
+	//MMTREEDL
+	private String Mm_Tree_Dl;
+	
+	//Delayed Recall - Ball / Apple 0= Incorrect; 1= Correct (67)
+	//WORD1DL
+	private String Word1_Dl;
+	
+	//Delayed Recall - Flag / Penny 0= Incorrect; 1= Correct (69)
+	//WORD2DL
+	private String Word2_Dl;
+	
+	//Delayed Recall - Tree / Table 0= Incorrect; 1= Correct (71)
+	//WORD3DL
+	private String Word3_Dl;
+	
+	//County 1= Incorrect; 2= Correct (26)
+	//MMAREA
+	private String Mm_Area;
+	
+	//County - Answer Verbatim response (27)
+	//MMAREACM
+	private String Mm_Area_Cm;
+	
+	//City - 1= Incorrect; 2= Correct (24)
+	//MMCITY
+	private String Mm_City;
+	
+	//City - Answer Verbatim response (25)
+	//MMCITYCM
+	private String Mm_City_Cm;
 }
