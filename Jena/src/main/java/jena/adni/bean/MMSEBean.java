@@ -147,4 +147,28 @@ public class MMSEBean extends ADNIBean {
 	//Date - Answer Verbatim response (11)
 	//MMDATECM
 	private String Mm_Date_Cm;
+	
+	//Day - 1= Correct; 2= Incorrect (16)
+	//MMDAY
+	private String Mm_Day;
+	
+	//Day - Answer Verbatim response (17)
+	//MMDAYCM
+	private String Mm_Day_Cm;
+	
+	//Month - 1= Correct; 2= Incorrect (14)
+	//MMMONTH
+	private String Mm_Month;
+	
+	//Month - Answer Verbatim response (15)
+	//MMMONTHCM
+	private String Mm_Month_Cm;
+	
+	//Year - 1= Correct; 2= Incorrect (12)
+	//MMYEAR
+	private String Mm_Year;
+	
+	//Year - Answer Verbatim response (13)
+	//MMYEARCM
+	private String Mm_Year_Cm;
 }
