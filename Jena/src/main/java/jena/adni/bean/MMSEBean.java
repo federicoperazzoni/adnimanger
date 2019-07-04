@@ -76,15 +76,15 @@ public class MMSEBean extends ADNIBean {
 	//MMWRITE
 	private String Mm_Write;
 	
-	//Immediate Recall - Ball / Apple 1= Incorrect; 2= Correct (31)
+	//Immediate Recall - Ball / Apple 1= Correct; 2= Incorrect (31)
 	//MMBALL
 	private String Mm_Ball;
 	
-	//Immediate Recall - Flag / Penny 1= Incorrect; 2= Correct (32)
+	//Immediate Recall - Flag / Penny 1= Correct; 2= Incorrect (32)
 	//MMFLAG
 	private String Mm_Flag;
 	
-	//Immediate Recall - Tree / Table 1= Incorrect; 2= Correct (33)
+	//Immediate Recall - Tree / Table 1= Correct; 2= Incorrect (33)
 	//MMTREE
 	private String Mm_Tree;
 	
@@ -100,15 +100,15 @@ public class MMSEBean extends ADNIBean {
 	//WORD3
 	private String Word3;
 	
-	//Delayed Recall - Ball / Apple 1= Incorrect; 2= Correct (45)
+	//Delayed Recall - Ball / Apple 1= Correct; 2= Incorrect (45)
 	//MMBALLDL
 	private String Mm_Ball_Dl;
 	
-	//Delayed Recall - Flag / Penny 1= Incorrect; 2= Correct (46)
+	//Delayed Recall - Flag / Penny 1= Correct; 2= Incorrect (46)
 	//MMFLAGDL
 	private String Mm_Flag_Dl;
 	
-	//Delayed Recall - Tree / Table 1= Incorrect; 2= Correct (47)
+	//Delayed Recall - Tree / Table 1= Correct; 2= Incorrect (47)
 	//MMTREEDL
 	private String Mm_Tree_Dl;
 	
@@ -124,7 +124,7 @@ public class MMSEBean extends ADNIBean {
 	//WORD3DL
 	private String Word3_Dl;
 	
-	//County 1= Incorrect; 2= Correct (26)
+	//County 1= Correct; 2= Incorrect (26)
 	//MMAREA
 	private String Mm_Area;
 	
@@ -132,11 +132,19 @@ public class MMSEBean extends ADNIBean {
 	//MMAREACM
 	private String Mm_Area_Cm;
 	
-	//City - 1= Incorrect; 2= Correct (24)
+	//City - 1= Correct; 2= Incorrect (24)
 	//MMCITY
 	private String Mm_City;
 	
 	//City - Answer Verbatim response (25)
 	//MMCITYCM
 	private String Mm_City_Cm;
+	
+	//Date - 1= Correct; 2= Incorrect (10)
+	//MMDATE
+	private String Mm_Date;
+	
+	//Date - Answer Verbatim response (11)
+	//MMDATECM
+	private String Mm_Date_Cm;
 }
