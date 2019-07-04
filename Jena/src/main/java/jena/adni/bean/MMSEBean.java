@@ -171,4 +171,40 @@ public class MMSEBean extends ADNIBean {
 	//Year - Answer Verbatim response (13)
 	//MMYEARCM
 	private String Mm_Year_Cm;
+	
+	//Floor - 1= Correct; 2= Incorrect (22)
+	//MMFLOOR
+	private String Mm_Floor;
+	
+	//Floor - Answer Verbatim response (23)
+	//MMFLRCM
+	private String Mm_Flr_Cm;
+	
+	//Hospital - 1= Correct; 2= Incorrect (20)
+	//MMHOSPIT
+	private String Mm_Hospit;
+	
+	//Hospital Answer Verbatim response (21)
+	//MMHOSPCM
+	private String Mm_Hosp_Cm;
+	
+	//Season - 1= Correct; 2= Incorrect (18)
+	//MMSEASON
+	private String Mm_Season;
+	
+	//Season Answer Verbatim response (19)
+	//MMSESNCM
+	private String Mm_Sesn_Cm;
+	
+	//State - 1= Correct; 2= Incorrect (28)
+	//MMSTATE
+	private String Mm_State;
+	
+	//State Answer Verbatim response (29)
+	//MMSTCM
+	private String Mm_St_Cm;
+	
+	//Total score 0 - 30 (57)
+	//MMSCORE
+	private String Mm_Score;
 }
