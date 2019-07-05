@@ -17,13 +17,14 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 
 import jena.adni.bean.CDRBean;
+import jena.adni.bean.MMSEBean;
 import jena.adni.bean.SubjectDataBean;
 
 public class LoaderMMSECsvToBeanArray {
 
-	public ArrayList<CDRBean> load(String pathCsv) {
+	public ArrayList<MMSEBean> load(String pathCsv) {
 
-		ArrayList<CDRBean> cdrTestList = new ArrayList<CDRBean>();
+		ArrayList<MMSEBean> mmseTestList = new ArrayList<MMSEBean>();
 
 		Path myPath = Paths.get(pathCsv);
 
@@ -42,22 +43,13 @@ public class LoaderMMSECsvToBeanArray {
 
 			if (count > 0) {
 
-				CDRBean cdrBean = new CDRBean();
-
-				cdrBean.setCDMemory(row[9].replaceAll("\"", ""));
-				cdrBean.setCDOrient(row[10].replaceAll("\"", ""));
-				cdrBean.setCDJudge(row[11].replaceAll("\"", ""));
-				cdrBean.setCDCommunityAffair(row[12].replaceAll("\"", ""));
-				cdrBean.setCDHome(row[13].replaceAll("\"", ""));
-				cdrBean.setCDPersonalCare(row[14].replaceAll("\"", ""));
-				cdrBean.setCDSob(row[15].replaceAll("\"", ""));
-				cdrBean.setCDGlobal(row[16].replaceAll("\"", ""));
+				MMSEBean mmseBean = new MMSEBean();
 				
-				cdrBean.setSubjectDataBean(new SubjectDataBean());
+				mmseBean.setSubjectDataBean(new SubjectDataBean());
 				
-				cdrBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
+				mmseBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
 
-				cdrTestList.add(cdrBean);
+				mmseTestList.add(mmseBean);
 			}
 			
 			count++;
@@ -68,6 +60,6 @@ public class LoaderMMSECsvToBeanArray {
 			e.printStackTrace();
 		}
 
-		return cdrTestList;
+		return mmseTestList;
 	}
 }

@@ -4,9 +4,11 @@ import java.util.ArrayList;
 
 import jena.adni.bean.CDRBean;
 import jena.adni.bean.FAQBean;
+import jena.adni.bean.MMSEBean;
 import jena.adni.constants.ADNIExternalResource;
 import jena.adni.loader.LoaderCDRCsvToBeanArray;
 import jena.adni.loader.LoaderFAQCsvToBeanArray;
+import jena.adni.loader.LoaderMMSECsvToBeanArray;
 import jena.adni.manager.CDRManager;
 import jena.adni.manager.FAQManager;
 import jena.adni.manager.ontology.ADNIOntologyLoader;
@@ -37,6 +39,9 @@ public class LoadCsv {
 		
 		LoaderFAQCsvToBeanArray faqCsvToBeanArray = new LoaderFAQCsvToBeanArray();
 		ArrayList<FAQBean> faqTestList = faqCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\FAQ.csv");
+		
+		LoaderMMSECsvToBeanArray mmseCsvToBeanArray = new LoaderMMSECsvToBeanArray();
+		ArrayList<MMSEBean> mmseTestList = mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\MMSE.csv");
 		loadMex = "Fine caricamento CSV";
 		loadPercent = 10;
 		
