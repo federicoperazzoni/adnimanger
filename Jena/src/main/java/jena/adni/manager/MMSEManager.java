@@ -29,12 +29,12 @@ public class MMSEManager {
 			
 			try {
 				
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, RDF.type.getURI(), prefix + "CDR");
-//				tdbConnection.addStatement(modelName, prefix + cdrBean.getSubjectDataBean().getRID(), RDF.type.getURI(), prefix + "Subject");
-//				tdbConnection.addStatement(modelName, prefix + cdrBean.getSubjectDataBean().getRID(), RDF.type.getURI(), "http://www.w3.org/2002/07/owl#NamedIndividual");
-//				tdbConnection.addStatement(modelName, prefix + cdrBean.getSubjectDataBean().getRID(), prefix + "hasStandardizedAssesment", prefix + "CDR_" + count);
-//							
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_CommunityAffairsItem_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, RDF.type.getURI(), prefix + "MMSE");
+				tdbConnection.addStatement(modelName, prefix + mmseBean.getSubjectDataBean().getRID(), RDF.type.getURI(), prefix + "Subject");
+				tdbConnection.addStatement(modelName, prefix + mmseBean.getSubjectDataBean().getRID(), RDF.type.getURI(), "http://www.w3.org/2002/07/owl#NamedIndividual");
+				tdbConnection.addStatement(modelName, prefix + mmseBean.getSubjectDataBean().getRID(), prefix + "hasStandardizedAssesment", prefix + "MMSE_" + count);
+							
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_AttentionAndCalculationItem_1_" + count);
 //				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_HomeAndHobbiesItem_" + count);
 //				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_JudgementAndProblemSolvingItem_" + count);
 //				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_OrientationItem_" + count);
@@ -42,7 +42,7 @@ public class MMSEManager {
 //				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_Sob_" + count);
 //				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_Global_" + count);
 //				
-//				tdbConnection.addStatement(modelName, prefix + "CDR_CommunityAffairsItem_" + count, RDF.type.getURI(), prefix + "CDR_CommunityAffairsItem");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_1");
 //				tdbConnection.addStatement(modelName, prefix + "CDR_HomeAndHobbiesItem_" + count, RDF.type.getURI(), prefix + "CDR_HomeAndHobbiesItem");
 //				tdbConnection.addStatement(modelName, prefix + "CDR_JudgementAndProblemSolvingItem_" + count, RDF.type.getURI(), prefix + "CDR_JudgementAndProblemSolvingItem");
 //				tdbConnection.addStatement(modelName, prefix + "CDR_OrientationItem_" + count, RDF.type.getURI(), prefix + "CDR_OrientationItem");
@@ -50,7 +50,7 @@ public class MMSEManager {
 //				tdbConnection.addStatement(modelName, prefix + "CDR_Sob_" + count, RDF.type.getURI(), prefix + "CDR_Sob");
 //				tdbConnection.addStatement(modelName, prefix + "CDR_Global_" + count, RDF.type.getURI(), prefix + "CDR_Global");
 //				
-//				tdbConnection.addStatement(modelName, prefix + "CDR_CommunityAffairsItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDCommunityAffair());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_D());
 //				tdbConnection.addStatement(modelName, prefix + "CDR_HomeAndHobbiesItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDHome());
 //				tdbConnection.addStatement(modelName, prefix + "CDR_JudgementAndProblemSolvingItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDJudge());
 //				tdbConnection.addStatement(modelName, prefix + "CDR_OrientationItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDOrient());
