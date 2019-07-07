@@ -12,61 +12,85 @@ import jena.adni.util.TDBUtil;
 import jena.test1.TDBConnection;
 
 public class MMSEManager {
-	
-	
+
+
 	public void insertInADNIOntology(ArrayList<MMSEBean> mmseTestList) {
-		
+
 		TDBConnection tdbConnection = new TDBConnection(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNIONTOLOGYSOURCE\\TDBDatabase");
-		
+
 		int count = 0;
-		
+
 		int total = mmseTestList.size();
-		
+
 		String prefix = ADNIExternalResource.getPrefix();
 		String modelName = ADNIExternalResource.getModelname();
-		
+
 		for (MMSEBean mmseBean : mmseTestList) {
-			
+
 			try {
-				
+
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, RDF.type.getURI(), prefix + "MMSE");
 				tdbConnection.addStatement(modelName, prefix + mmseBean.getSubjectDataBean().getRID(), RDF.type.getURI(), prefix + "Subject");
 				tdbConnection.addStatement(modelName, prefix + mmseBean.getSubjectDataBean().getRID(), RDF.type.getURI(), "http://www.w3.org/2002/07/owl#NamedIndividual");
 				tdbConnection.addStatement(modelName, prefix + mmseBean.getSubjectDataBean().getRID(), prefix + "hasStandardizedAssesment", prefix + "MMSE_" + count);
-							
+
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_AttentionAndCalculationItem_1_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_HomeAndHobbiesItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_JudgementAndProblemSolvingItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_OrientationItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_MemoryItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_Sob_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_Global_" + count);
-//				
-				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_1");
-//				tdbConnection.addStatement(modelName, prefix + "CDR_HomeAndHobbiesItem_" + count, RDF.type.getURI(), prefix + "CDR_HomeAndHobbiesItem");
-//				tdbConnection.addStatement(modelName, prefix + "CDR_JudgementAndProblemSolvingItem_" + count, RDF.type.getURI(), prefix + "CDR_JudgementAndProblemSolvingItem");
-//				tdbConnection.addStatement(modelName, prefix + "CDR_OrientationItem_" + count, RDF.type.getURI(), prefix + "CDR_OrientationItem");
-//				tdbConnection.addStatement(modelName, prefix + "CDR_MemoryItem_" + count, RDF.type.getURI(), prefix + "CDR_MemoryItem");
-//				tdbConnection.addStatement(modelName, prefix + "CDR_Sob_" + count, RDF.type.getURI(), prefix + "CDR_Sob");
-//				tdbConnection.addStatement(modelName, prefix + "CDR_Global_" + count, RDF.type.getURI(), prefix + "CDR_Global");
-//				
-				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_D());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_HomeAndHobbiesItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDHome());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_JudgementAndProblemSolvingItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDJudge());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_OrientationItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDOrient());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_MemoryItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDMemory());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_Sob_" + count, prefix + "totalScore", prefix + cdrBean.getCDSob());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_Global_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDGlobal());
-			} catch (Exception e) {
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_AttentionAndCalculationItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_AttentionAndCalculationItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_AttentionAndCalculationItem_4_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_AttentionAndCalculationItem_5_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_4_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_5_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_6_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_7_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_8_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_9_" + count);
 				
+				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_1");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_2");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_3_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_3");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_4_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_4");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_5_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_5");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_1");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_2");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_3_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_3");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_4_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_4");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_5_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_5");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_6_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_6");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_7_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_7");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_8_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_8");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_9_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_9");
+				
+				if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
+					
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_D_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_L_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_3_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_R_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_4_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_O_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_5_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_W_V());
+				} else {
+					
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_1());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_2());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_3_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_3());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_4_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_4());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_5_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_5());
+				}
+				
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Watch());
+			} catch (Exception e) {
+
 				e.printStackTrace();
 			}
-			
+
 			count++;
-			
+
 			LoadCsv.loadPercent = ((40*count)/total) + 20;
 		}
-		
+
 		tdbConnection.close();
 		TDBUtil.removeLock();
 	}
