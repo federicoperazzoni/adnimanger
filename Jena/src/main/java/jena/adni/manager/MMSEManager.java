@@ -61,6 +61,10 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RecallItem_1_" + count);
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RecallItem_2_" + count);
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RecallItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RegistrationItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RegistrationItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RegistrationItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RegistrationItem_4_" + count);
 				
 				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_1");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_2");
@@ -89,6 +93,10 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_1");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_2");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_3");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RegistrationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_3");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RegistrationItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_3");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RegistrationItem_3_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_3");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RegistrationItem_4_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_3");
 				
 				//Mi calcolo i valori correct incorrect per le risposte verbose di ADNI3?
 				if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
@@ -146,6 +154,8 @@ public class MMSEManager {
 					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord2()));
 					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord3()));
 				}
+				//Cosa metto in questi item?
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RegistrationItem_1_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Floor()));
 			} catch (Exception e) {
 
 				e.printStackTrace();
