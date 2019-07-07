@@ -49,6 +49,15 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_8_" + count);
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_LanguageItem_9_" + count);
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_4_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_5_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_6_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_7_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_8_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_9_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_10_" + count);
 				
 				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_1");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_2");
@@ -65,6 +74,15 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_8_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_8");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_9_" + count, RDF.type.getURI(), prefix + "MMSE_LanguageItem_9");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_1");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_2");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_3_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_3");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_4_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_4");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_5_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_5");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_6_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_6");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_7_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_7");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_8_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_8");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_9_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_9");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_10_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_10");
 				
 				//Mi calcolo i valori correct incorrect per le risposte verbose di ADNI3?
 				if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
@@ -96,7 +114,22 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_7_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Read());//E' corretto?
 				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_8_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Write());//E' corretto?
 				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_9_" + count, prefix + "0_1_score", prefix + mmseBean.getClock_Drawing());//E' corretto?
-				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_9_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Date());
+				//Per gli orientation item non ho messo le risposte verbose
+				//Converto con 0 e 1 score?
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_1_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Date());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_2_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Year());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_3_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Month());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_4_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Day());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_5_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Season());
+				if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
+					tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_6_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Hospit());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_7_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Floor());
+				} else {
+					//In questo caso cosa metto?
+				}
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_8_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_City());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_9_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Area());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_10_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_State());
 			} catch (Exception e) {
 
 				e.printStackTrace();
