@@ -44,87 +44,87 @@ public class MMSEBean extends ADNIBean {
 	//WORDLIST
 	private String Wordlist;
 	
-	//Folds paper in half 1= Correct; 2= Incorrect AZ (52)
+	//Folds paper in half 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO AZ (52)
 	//MMFOLD
 	private String Mm_Fold;
 	
-	//Takes paper in right hand 1= Correct; 2= Incorrect (51)
+	//Takes paper in right hand 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (51)
 	//MMHAND
 	private String Mm_Hand;
 	
-	//Puts paper on floor 0= Incorrect; 1= Correct (53)
+	//Puts paper on floor 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (53)
 	//MMONFLR
 	private String Mm_Onflr;
 	
-	//Read and Follow a written order 0= Incorrect; 1= Correct (54)
+	//Read and Follow a written order 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (54)
 	//MMREAD
 	private String Mm_Read;
 	
-	//Naming - Pencil 1= Correct; 2= Incorrect (49)
+	//Naming - Pencil 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (49)
 	//MMPENCIL
 	private String Mm_Pencil;
 	
-	//Naming - Watch 1= Correct; 2= Incorrect (48)
+	//Naming - Watch 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (48)
 	//MMWATCH
 	private String Mm_Watch;
 	
-	//Repetition of a sentence 1= Correct; 2= Incorrect (50)
+	//Repetition of a sentence 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (50)
 	//MMREPEAT
 	private String Mm_Repeat;
 	
-	//Writing a sentence 0= Incorrect; 1= Correct (55)
+	//Writing a sentence 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (55)
 	//MMWRITE
 	private String Mm_Write;
 	
-	//Immediate Recall - Ball / Apple 1= Correct; 2= Incorrect (31)
+	//Immediate Recall - Ball / Apple 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (31)
 	//MMBALL
 	private String Mm_Ball;
 	
-	//Immediate Recall - Flag / Penny 1= Correct; 2= Incorrect (32)
+	//Immediate Recall - Flag / Penny 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (32)
 	//MMFLAG
 	private String Mm_Flag;
 	
-	//Immediate Recall - Tree / Table 1= Correct; 2= Incorrect (33)
+	//Immediate Recall - Tree / Table 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (33)
 	//MMTREE
 	private String Mm_Tree;
 	
-	//Immediate Recall - Ball / Apple 0= Incorrect; 1= Correct (66)
+	//Immediate Recall - Ball / Apple 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (66)
 	//WORD1
 	private String Word1;
 	
-	//Immediate Recall - Flag / Penny 0= Incorrect; 1= Correct (68)
+	//Immediate Recall - Flag / Penny 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (68)
 	//WORD2
 	private String Word2;
 	
-	//Immediate Recall - Tree / Table 0= Incorrect; 1= Correct (70)
+	//Immediate Recall - Tree / Table 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (70)
 	//WORD3
 	private String Word3;
 	
-	//Delayed Recall - Ball / Apple 1= Correct; 2= Incorrect (45)
+	//Delayed Recall - Ball / Apple 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (45)
 	//MMBALLDL
 	private String Mm_Ball_Dl;
 	
-	//Delayed Recall - Flag / Penny 1= Correct; 2= Incorrect (46)
+	//Delayed Recall - Flag / Penny 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (46)
 	//MMFLAGDL
 	private String Mm_Flag_Dl;
 	
-	//Delayed Recall - Tree / Table 1= Correct; 2= Incorrect (47)
+	//Delayed Recall - Tree / Table 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (47)
 	//MMTREEDL
 	private String Mm_Tree_Dl;
 	
-	//Delayed Recall - Ball / Apple 0= Incorrect; 1= Correct (67)
+	//Delayed Recall - Ball / Apple 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (67)
 	//WORD1DL
 	private String Word1_Dl;
 	
-	//Delayed Recall - Flag / Penny 0= Incorrect; 1= Correct (69)
+	//Delayed Recall - Flag / Penny 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (69)
 	//WORD2DL
 	private String Word2_Dl;
 	
-	//Delayed Recall - Tree / Table 0= Incorrect; 1= Correct (71)
+	//Delayed Recall - Tree / Table 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (71)
 	//WORD3DL
 	private String Word3_Dl;
 	
-	//County 1= Correct; 2= Incorrect (26)
+	//County 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (26)
 	//MMAREA
 	private String Mm_Area;
 	
@@ -132,7 +132,7 @@ public class MMSEBean extends ADNIBean {
 	//MMAREACM
 	private String Mm_Area_Cm;
 	
-	//City - 1= Correct; 2= Incorrect (24)
+	//City - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (24)
 	//MMCITY
 	private String Mm_City;
 	
@@ -140,7 +140,7 @@ public class MMSEBean extends ADNIBean {
 	//MMCITYCM
 	private String Mm_City_Cm;
 	
-	//Date - 1= Correct; 2= Incorrect (10)
+	//Date - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (10)
 	//MMDATE
 	private String Mm_Date;
 	
@@ -148,7 +148,7 @@ public class MMSEBean extends ADNIBean {
 	//MMDATECM
 	private String Mm_Date_Cm;
 	
-	//Day - 1= Correct; 2= Incorrect (16)
+	//Day - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (16)
 	//MMDAY
 	private String Mm_Day;
 	
@@ -156,7 +156,7 @@ public class MMSEBean extends ADNIBean {
 	//MMDAYCM
 	private String Mm_Day_Cm;
 	
-	//Month - 1= Correct; 2= Incorrect (14)
+	//Month - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (14)
 	//MMMONTH
 	private String Mm_Month;
 	
@@ -164,7 +164,7 @@ public class MMSEBean extends ADNIBean {
 	//MMMONTHCM
 	private String Mm_Month_Cm;
 	
-	//Year - 1= Correct; 2= Incorrect (12)
+	//Year - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (12)
 	//MMYEAR
 	private String Mm_Year;
 	
@@ -172,7 +172,7 @@ public class MMSEBean extends ADNIBean {
 	//MMYEARCM
 	private String Mm_Year_Cm;
 	
-	//Floor - 1= Correct; 2= Incorrect (22)
+	//Floor - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (22)
 	//MMFLOOR
 	private String Mm_Floor;
 	
@@ -180,7 +180,7 @@ public class MMSEBean extends ADNIBean {
 	//MMFLRCM
 	private String Mm_Flr_Cm;
 	
-	//Hospital - 1= Correct; 2= Incorrect (20)
+	//Hospital - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (20)
 	//MMHOSPIT
 	private String Mm_Hospit;
 	
@@ -188,7 +188,7 @@ public class MMSEBean extends ADNIBean {
 	//MMHOSPCM
 	private String Mm_Hosp_Cm;
 	
-	//Season - 1= Correct; 2= Incorrect (18)
+	//Season - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (18)
 	//MMSEASON
 	private String Mm_Season;
 	
@@ -196,7 +196,7 @@ public class MMSEBean extends ADNIBean {
 	//MMSESNCM
 	private String Mm_Sesn_Cm;
 	
-	//State - 1= Correct; 2= Incorrect (28)
+	//State - 0= Incorrect; 1= Correct ADNI3 1= Correct; 2= Incorrect ADNI1, ADNI2, ADNIGO (28)
 	//MMSTATE
 	private String Mm_State;
 	
