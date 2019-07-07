@@ -11,6 +11,7 @@ import jena.adni.loader.LoaderFAQCsvToBeanArray;
 import jena.adni.loader.LoaderMMSECsvToBeanArray;
 import jena.adni.manager.CDRManager;
 import jena.adni.manager.FAQManager;
+import jena.adni.manager.MMSEManager;
 import jena.adni.manager.ontology.ADNIOntologyLoader;
 
 public class LoadCsv {
@@ -53,6 +54,9 @@ public class LoadCsv {
 		
 		FAQManager faqManager = new FAQManager();
 		faqManager.insertInADNIOntology(faqTestList);
+		
+		MMSEManager mmseManager = new MMSEManager();
+		mmseManager.insertInADNIOntology(mmseTestList);
 		loadMex = "Fine caricamento CSV nell'ontologia";
 	}
 
@@ -67,6 +71,9 @@ public class LoadCsv {
 		
 		LoaderFAQCsvToBeanArray faqCsvToBeanArray = new LoaderFAQCsvToBeanArray();
 		ArrayList<FAQBean> faqTestList = faqCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\FAQ.csv");
+		
+		LoaderMMSECsvToBeanArray mmseCsvToBeanArray = new LoaderMMSECsvToBeanArray();
+		ArrayList<MMSEBean> mmseTestList = mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\MMSE.csv");
 		loadMex = "Fine caricamento CSV";
 		loadPercent = 20;
 		
@@ -79,6 +86,9 @@ public class LoadCsv {
 		
 		FAQManager faqManager = new FAQManager();
 		faqManager.insertInADNIOntology(faqTestList);
+		
+		MMSEManager mmseManager = new MMSEManager();
+		mmseManager.insertInADNIOntology(mmseTestList);
 		loadMex = "Fine caricamento CSV nell'ontologia";
 	}
 }
