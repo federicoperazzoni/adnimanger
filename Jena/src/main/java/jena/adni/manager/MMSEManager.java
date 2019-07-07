@@ -58,6 +58,9 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_8_" + count);
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_9_" + count);
 				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_OrientationItem_10_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RecallItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RecallItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "MMSE_" + count, prefix + "hasAssesmentItem", prefix + "MMSE_RecallItem_3_" + count);
 				
 				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_1");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_AttentionAndCalculationItem_2");
@@ -83,30 +86,33 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_8_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_8");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_9_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_9");
 				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_10_" + count, RDF.type.getURI(), prefix + "MMSE_OrientationItem_10");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_1");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_2");
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, RDF.type.getURI(), prefix + "MMSE_RecallItem_3");
 				
 				//Mi calcolo i valori correct incorrect per le risposte verbose di ADNI3?
 				if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
 					
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_D_V());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_L_V());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_3_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_R_V());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_4_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_O_V());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_5_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_W_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_D_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_L_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_3_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_R_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_4_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_O_V());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_5_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_W_V());
 				} else {
 					
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_1());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_2());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_3_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_3());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_4_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_4());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_5_" + count, prefix + "0_1_score", prefix + mmseBean.getBackward_Spelling_Letter_5());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_1_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_1());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_2_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_2());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_3_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_3());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_4_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_4());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_AttentionAndCalculationItem_5_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getBackward_Spelling_Letter_5());
 				}
-				
-				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Watch());
-				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_2_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Pencil());
-				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_3_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Repeat());
+				//Converto con 0 e 1 score?
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_1_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Watch());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_2_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Pencil());
+				tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_3_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Repeat());
 				if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
-					tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_4_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Hand());
-					tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_5_" + count, prefix + "0_1_score", prefix + mmseBean.getMm_Fold());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_4_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Hand());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_5_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Fold());
 				} else {
 					//In questo caso cosa metto?
 				}
@@ -130,6 +136,15 @@ public class MMSEManager {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_8_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_City());
 				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_9_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Area());
 				tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_10_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_State());
+				if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
+					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Ball());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Flag());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "1_2_score", prefix + mmseBean.getMm_Tree());
+				} else {
+					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "0_1_score", prefix + mmseBean.getWord1());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "0_1_score", prefix + mmseBean.getWord2());
+					tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "0_1_score", prefix + mmseBean.getWord3());
+				}
 			} catch (Exception e) {
 
 				e.printStackTrace();

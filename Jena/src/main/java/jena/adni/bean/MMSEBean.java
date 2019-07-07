@@ -44,11 +44,11 @@ public class MMSEBean extends ADNIBean {
 	//WORDLIST
 	private String Wordlist;
 	
-	//Folds paper in half 0= Incorrect; 1= Correct AZ (52)
+	//Folds paper in half 1= Correct; 2= Incorrect AZ (52)
 	//MMFOLD
 	private String Mm_Fold;
 	
-	//Takes paper in right hand 0= Incorrect; 1= Correct (51)
+	//Takes paper in right hand 1= Correct; 2= Incorrect (51)
 	//MMHAND
 	private String Mm_Hand;
 	
@@ -60,15 +60,15 @@ public class MMSEBean extends ADNIBean {
 	//MMREAD
 	private String Mm_Read;
 	
-	//Naming - Pencil 0= Incorrect; 1= Correct (49)
+	//Naming - Pencil 1= Correct; 2= Incorrect (49)
 	//MMPENCIL
 	private String Mm_Pencil;
 	
-	//Naming - Watch 0= Incorrect; 1= Correct (48)
+	//Naming - Watch 1= Correct; 2= Incorrect (48)
 	//MMWATCH
 	private String Mm_Watch;
 	
-	//Repetition of a sentence 0= Incorrect; 1= Correct (50)
+	//Repetition of a sentence 1= Correct; 2= Incorrect (50)
 	//MMREPEAT
 	private String Mm_Repeat;
 	
