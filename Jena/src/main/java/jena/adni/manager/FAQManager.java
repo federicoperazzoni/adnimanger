@@ -77,7 +77,7 @@ public class FAQManager {
 			
 			count++;
 			
-			LoadCsv.loadPercent = ((40*count)/total) + 60;
+			LoadCsv.loadPercent = ((4*count)/total) + 6;
 		}
 		
 		tdbConnection.close();

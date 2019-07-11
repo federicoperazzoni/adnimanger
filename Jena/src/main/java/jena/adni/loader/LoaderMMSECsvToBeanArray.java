@@ -29,6 +29,8 @@ public class LoaderMMSECsvToBeanArray {
 		Path myPath = Paths.get(pathCsv);
 
 		CSVParser parser = new CSVParserBuilder().withSeparator(';').build();
+		
+		int count = 0;
 
 		try { BufferedReader br = Files.newBufferedReader(myPath, 
 				StandardCharsets.UTF_8);
@@ -37,14 +39,12 @@ public class LoaderMMSECsvToBeanArray {
 
 		List<String[]> rows = reader.readAll();
 
-		int count = 0;
-
 		for (String[] row : rows) {
 
 			if (count > 0) {
 
 				MMSEBean mmseBean = new MMSEBean();
-				
+
 				mmseBean.setClock_Drawing(row[55]);
 				mmseBean.setBackward_Spelling_Letter_1(row[58]);
 				mmseBean.setBackward_Spelling_Letter_2(row[59]);
@@ -108,17 +108,17 @@ public class LoaderMMSECsvToBeanArray {
 				mmseBean.setMm_St_Cm(row[28]);
 				mmseBean.setMm_Score(row[56]);
 				mmseBean.setWorldscore(row[72]);
-				
+
 				mmseBean.setPhase(row[0]);
 				mmseBean.setSubjectDataBean(new SubjectDataBean());
 				mmseBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
 				mmseTestList.add(mmseBean);
 			}
-			
+
 			count++;
 		}
 
-		} catch (IOException e) {
+		} catch (Exception e) {
 
 			e.printStackTrace();
 		}

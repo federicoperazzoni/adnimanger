@@ -29,7 +29,7 @@ public class LoadCsv {
 		adniOntologyLoader.resetADNIOntologyTDB();
 		adniOntologyLoader.loadADNIOntology();
 		loadMex = "Fine caricamento ontologia ADNI";
-		loadPercent = 10;
+		loadPercent = 1;
 		
 		status = 2;
 		loadMex = "Caricamento CSV";
@@ -44,7 +44,7 @@ public class LoadCsv {
 		LoaderMMSECsvToBeanArray mmseCsvToBeanArray = new LoaderMMSECsvToBeanArray();
 		ArrayList<MMSEBean> mmseTestList = mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\MMSE.csv");
 		loadMex = "Fine caricamento CSV";
-		loadPercent = 10;
+		loadPercent = 1;
 		
 		status = 3;
 		loadMex = "Caricamento CSV nell'ontologia";
