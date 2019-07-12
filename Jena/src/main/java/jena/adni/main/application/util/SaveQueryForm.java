@@ -26,7 +26,7 @@ public class SaveQueryForm extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private static JTextComponent[] fields;
+	private static JTextComponent[] fields = new JTextComponent[2];
 	private static JFrame f = new JFrame("Text Form Example");
 
 	// Create a form with the specified labels, tooltips, and sizes.
@@ -36,7 +36,6 @@ public class SaveQueryForm extends JPanel {
 		JPanel fieldPanel = new JPanel(new GridLayout(labels.length, 1));
 		add(labelPanel, BorderLayout.WEST);
 		add(fieldPanel, BorderLayout.CENTER);
-		fields = new JTextComponent[labels.length];
 
 		for (int i = 0; i < labels.length; i += 1) {
 			if (mnemonics[i] == 'N')
@@ -69,7 +68,7 @@ public class SaveQueryForm extends JPanel {
 		}
 	}
 
-	public String getText(int i) {
+	public static String getText(int i) {
 		return (fields[i].getText());
 	}
 
@@ -86,7 +85,7 @@ public class SaveQueryForm extends JPanel {
 		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				LoadCsv.loadPercent = 0;
-				QueryPerformAction.saveQueryPerm(ApplicationDesktop.saveQuery, progressBar, label1, ApplicationDesktop.textAreaForQuery,fields);
+				QueryPerformAction.saveQueryPerm(ApplicationDesktop.saveQuery, progressBar, label1, ApplicationDesktop.textAreaForQuery,getText(0),getText(1));
 				f.dispose();
 			}
 		});

@@ -11,10 +11,14 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
+import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.text.JTextComponent;
 
@@ -165,7 +169,7 @@ public class QueryPerformAction {
 	}
 
 	public static void saveQueryPerm(JButton saveQuery, final JProgressBar progressBar, final JLabel label1,
-			final JTextArea textAreaForQuery, JTextComponent[] fields) {
+			final JTextArea textAreaForQuery, String text1,String text2) {
 
 
 		Thread thread = new Thread( new Runnable() {
@@ -220,8 +224,19 @@ public class QueryPerformAction {
 							CSVWriter.DEFAULT_ESCAPE_CHARACTER,
 							CSVWriter.DEFAULT_LINE_END);
 
-					if (!textAreaForQuery.getText().isEmpty())
-						cSVFileWriter.writeNext(new String[]{fields[0].getText(), fields[1].getText(), textAreaForQuery.getText()});
+					if (!textAreaForQuery.getText().isEmpty()) {
+						
+						SimpleDateFormat simpleDateFormat = new SimpleDateFormat("ddMMyyyyHHmmss");
+						
+						String date = simpleDateFormat.format(new Date());
+						
+						String nomeFile = "query_"+date+".txt";
+						String textQuery = textAreaForQuery.getText();
+						FileWriter fileWriterQuery = new FileWriter(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\"+nomeFile);
+						fileWriterQuery.write(textQuery);
+						fileWriterQuery.close();
+						cSVFileWriter.writeNext(new String[]{text2.replaceAll(",", " "), text2.replaceAll(",", " "), nomeFile});
+					}
 					cSVFileWriter.flush();
 					cSVFileWriter.close();
 					fileWriter.close();
@@ -249,5 +264,26 @@ public class QueryPerformAction {
 			}
 		});
 		
+	}
+
+	public static void loadQuery(JButton loadQueryButton, JTextArea textAreaForQuery,JTable csvAdniTable, JFrame frame) {
+		loadQueryButton.addActionListener(new ActionListener(){  
+
+			public void actionPerformed(ActionEvent e){  
+				
+				int selectedRow = csvAdniTable.getSelectedRow();
+				if (selectedRow != -1) {
+					try {
+						String fileQuery = (String) csvAdniTable.getModel().getValueAt(selectedRow, 2);
+						fileQuery = "Query_" + fileQuery.replaceAll(":", "").replaceAll(" ", "").replaceAll("/", "")+".txt";
+						byte[] encoded = Files.readAllBytes(Paths.get(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\"+fileQuery));
+						textAreaForQuery.setText(new String(encoded));
+						frame.dispose();
+					} catch (IOException e1) {
+						e1.printStackTrace();
+					}
+				}
+			}
+		});
 	}
 }
