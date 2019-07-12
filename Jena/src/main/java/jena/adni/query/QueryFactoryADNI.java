@@ -140,7 +140,7 @@ public class QueryFactoryADNI {
 
 	}
 
-	public static void executeQueryWithoutCostruct(String sparql) {
+	public static void executeQueryWithoutConstruct(String sparql) {
 
 		try {
 			

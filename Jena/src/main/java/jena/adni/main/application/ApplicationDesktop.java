@@ -89,8 +89,9 @@ public class ApplicationDesktop {
 		LoadPerformAction.performLoadWithResetAction(buttonLoadWithReset, progressBar, label1);
 		LoadPerformAction.performLoadWithoutResetAction(buttonLoadNoReset, progressBar, label1);
 		QueryPerformAction.performQueryAcion(buttonExcuteQuery, progressBar, label1, textAreaForQuery);
-		QueryPerformAction.performQueryWithoutCostructAcion(buttonExcuteWithoutCostructQuery, progressBar, label1, textAreaForQuery);
+		QueryPerformAction.performQueryWithoutConstructAcion(buttonExcuteWithoutCostructQuery, progressBar, label1, textAreaForQuery);
 		QueryPerformAction.saveQuery(saveQuery, progressBar, label1, textAreaForQuery);
+		QueryPerformAction.loadQuery(loadQuery, progressBar, label1);
 		
 		JPanel jaJPanel = new JPanel();
 		JPanel jaJPanel2 = new JPanel();

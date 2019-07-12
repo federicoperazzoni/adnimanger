@@ -17,6 +17,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JProgressBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -52,6 +53,56 @@ public class ApplicationUtil {
 		ApplicationDesktop.buttonExcuteQuery.setEnabled(true);
 		ApplicationDesktop.buttonExcuteWithoutCostructQuery.setEnabled(true);
 		ApplicationDesktop.saveQuery.setEnabled(true);
+	}
+	
+	public static void openFrameCsvLoadQuery() {
+
+		try {
+
+			JFrame frame = new JFrame("Saved query" );
+			frame.setSize( 1000,400 );
+			frame.setLocationRelativeTo( null ); 
+			frame.setLayout(new BorderLayout());
+
+			JPanel container = new JPanel();
+			container.setLayout(new BorderLayout());
+			JScrollPane scrPane = new JScrollPane(container);
+
+			Object[] columnnames;
+			CSVReader CSVFileReader;
+			CSVFileReader = new CSVReader(new FileReader(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\Saved_Query.csv"));
+			List myEntries = CSVFileReader.readAll();
+			columnnames = (String[]) myEntries.get(0);
+			DefaultTableModel tableModel = new DefaultTableModel(columnnames, myEntries.size()); 
+			int rowcount = tableModel.getRowCount();
+			for (int x = 0; x<rowcount; x++)
+			{
+				int columnnumber = 0;
+
+				if (x>=0)
+				{
+					for (String thiscellvalue : (String[])myEntries.get(x))
+					{
+						tableModel.setValueAt(thiscellvalue.replaceAll(ADNIExternalResource.getInstance().getPrefix(), ""), x, columnnumber);
+						columnnumber++;
+					}
+				}
+			}
+
+			JTable csvAdniTable = new JTable(tableModel);
+			csvAdniTable.setFont(new Font("", Font.ITALIC, 20));
+			csvAdniTable.setRowHeight(20);
+
+			container.add(csvAdniTable,BorderLayout.CENTER);
+			frame.getContentPane().add(scrPane,BorderLayout.CENTER);
+			frame.setVisible( true );
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public static void openFrameCsv() {
@@ -104,11 +155,11 @@ public class ApplicationUtil {
 		}
 	}
 
-	public static void openFrameSaveQuery() {
+	public static void openFrameSaveQuery(JProgressBar progressBar, JLabel label1) {
 
 		try {
 
-			SaveQueryForm.visualize();
+			SaveQueryForm.visualize(progressBar, label1);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
