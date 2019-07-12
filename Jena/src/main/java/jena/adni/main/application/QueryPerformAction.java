@@ -147,8 +147,19 @@ public class QueryPerformAction {
 		});
 
 	}
-
+	
 	public static void saveQuery(JButton saveQuery, final JProgressBar progressBar, final JLabel label1,
+			final JTextArea textAreaForQuery) {
+		saveQuery.addActionListener(new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				ApplicationUtil.openFrameSaveQuery();
+			}  
+		});
+	}
+
+	public static void saveQueryPerm(JButton saveQuery, final JProgressBar progressBar, final JLabel label1,
 			final JTextArea textAreaForQuery) {
 		saveQuery.addActionListener(new ActionListener(){  
 

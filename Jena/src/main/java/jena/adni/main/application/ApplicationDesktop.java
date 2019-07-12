@@ -29,6 +29,7 @@ public class ApplicationDesktop {
 	public static JButton buttonExcuteQuery = null;
 	public static JButton buttonExcuteWithoutCostructQuery = null;
 	public static JButton saveQuery = null;
+	public static JButton loadQuery = null;
 	
 	public static JTextArea textAreaForQuery = null;
 	public static JPopupMenu popup = null;
@@ -47,14 +48,17 @@ public class ApplicationDesktop {
 		buttonPerformAllItem = new JButton("Export all item");
 		buttonPerformAllItem.setSize(200, 40);
 		
-		buttonExcuteQuery = new JButton("Excute query with costruct");
+		buttonExcuteQuery = new JButton("Excute query with construct");
 		buttonExcuteQuery.setSize(200, 40);
 		
 		buttonExcuteWithoutCostructQuery = new JButton("Excute query without costruct");
 		buttonExcuteWithoutCostructQuery.setSize(200, 40);
 		
 		saveQuery =  new JButton("Save query");
-		saveQuery.setSize(200, 40);
+		saveQuery.setSize(100, 40);
+		
+		loadQuery =  new JButton("Load query");
+		loadQuery.setSize(100, 40);
 		
 		final JLabel label1 = new JLabel("-");
 		label1.setSize(400,30);  
@@ -126,6 +130,7 @@ public class ApplicationDesktop {
 		jaJPanel5.add(buttonExcuteWithoutCostructQuery);
 		jaJPanel5.add(buttonExcuteQuery);
 		jaJPanel5.add(saveQuery);
+		jaJPanel5.add(loadQuery);
 		
 		jaJPanel4.add(jaJPanel5,BorderLayout.CENTER);
 		
