@@ -111,8 +111,8 @@ public class ApplicationUtil {
 			QueryPerformAction.loadQuery(loadQueryButton,ApplicationDesktop.textAreaForQuery,csvAdniTable,frame);
 
 			container.add(csvAdniTable,BorderLayout.CENTER);
-			container.add(loadQueryButton,BorderLayout.SOUTH);
 			frame.getContentPane().add(scrPane,BorderLayout.CENTER);
+			frame.getContentPane().add(loadQueryButton,BorderLayout.SOUTH);
 			frame.setVisible( true );
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

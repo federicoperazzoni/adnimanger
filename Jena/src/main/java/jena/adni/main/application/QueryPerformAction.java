@@ -28,6 +28,7 @@ import com.opencsv.CSVWriter;
 import jena.adni.constants.ADNIExternalResource;
 import jena.adni.main.LoadCsv;
 import jena.adni.main.application.util.ApplicationUtil;
+import jena.adni.main.application.util.SaveQueryForm;
 import jena.adni.query.QueryFactoryADNI;
 
 public class QueryPerformAction {
@@ -169,7 +170,7 @@ public class QueryPerformAction {
 	}
 
 	public static void saveQueryPerm(JButton saveQuery, final JProgressBar progressBar, final JLabel label1,
-			final JTextArea textAreaForQuery, String text1,String text2) {
+			final JTextArea textAreaForQuery) {
 
 
 		Thread thread = new Thread( new Runnable() {
@@ -235,7 +236,7 @@ public class QueryPerformAction {
 						FileWriter fileWriterQuery = new FileWriter(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\"+nomeFile);
 						fileWriterQuery.write(textQuery);
 						fileWriterQuery.close();
-						cSVFileWriter.writeNext(new String[]{text2.replaceAll(",", " "), text2.replaceAll(",", " "), nomeFile});
+						cSVFileWriter.writeNext(new String[]{SaveQueryForm.fields[0].getText().replaceAll(",", " "), SaveQueryForm.fields[1].getText().replaceAll(",", " "), nomeFile});
 					}
 					cSVFileWriter.flush();
 					cSVFileWriter.close();
