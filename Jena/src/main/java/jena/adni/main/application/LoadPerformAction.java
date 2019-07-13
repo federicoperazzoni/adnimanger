@@ -19,6 +19,7 @@ import com.opencsv.CSVReader;
 import jena.adni.constants.ADNIExternalResource;
 import jena.adni.main.LoadCsv;
 import jena.adni.main.application.util.ApplicationUtil;
+import jena.adni.main.application.util.LoadCSVForm;
 
 public class LoadPerformAction {
 
@@ -26,59 +27,63 @@ public class LoadPerformAction {
 
 		buttonLoadWithReset.addActionListener(new ActionListener(){  
 			public void actionPerformed(ActionEvent e){  
+				LoadCSVForm.visualize(progressBar, label1);
+			}
+		});
+	}
 
-				Thread thread = new Thread( new Runnable() {
+	public static void performLoadWithResetActionPerm(JButton buttonLoadWithReset, final JProgressBar progressBar, final JLabel label1) {
 
-					@Override
-					public void run() {
+		Thread thread = new Thread( new Runnable() {
 
-						LoadCsv.loadPercent = 0;
+			@Override
+			public void run() {
+
+				LoadCsv.loadPercent = 0;
+				progressBar.setValue(LoadCsv.loadPercent);
+				ApplicationUtil.disableButton();
+
+				while(true) {
+
+					label1.setText(LoadCsv.loadMex);
+
+					if (LoadCsv.status == 3) {
+
 						progressBar.setValue(LoadCsv.loadPercent);
-						ApplicationUtil.disableButton();
-
-						while(true) {
-
-							label1.setText(LoadCsv.loadMex);
-
-							if (LoadCsv.status == 3) {
-
-								progressBar.setValue(LoadCsv.loadPercent);
-							}
-
-
-							if (LoadCsv.loadPercent == 100) {
-
-								ApplicationUtil.enableButton();
-								label1.setText("Fine caricamento");
-								break;
-							}
-
-							try {
-
-								Thread.sleep(100);
-							} catch (InterruptedException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-						}
-
 					}
 
-				});
-				thread.start();
 
-				Thread thread2 = new Thread( new Runnable() {
+					if (LoadCsv.loadPercent == 100) {
 
-					@Override
-					public void run() {
-
-						LoadCsv.loadCsvWithReset();
+						ApplicationUtil.enableButton();
+						label1.setText("Fine caricamento");
+						break;
 					}
 
-				});
-				thread2.start();
-			}  
-		});  
+					try {
+
+						Thread.sleep(100);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+
+			}
+
+		});
+		thread.start();
+
+		Thread thread2 = new Thread( new Runnable() {
+
+			@Override
+			public void run() {
+
+				LoadCsv.loadCsvWithReset();
+			}
+
+		});
+		thread2.start();
 	}
 
 	public static void performLoadWithoutResetAction(JButton buttonLoadNoReset, final JProgressBar progressBar, final JLabel label1) {
