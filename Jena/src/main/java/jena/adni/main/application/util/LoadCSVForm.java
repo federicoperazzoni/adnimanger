@@ -3,6 +3,7 @@ package jena.adni.main.application.util;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
@@ -41,12 +42,14 @@ public class LoadCSVForm extends JPanel {
 	private static final JFileChooser fc = new JFileChooser();
 
 	public static String[] labels = { "CDR", "FAQ", "MMSE" };
-	public static String[] labelButton = {"CDR csv","FAQ csv","MMSE csv"};
+	public static String[] labelButton = {"             Select file","             Select file","             Select file"};
 	
 	public static File[] files = new File[3];
 	public static char[] mnemonics = { 'C', 'F', 'M'};
 	public static int[] widths = { 25, 25, 25 };
 	public static String[] descs = { "Clinical dementia rating", "Functional assessment question", "Mini mental state exam"};
+	
+	int i = 0;
 
 	private static final LoadCSVForm form = new LoadCSVForm(labels, mnemonics, widths, descs);
 
@@ -57,36 +60,30 @@ public class LoadCSVForm extends JPanel {
 		JPanel cecklPanel = new JPanel(new GridLayout(labels.length, 1));
 		JPanel fieldPanel = new JPanel(new GridLayout(labels.length, 1));
 		JPanel fileNamePanel = new JPanel(new GridLayout(labels.length, 1));
-		add(labelPanel, BorderLayout.WEST);
 		JPanel panelCB = new JPanel(new BorderLayout());
-		panelCB.add(cecklPanel, BorderLayout.WEST);
-		panelCB.add(fieldPanel, BorderLayout.CENTER);
-		panelCB.add(fileNamePanel, BorderLayout.EAST);
-		add(panelCB, BorderLayout.CENTER);
-		
+		panelCB.add(labelPanel, BorderLayout.WEST);
+		panelCB.add(cecklPanel, BorderLayout.CENTER);
+		panelCB.setBounds(0, 0, 300, 300);
+		add(panelCB, BorderLayout.WEST);
+		add(fieldPanel,BorderLayout.CENTER);
+		add(fileNamePanel, BorderLayout.EAST);
 
-		for (int i = 0; i < labels.length; i += 1) {
+		for (i = 0; i < labels.length; i += 1) {
 
 			fields[i] = new JButton(labelButton[i]);
 
-			fields[i].addActionListener(new ActionListener(){  
+			fields[i].addActionListener(new ActionListener(){ 
+				
+				private int cont = i; 
+				
 				public void actionPerformed(ActionEvent e){  
 					int returnVal = fc.showOpenDialog(LoadCSVForm.this);
 
 					if (returnVal == JFileChooser.APPROVE_OPTION) {
 						File file = fc.getSelectedFile();
-						String buttonS = ((JButton)e.getSource()).getText();
-						
-						if ("CDR csv".equals(buttonS)) {
-							files[0] = file;
-							fieldsL[0].setText(file.getName());
-						} else if ("FAQ csv".equals(buttonS)) {
-							files[1] = file;
-							fieldsL[1].setText(file.getName());
-						} else if ("MMSE csv".equals(buttonS)) {
-							files[2] = file;
-							fieldsL[2].setText(file.getName());
-						}
+						files[cont] = file;
+						fieldsL[cont].setText(file.getName().length() > 16 ? file.getName().substring(0,15) + "..." : file.getName());
+						fieldsL[cont].setToolTipText(file.getName());
 					}
 				}
 			});
@@ -108,19 +105,24 @@ public class LoadCSVForm extends JPanel {
 
 			fieldsCB[i] = new JCheckBox();
 
-			JPanel pc = new JPanel(new FlowLayout());
+			JPanel pc = new JPanel(new GridLayout());
 			fieldsCB[i].setAlignmentX(100);
 			fieldsCB[i].setSelected(true);
 			pc.add(fieldsCB[i]);
 			cecklPanel.add(pc);
 
-			JPanel p = new JPanel(new BorderLayout());
+			JPanel p = new JPanel(new CardLayout());
 			fields[i].setAlignmentX(100);
+			fields[i].setHorizontalAlignment(JButton.LEFT);
+			fields[i].setSize(new Dimension(300,80));
 			p.add(fields[i]);
-			fieldPanel.add(p,BorderLayout.WEST);
-			fieldsL[i] = new JLabel("Default File                                ");
-			p.add(fieldsL[i],BorderLayout.EAST);
+			JPanel p2 = new JPanel(new CardLayout());
+			fieldPanel.add(p2);
+			fieldsL[i] = new JLabel("Default File                                   ");
+			fieldsL[i].setBorder(border);
+			p2.add(fieldsL[i]);
 			fileNamePanel.add(p);
+			fileNamePanel.add(p2);
 		}
 	}
 

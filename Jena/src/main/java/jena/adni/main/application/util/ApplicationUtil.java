@@ -49,18 +49,14 @@ public class ApplicationUtil {
 
 	public static void enableButton() {
 
-		if(LoadCsv.status != 3) {
-
-			ApplicationDesktop.buttonLoadWithReset.setEnabled(true);
-			ApplicationDesktop.buttonLoadNoReset.setEnabled(true);
-		}
-
+		ApplicationDesktop.buttonLoadWithReset.setEnabled(true);
+		ApplicationDesktop.buttonLoadNoReset.setEnabled(true);
 		ApplicationDesktop.buttonPerformAllItem.setEnabled(true);
 		ApplicationDesktop.buttonExcuteQuery.setEnabled(true);
 		ApplicationDesktop.buttonExcuteWithoutCostructQuery.setEnabled(true);
 		ApplicationDesktop.saveQuery.setEnabled(true);
 	}
-	
+
 	public static void openFrameCsvLoadQuery() {
 
 		try {
@@ -69,9 +65,9 @@ public class ApplicationUtil {
 			frame.setSize( 1000,400 );
 			frame.setLocationRelativeTo( null ); 
 			frame.setLayout(new BorderLayout());
-			
+
 			JButton loadQueryButton = new JButton("Load query");
-			
+
 			JPanel container = new JPanel();
 			container.setLayout(new BorderLayout());
 			JScrollPane scrPane = new JScrollPane(container);
@@ -107,7 +103,7 @@ public class ApplicationUtil {
 			csvAdniTable.getColumnModel().getColumn(2).setWidth(0);
 			csvAdniTable.setFont(new Font("", Font.ITALIC, 20));
 			csvAdniTable.setRowHeight(20);
-			
+
 			QueryPerformAction.loadQuery(loadQueryButton,ApplicationDesktop.textAreaForQuery,csvAdniTable,frame);
 
 			container.add(csvAdniTable,BorderLayout.CENTER);
