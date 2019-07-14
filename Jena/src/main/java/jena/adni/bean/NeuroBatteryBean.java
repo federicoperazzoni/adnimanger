@@ -86,15 +86,19 @@ public class NeuroBatteryBean extends ADNIBean {
 	//AVTOTB
 	private String AvtotB;
 	
-	//Number of correct unique animal names produced within the one-minute time limit (44) ADNI1 ADNIGO ADNI2 ADNI3
+	//Number of correct unique animal names produced within the one-minute time limit (0-60) (44) ADNI1 ADNIGO ADNI2 ADNI3
 	//CATANIMSC
 	private String Catanimsc;
 	
-	//Number of intrusions (non-animal names) (46) ADNI1 ADNIGO ADNI2 ADNI3
+	//Number of intrusions (non-animal names) (0-51) (46) ADNI1 ADNIGO ADNI2 ADNI3
 	//CATANINTR
 	private String Catanintr;
 	
-	//Number of perseverations (repeated names) (45) ADNI1 ADNIGO ADNI2 ADNI3
+	//Number of perseverations (repeated names) (0-30) (45) ADNI1 ADNIGO ADNI2 ADNI3
 	//CATANPERS
 	private String Catanpers;
+	
+	//Approximately circular face (0 incorrect 1 Correct) (10) ADNI1 ADNIGO ADNI2 ADNI3
+	//CLOCKCIRC
+	private String Clockcirc;
 }
