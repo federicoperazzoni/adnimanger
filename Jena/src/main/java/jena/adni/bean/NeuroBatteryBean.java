@@ -101,4 +101,40 @@ public class NeuroBatteryBean extends ADNIBean {
 	//Approximately circular face (0 incorrect 1 Correct) (10) ADNI1 ADNIGO ADNI2 ADNI3
 	//CLOCKCIRC
 	private String Clockcirc;
+	
+	//Presence of the two hands (0 incorrect 1 Correct) (13) ADNI1 ADNIGO ADNI2 ADNI3
+	//CLOCKHAND
+	private String Clockhand;
+	
+	//Correctness of numbers (0 incorrect 1 Correct) (12) ADNI1 ADNIGO ADNI2 ADNI3
+	//CLOCKNUM
+	private String Clocknum;
+	
+	//Total score (0-5) (15) ADNI1 ADNIGO ADNI2 ADNI3
+	//CLOCKSCOR
+	private String Clockscor;
+	
+	//Symmetry of number placement (0 incorrect 1 Correct) (11) ADNI1 ADNIGO ADNI2 ADNI3
+	//CLOCKSYM
+	private String Clocksym;
+	
+	//Presence of the two hands, set to ten after eleven (0 incorrect 1 Correct) (14) ADNI1 ADNIGO ADNI2 ADNI3
+	//CLOCKTIME
+	private String Clocktime;
+	
+	//Approximately circular face (0 incorrect 1 Correct) (16) ADNI1 ADNIGO ADNI2 ADNI3
+	//COPYCIRC
+	private String Copycirc;
+	
+	//Presence of the two hands (0 incorrect 1 Correct) (19) ADNI1 ADNIGO ADNI2 ADNI3
+	//COPYHAND
+	private String Copyhand;
+	
+	//Correctness of numbers (0 incorrect 1 Correct) (18) ADNI1 ADNIGO ADNI2 ADNI3
+	//COPYNUM
+	private String Copynum;
+	
+	//Total Score (0-5) (21) ADNI1 ADNIGO ADNI2 ADNI3
+	//COPYSCOR
+	private String Copyscor;
 }
