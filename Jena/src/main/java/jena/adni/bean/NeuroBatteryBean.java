@@ -165,4 +165,12 @@ public class NeuroBatteryBean extends ADNIBean {
 	//Total number of story units recalled (0-25) (23) ADNI1 ADNIGO ADNI2 ADNI3
 	//LIMMTOTAL
 	private String Limmtotal;
+	
+	//Which story was used (0-2)? (22) ADNI2 ADNI3
+	//LMSTORY
+	private String Lmstory;
+	
+	//Correct names with semantic cue (0-2)? (74) ADNI2 ADNI3
+	//MINTSEMCUE
+	private String Mintsemcue;
 }
