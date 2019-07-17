@@ -137,4 +137,16 @@ public class NeuroBatteryBean extends ADNIBean {
 	//Total Score (0-5) (21) ADNI1 ADNIGO ADNI2 ADNI3
 	//COPYSCOR
 	private String Copyscor;
+	
+	//Symmetry of number placement (0 incorrect 1 Correct) (17) ADNI1 ADNIGO ADNI2 ADNI3
+	//COPYSYM
+	private String Copysym;
+	
+	//Presence of the two hands, set to ten after eleven  (0 incorrect 1 Correct) (20) ADNI1 ADNIGO ADNI2 ADNI3
+	//COPYTIME
+	private String Copytime;
+	
+	//Time of beginning (Ora di inizio) (57) ADNI2 ADNI3
+	//LDELBEGIN
+	private String Ldelbegin;
 }
