@@ -146,7 +146,23 @@ public class NeuroBatteryBean extends ADNIBean {
 	//COPYTIME
 	private String Copytime;
 	
-	//Time of beginning (Ora di inizio) (57) ADNI2 ADNI3
+	//Time of beginning (Ora) (57) ADNI2 ADNI3
 	//LDELBEGIN
 	private String Ldelbegin;
+	
+	//Reminder givenReminder given (Yes/No)(0 incorrect 1 Correct)? (59) ADNI1 ADNIGO ADNI2 ADNI3
+	//LDELCUE
+	private String Ldelcue;
+	
+	//Total number of story units recalled (0-25) (58) ADNI1 ADNIGO ADNI2 ADNI3
+	//LDELTOTAL
+	private String Ldeltotal;
+	
+	//Time fo ending (Ora) (24) ADNI2 ADNI3
+	//LIMMEND
+	private String Limmend;
+	
+	//Total number of story units recalled (0-25) (23) ADNI1 ADNIGO ADNI2 ADNI3
+	//LIMMTOTAL
+	private String Limmtotal;
 }
