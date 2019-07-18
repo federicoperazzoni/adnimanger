@@ -182,7 +182,23 @@ public class NeuroBatteryBean extends ADNIBean {
 	//MINTUNCUED
 	private String Mintuncued;
 	
-	//Errors occurring when the participant connects two circles in the incorrect sequence (0-25)? (51) ADNI3
+	//Errors occurring when the participant connects two circles in the incorrect sequence (0-25)? (51) ADNI1 ADNIGO ADNI2 ADNI3
 	//TRAAERRCOM
 	private String Traaerrcom;
+	
+	// Errors occurring because the participant failed to draw a connecting line to a given circle in the correct sequence (0-25)? (52) ADNI1 ADNIGO ADNI2 ADNI3
+	//TRAAERROM
+	private String Traaerrom;
+	
+	// Total number of seconds to complete Part A (Seconds) (50) ADNI1 ADNIGO ADNI2 ADNI3
+	//TRAASCOR
+	private String Traascor;
+	
+	// Errors occurring when the participant connects two circles in the incorrect sequence (0-25) (54) ADNI1 ADNIGO ADNI2 ADNI3
+	//TRABERRCOM
+	private String Traberrcom;
+	
+	// Errors occurring because the participant failed to draw a connecting line to a given circle in the correct sequence (0-25) (55) ADNI1 ADNIGO ADNI2 ADNI3
+	//TRABERROM
+	private String Traberrom;
 }
