@@ -170,7 +170,19 @@ public class NeuroBatteryBean extends ADNIBean {
 	//LMSTORY
 	private String Lmstory;
 	
-	//Correct names with semantic cue (0-2)? (74) ADNI2 ADNI3
+	//Correct names with semantic cue (0-32)? (74) ADNI3
 	//MINTSEMCUE
 	private String Mintsemcue;
+	
+	//Correct names uncued + semantic cue (0-32)? (75) ADNI3
+	//MINTTOTAL
+	private String Minttotal;
+	
+	//Correct names uncued (0-32)? (76) ADNI3
+	//MINTUNCUED
+	private String Mintuncued;
+	
+	//Errors occurring when the participant connects two circles in the incorrect sequence (0-25)? (51) ADNI3
+	//TRAAERRCOM
+	private String Traaerrcom;
 }
