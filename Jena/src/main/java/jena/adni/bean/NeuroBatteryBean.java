@@ -201,4 +201,24 @@ public class NeuroBatteryBean extends ADNIBean {
 	// Errors occurring because the participant failed to draw a connecting line to a given circle in the correct sequence (0-25) (55) ADNI1 ADNIGO ADNI2 ADNI3
 	//TRABERROM
 	private String Traberrom;
+	
+	// Total number of seconds to complete Part B (Seconds) (53) ADNI1 ADNIGO ADNI2 ADNI3
+	//TRABSCOR
+	private String Trabscor;	
+	
+	// Sum of scores from five first trials (0-75) (78) ADNI3
+	//RAVLT_immediate
+	private String Ravlt_immediate;
+	
+	// Score of Trial 5 minus score of trial 1 (-2-15) (79) ADNI3
+	//RAVLT_learning
+	private String Ravlt_learning;
+	
+	// Score of trial 5 minus score of the delayed recall (-33-15) (77) ADNI3
+	//RAVLT_forgetting
+	private String Ravlt_forgetting;
+	
+	// RAVTL forgettng divided by the score of Trial 5 (percent) (80) ADNI3
+	//RAVLT_perc_forgetting
+	private String Ravlt_perc_forgetting;
 }
