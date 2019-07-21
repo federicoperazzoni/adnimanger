@@ -45,7 +45,23 @@ public class LoaderNeuroBatteryCsvToBeanArray {
 
 				NeuroBatteryBean neuroBatteryBean = new NeuroBatteryBean();
 
-				//Vanno le info
+				neuroBatteryBean.setAnart_Nd(row[71]);
+				neuroBatteryBean.setAnart_Err(row[72]);
+				neuroBatteryBean.setAvdel30_Min(row[67]);
+				neuroBatteryBean.setAvdel_Err1(row[68]);
+				neuroBatteryBean.setAvdel_Err2(row[70]);
+				neuroBatteryBean.setAvdel_Tot(row[69]);
+				neuroBatteryBean.setAvended(row[38]);
+				neuroBatteryBean.setAverr1(row[25]);
+				neuroBatteryBean.setAverr2(row[27]);
+				neuroBatteryBean.setAverr3(row[29]);
+				neuroBatteryBean.setAverr4(row[31]);
+				neuroBatteryBean.setAverr5(row[33]);
+				neuroBatteryBean.setAverr6(row[35]);
+				neuroBatteryBean.setAverrB(row[37]);
+				neuroBatteryBean.setAvtot1(row[24]);
+				neuroBatteryBean.setAvtot2(row[26]);
+				neuroBatteryBean.setAvtot3(row[28]);
 				
 				neuroBatteryBean.setSubjectDataBean(new SubjectDataBean());
 				
