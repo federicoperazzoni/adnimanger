@@ -62,6 +62,10 @@ public class LoaderNeuroBatteryCsvToBeanArray {
 				neuroBatteryBean.setAvtot1(row[24]);
 				neuroBatteryBean.setAvtot2(row[26]);
 				neuroBatteryBean.setAvtot3(row[28]);
+				neuroBatteryBean.setAvtot4(row[30]);
+				neuroBatteryBean.setAvtot5(row[32]);
+				neuroBatteryBean.setAvtot6(row[34]);
+				neuroBatteryBean.setAvtotB(row[36]);
 				
 				neuroBatteryBean.setSubjectDataBean(new SubjectDataBean());
 				
