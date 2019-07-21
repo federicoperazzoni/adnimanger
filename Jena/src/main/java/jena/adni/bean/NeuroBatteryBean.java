@@ -245,4 +245,444 @@ public class NeuroBatteryBean extends ADNIBean {
 	// Total correct = sum of 1 + 3 above (0-30) (66) ADNI1 ADNIGO ADNI2
 	//BNTTOTAL
 	private String Bnttotal;
+	
+	// - (-) (67) ADNI1 ADNIGO ADNI2
+	//AVDELBEGAN
+	private String Avdelbegan;
+	
+	// - (-) (72) ADNI1 ADNIGO ADNI2
+	//ANARTND
+	private String Anartnd;
+	
+	// - (-) (60) ADNI1
+	//BNTND
+	private String Bntnd;
+	
+	// - (data) (9) ADNI1
+	//EXAMDATE
+	private String Examdate;
+	
+	// Total score (0-12) (40) ADNI1
+	//DSPANFOR
+	private String Dspanfor;
+	
+	// Lenght of span (0-9) (41) ADNI1
+	//DSPANFLTH
+	private String Dspanflth;
+	
+	// Total score (0-12) (42) ADNI1
+	//DSPANBAC
+	private String Dspanbac;
+	
+	// Lenght of span (0-9) (43) ADNI1
+	//DSPANBLTH
+	private String Dspanblth;
+	
+	// Number of correct unique vegetables names produced within the one-minute time limit (0-60) (47) ADNI1
+	//CATVEGESC
+	private String Catvegesc;
+	
+	// Number of intrusions (non-vegetables names) (0-51) (48) ADNI1
+	//CATVGPERS
+	private String Catvgpers;
+	
+	// Number of perseverations (repeated names) (0-30) (49) ADNI1
+	//CATVGINTR
+	private String Catvgintr;
+	
+	// Total Score of test (0-83) (56) ADNI1
+	//DIGITSCOR
+	private String Digitscor;
+
+	public String getAnart_Nd() {
+		return Anart_Nd;
+	}
+
+	public void setAnart_Nd(String anart_Nd) {
+		Anart_Nd = anart_Nd;
+	}
+
+	public String getAnart_Err() {
+		return Anart_Err;
+	}
+
+	public void setAnart_Err(String anart_Err) {
+		Anart_Err = anart_Err;
+	}
+
+	public String getAvdel30_Min() {
+		return Avdel30_Min;
+	}
+
+	public void setAvdel30_Min(String avdel30_Min) {
+		Avdel30_Min = avdel30_Min;
+	}
+
+	public String getAvdel_Err1() {
+		return Avdel_Err1;
+	}
+
+	public void setAvdel_Err1(String avdel_Err1) {
+		Avdel_Err1 = avdel_Err1;
+	}
+
+	public String getAvdel_Err2() {
+		return Avdel_Err2;
+	}
+
+	public void setAvdel_Err2(String avdel_Err2) {
+		Avdel_Err2 = avdel_Err2;
+	}
+
+	public String getAvdel_Tot() {
+		return Avdel_Tot;
+	}
+
+	public void setAvdel_Tot(String avdel_Tot) {
+		Avdel_Tot = avdel_Tot;
+	}
+
+	public String getAvended() {
+		return Avended;
+	}
+
+	public void setAvended(String avended) {
+		Avended = avended;
+	}
+
+	public String getAverr1() {
+		return Averr1;
+	}
+
+	public void setAverr1(String averr1) {
+		Averr1 = averr1;
+	}
+
+	public String getAverr2() {
+		return Averr2;
+	}
+
+	public void setAverr2(String averr2) {
+		Averr2 = averr2;
+	}
+
+	public String getAverr3() {
+		return Averr3;
+	}
+
+	public void setAverr3(String averr3) {
+		Averr3 = averr3;
+	}
+
+	public String getAverr4() {
+		return Averr4;
+	}
+
+	public void setAverr4(String averr4) {
+		Averr4 = averr4;
+	}
+
+	public String getAverr5() {
+		return Averr5;
+	}
+
+	public void setAverr5(String averr5) {
+		Averr5 = averr5;
+	}
+
+	public String getAverr6() {
+		return Averr6;
+	}
+
+	public void setAverr6(String averr6) {
+		Averr6 = averr6;
+	}
+
+	public String getAverrB() {
+		return AverrB;
+	}
+
+	public void setAverrB(String averrB) {
+		AverrB = averrB;
+	}
+
+	public String getAvtot1() {
+		return Avtot1;
+	}
+
+	public void setAvtot1(String avtot1) {
+		Avtot1 = avtot1;
+	}
+
+	public String getAvtot2() {
+		return Avtot2;
+	}
+
+	public void setAvtot2(String avtot2) {
+		Avtot2 = avtot2;
+	}
+
+	public String getAvtot3() {
+		return Avtot3;
+	}
+
+	public void setAvtot3(String avtot3) {
+		Avtot3 = avtot3;
+	}
+
+	public String getAvtot4() {
+		return Avtot4;
+	}
+
+	public void setAvtot4(String avtot4) {
+		Avtot4 = avtot4;
+	}
+
+	public String getAvtot5() {
+		return Avtot5;
+	}
+
+	public void setAvtot5(String avtot5) {
+		Avtot5 = avtot5;
+	}
+
+	public String getAvtot6() {
+		return Avtot6;
+	}
+
+	public void setAvtot6(String avtot6) {
+		Avtot6 = avtot6;
+	}
+
+	public String getAvtotB() {
+		return AvtotB;
+	}
+
+	public void setAvtotB(String avtotB) {
+		AvtotB = avtotB;
+	}
+
+	public String getCatanimsc() {
+		return Catanimsc;
+	}
+
+	public void setCatanimsc(String catanimsc) {
+		Catanimsc = catanimsc;
+	}
+
+	public String getCatanintr() {
+		return Catanintr;
+	}
+
+	public void setCatanintr(String catanintr) {
+		Catanintr = catanintr;
+	}
+
+	public String getCatanpers() {
+		return Catanpers;
+	}
+
+	public void setCatanpers(String catanpers) {
+		Catanpers = catanpers;
+	}
+
+	public String getClockcirc() {
+		return Clockcirc;
+	}
+
+	public void setClockcirc(String clockcirc) {
+		Clockcirc = clockcirc;
+	}
+
+	public String getClockhand() {
+		return Clockhand;
+	}
+
+	public void setClockhand(String clockhand) {
+		Clockhand = clockhand;
+	}
+
+	public String getClocknum() {
+		return Clocknum;
+	}
+
+	public void setClocknum(String clocknum) {
+		Clocknum = clocknum;
+	}
+
+	public String getClockscor() {
+		return Clockscor;
+	}
+
+	public void setClockscor(String clockscor) {
+		Clockscor = clockscor;
+	}
+
+	public String getClocksym() {
+		return Clocksym;
+	}
+
+	public void setClocksym(String clocksym) {
+		Clocksym = clocksym;
+	}
+
+	public String getClocktime() {
+		return Clocktime;
+	}
+
+	public void setClocktime(String clocktime) {
+		Clocktime = clocktime;
+	}
+
+	public String getCopycirc() {
+		return Copycirc;
+	}
+
+	public void setCopycirc(String copycirc) {
+		Copycirc = copycirc;
+	}
+
+	public String getCopyhand() {
+		return Copyhand;
+	}
+
+	public void setCopyhand(String copyhand) {
+		Copyhand = copyhand;
+	}
+
+	public String getCopynum() {
+		return Copynum;
+	}
+
+	public void setCopynum(String copynum) {
+		Copynum = copynum;
+	}
+
+	public String getCopyscor() {
+		return Copyscor;
+	}
+
+	public void setCopyscor(String copyscor) {
+		Copyscor = copyscor;
+	}
+
+	public String getCopysym() {
+		return Copysym;
+	}
+
+	public void setCopysym(String copysym) {
+		Copysym = copysym;
+	}
+
+	public String getCopytime() {
+		return Copytime;
+	}
+
+	public void setCopytime(String copytime) {
+		Copytime = copytime;
+	}
+
+	public String getBntspont() {
+		return Bntspont;
+	}
+
+	public void setBntspont(String bntspont) {
+		Bntspont = bntspont;
+	}
+
+	public String getBntstim() {
+		return Bntstim;
+	}
+
+	public void setBntstim(String bntstim) {
+		Bntstim = bntstim;
+	}
+
+	public String getBntcstim() {
+		return Bntcstim;
+	}
+
+	public void setBntcstim(String bntcstim) {
+		Bntcstim = bntcstim;
+	}
+
+	public String getBntphon() {
+		return Bntphon;
+	}
+
+	public void setBntphon(String bntphon) {
+		Bntphon = bntphon;
+	}
+
+	public String getBntcphon() {
+		return Bntcphon;
+	}
+
+	public void setBntcphon(String bntcphon) {
+		Bntcphon = bntcphon;
+	}
+
+	public String getBnttotal() {
+		return Bnttotal;
+	}
+
+	public void setBnttotal(String bnttotal) {
+		Bnttotal = bnttotal;
+	}
+
+	public String getAvdelbegan() {
+		return Avdelbegan;
+	}
+
+	public void setAvdelbegan(String avdelbegan) {
+		Avdelbegan = avdelbegan;
+	}
+
+	public String getAnartnd() {
+		return Anartnd;
+	}
+
+	public void setAnartnd(String anartnd) {
+		Anartnd = anartnd;
+	}
+
+	public String getBntnd() {
+		return Bntnd;
+	}
+
+	public void setBntnd(String bntnd) {
+		Bntnd = bntnd;
+	}
+
+	public String getCatvegesc() {
+		return Catvegesc;
+	}
+
+	public void setCatvegesc(String catvegesc) {
+		Catvegesc = catvegesc;
+	}
+
+	public String getCatvgpers() {
+		return Catvgpers;
+	}
+
+	public void setCatvgpers(String catvgpers) {
+		Catvgpers = catvgpers;
+	}
+
+	public String getCatvgintr() {
+		return Catvgintr;
+	}
+
+	public void setCatvgintr(String catvgintr) {
+		Catvgintr = catvgintr;
+	}
+
+	public String getDigitscor() {
+		return Digitscor;
+	}
+
+	public void setDigitscor(String digitscor) {
+		Digitscor = digitscor;
+	}
 }
