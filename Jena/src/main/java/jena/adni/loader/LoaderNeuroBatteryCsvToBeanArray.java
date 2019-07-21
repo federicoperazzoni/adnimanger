@@ -66,6 +66,14 @@ public class LoaderNeuroBatteryCsvToBeanArray {
 				neuroBatteryBean.setAvtot5(row[32]);
 				neuroBatteryBean.setAvtot6(row[34]);
 				neuroBatteryBean.setAvtotB(row[36]);
+				neuroBatteryBean.setCatanimsc(row[43]);
+				neuroBatteryBean.setCatanintr(row[45]);
+				neuroBatteryBean.setCatanpers(row[44]);
+				neuroBatteryBean.setClockcirc(row[9]);
+				neuroBatteryBean.setClockhand(row[12]);
+				neuroBatteryBean.setClocknum(row[11]);
+				neuroBatteryBean.setClockscor(row[14]);
+				neuroBatteryBean.setClocktime(row[13]);
 				
 				neuroBatteryBean.setSubjectDataBean(new SubjectDataBean());
 				
