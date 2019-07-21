@@ -221,4 +221,28 @@ public class NeuroBatteryBean extends ADNIBean {
 	// RAVTL forgettng divided by the score of Trial 5 (percent) (80) ADNI3
 	//RAVLT_perc_forgetting
 	private String Ravlt_perc_forgetting;
+	
+	// Total correct without a cue (0-30) (61) ADNI1 ADNIGO ADNI2
+	//BNTSPONT
+	private String Bntspont;
+	
+	// Total semantic cues given (0-30) (62) ADNI1 ADNIGO ADNI2
+	//BNTSTIM
+	private String Bntstim;
+	
+	// Total correct with a semantic cue (0-30) (63) ADNI1 ADNIGO ADNI2
+	//BNTCSTIM
+	private String Bntcstim;
+	
+	// Total phonemic cues given (0-30) (64) ADNI1 ADNIGO ADNI2
+	//BNTPHON
+	private String Bntphon;
+	
+	// Total correct with phonemic cues (0-30) (65) ADNI1 ADNIGO ADNI2
+	//BNTCPHON
+	private String Bntcphon;
+	
+	// Total correct = sum of 1 + 3 above (0-30) (66) ADNI1 ADNIGO ADNI2
+	//BNTTOTAL
+	private String Bnttotal;
 }
