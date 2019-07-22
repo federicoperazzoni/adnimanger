@@ -35,19 +35,19 @@ public class LoadCSVForm extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public final static JButton[] fields = new JButton[3];
-	public final static JCheckBox[] fieldsCB = new JCheckBox[3];
-	public final static JLabel[] fieldsL = new JLabel[3];
+	public final static JButton[] fields = new JButton[4];
+	public final static JCheckBox[] fieldsCB = new JCheckBox[4];
+	public final static JLabel[] fieldsL = new JLabel[4];
 	private static JFrame f = new JFrame("Load CSV form");
 	private static final JFileChooser fc = new JFileChooser();
 
-	public static String[] labels = { "CDR", "FAQ", "MMSE" };
-	public static String[] labelButton = {"             Select file","             Select file","             Select file"};
+	public static String[] labels = {"CDR","FAQ","MMSE","NEUROBAT" };
+	public static String[] labelButton = {"             Select file","             Select file","             Select file","             Select file"};
 	
-	public static File[] files = new File[3];
-	public static char[] mnemonics = { 'C', 'F', 'M'};
-	public static int[] widths = { 25, 25, 25 };
-	public static String[] descs = { "Clinical dementia rating", "Functional assessment question", "Mini mental state exam"};
+	public static File[] files = new File[4];
+	public static char[] mnemonics = {'C','F','M','N'};
+	public static int[] widths = { 25, 25, 25, 25 };
+	public static String[] descs = {"Clinical dementia rating","Functional assessment question","Mini mental state exam","Neuro Battery"};
 	
 	int i = 0;
 

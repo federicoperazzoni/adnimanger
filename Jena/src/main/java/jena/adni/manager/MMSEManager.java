@@ -173,7 +173,7 @@ public class MMSEManager {
 
 			count++;
 
-			LoadCsv.loadPercent = ((90*count)/total) + 10;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_MMSE*count)/total) + (LoadCsv.PERCENT_PRE+LoadCsv.PERCENT_CDR+LoadCsv.PERCENT_FAQ);
 		}
 
 		tdbConnection.close();

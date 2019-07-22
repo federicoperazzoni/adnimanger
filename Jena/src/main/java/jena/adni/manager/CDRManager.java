@@ -63,7 +63,7 @@ public class CDRManager {
 			
 			count++;
 			
-			LoadCsv.loadPercent = ((4*count)/total) + 2;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_CDR*count)/total) + LoadCsv.PERCENT_PRE;
 		}
 		
 		tdbConnection.close();

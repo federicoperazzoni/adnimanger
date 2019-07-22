@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import jena.adni.bean.CDRBean;
 import jena.adni.bean.FAQBean;
 import jena.adni.bean.MMSEBean;
+import jena.adni.bean.NeuroBatteryBean;
 import jena.adni.constants.ADNIExternalResource;
 import jena.adni.loader.LoaderCDRCsvToBeanArray;
 import jena.adni.loader.LoaderFAQCsvToBeanArray;
@@ -13,6 +14,7 @@ import jena.adni.main.application.util.LoadCSVForm;
 import jena.adni.manager.CDRManager;
 import jena.adni.manager.FAQManager;
 import jena.adni.manager.MMSEManager;
+import jena.adni.manager.NeuroBatteryManager;
 import jena.adni.manager.ontology.ADNIOntologyLoader;
 
 public class LoadCsv {
@@ -20,6 +22,12 @@ public class LoadCsv {
 	public static int loadPercent;
 	public static String loadMex;
 	public static int status;
+	
+	public static final int PERCENT_PRE = 2;
+	public static final int PERCENT_CDR = 4;
+	public static final int PERCENT_FAQ = 4;
+	public static final int PERCENT_MMSE = 50;
+	public static final int PERCENT_NEUROBAT = 50;
 
 	public static void loadCsvWithReset() {
 
@@ -37,6 +45,7 @@ public class LoadCsv {
 		ArrayList<MMSEBean> mmseTestList = null;
 		ArrayList<FAQBean> faqTestList = null;
 		ArrayList<CDRBean> cdrTestList = null;
+		ArrayList<NeuroBatteryBean> neuroBatteryTestList = null;
 		//Carica i CSV in un Array list
 		if (LoadCSVForm.fieldsCB[0].isSelected()) {
 			LoaderCDRCsvToBeanArray cdrCsvToBeanArray = new LoaderCDRCsvToBeanArray();
@@ -61,6 +70,14 @@ public class LoadCsv {
 			else
 				mmseTestList = mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\MMSE.csv");
 		}
+		
+		if (LoadCSVForm.fieldsCB[3].isSelected()) {
+			LoaderMMSECsvToBeanArray mmseCsvToBeanArray = new LoaderMMSECsvToBeanArray();
+			if (LoadCSVForm.files[3] != null && LoadCSVForm.files[3].exists())
+				mmseTestList = mmseCsvToBeanArray.load(LoadCSVForm.files[3].getAbsolutePath());
+			else
+				mmseTestList = mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\NEUROBAT.csv");
+		}
 
 		loadMex = "Fine caricamento CSV";
 		loadPercent = 1;
@@ -72,19 +89,25 @@ public class LoadCsv {
 			CDRManager cdrManager = new CDRManager();
 			cdrManager.insertInADNIOntology(cdrTestList);
 		} else {
-			loadPercent += 4;
+			loadPercent += PERCENT_CDR;
 		}
 		if (LoadCSVForm.fieldsCB[1].isSelected()) {		
 			FAQManager faqManager = new FAQManager();
 			faqManager.insertInADNIOntology(faqTestList);
 		} else {
-			loadPercent += 4;
+			loadPercent += PERCENT_FAQ;
 		}
 		if (LoadCSVForm.fieldsCB[2].isSelected()) {		
 			MMSEManager mmseManager = new MMSEManager();
 			mmseManager.insertInADNIOntology(mmseTestList);
 		} else {
-			loadPercent += 90;
+			loadPercent += PERCENT_MMSE;
+		}
+		if (LoadCSVForm.fieldsCB[2].isSelected()) {		
+			NeuroBatteryManager neuroBatteryManager = new NeuroBatteryManager();
+			neuroBatteryManager.insertInADNIOntology(neuroBatteryTestList);
+		} else {
+			loadPercent += PERCENT_NEUROBAT;
 		}
 		loadMex = "Fine caricamento CSV nell'ontologia";
 	}
