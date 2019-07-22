@@ -26,8 +26,8 @@ public class LoadCsv {
 	public static final int PERCENT_PRE = 2;
 	public static final int PERCENT_CDR = 4;
 	public static final int PERCENT_FAQ = 4;
-	public static final int PERCENT_MMSE = 50;
-	public static final int PERCENT_NEUROBAT = 50;
+	public static final int PERCENT_MMSE = 45;
+	public static final int PERCENT_NEUROBAT = 45;
 
 	public static void loadCsvWithReset() {
 
