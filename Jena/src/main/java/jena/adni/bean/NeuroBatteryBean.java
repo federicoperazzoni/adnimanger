@@ -294,6 +294,198 @@ public class NeuroBatteryBean extends ADNIBean {
 	//DIGITSCOR
 	private String Digitscor;
 
+	public String getLdelbegin() {
+		return Ldelbegin;
+	}
+
+	public void setLdelbegin(String ldelbegin) {
+		Ldelbegin = ldelbegin;
+	}
+
+	public String getLdelcue() {
+		return Ldelcue;
+	}
+
+	public void setLdelcue(String ldelcue) {
+		Ldelcue = ldelcue;
+	}
+
+	public String getLdeltotal() {
+		return Ldeltotal;
+	}
+
+	public void setLdeltotal(String ldeltotal) {
+		Ldeltotal = ldeltotal;
+	}
+
+	public String getLimmend() {
+		return Limmend;
+	}
+
+	public void setLimmend(String limmend) {
+		Limmend = limmend;
+	}
+
+	public String getLimmtotal() {
+		return Limmtotal;
+	}
+
+	public void setLimmtotal(String limmtotal) {
+		Limmtotal = limmtotal;
+	}
+
+	public String getLmstory() {
+		return Lmstory;
+	}
+
+	public void setLmstory(String lmstory) {
+		Lmstory = lmstory;
+	}
+
+	public String getMintsemcue() {
+		return Mintsemcue;
+	}
+
+	public void setMintsemcue(String mintsemcue) {
+		Mintsemcue = mintsemcue;
+	}
+
+	public String getMinttotal() {
+		return Minttotal;
+	}
+
+	public void setMinttotal(String minttotal) {
+		Minttotal = minttotal;
+	}
+
+	public String getMintuncued() {
+		return Mintuncued;
+	}
+
+	public void setMintuncued(String mintuncued) {
+		Mintuncued = mintuncued;
+	}
+
+	public String getTraaerrcom() {
+		return Traaerrcom;
+	}
+
+	public void setTraaerrcom(String traaerrcom) {
+		Traaerrcom = traaerrcom;
+	}
+
+	public String getTraaerrom() {
+		return Traaerrom;
+	}
+
+	public void setTraaerrom(String traaerrom) {
+		Traaerrom = traaerrom;
+	}
+
+	public String getTraascor() {
+		return Traascor;
+	}
+
+	public void setTraascor(String traascor) {
+		Traascor = traascor;
+	}
+
+	public String getTraberrcom() {
+		return Traberrcom;
+	}
+
+	public void setTraberrcom(String traberrcom) {
+		Traberrcom = traberrcom;
+	}
+
+	public String getTraberrom() {
+		return Traberrom;
+	}
+
+	public void setTraberrom(String traberrom) {
+		Traberrom = traberrom;
+	}
+
+	public String getTrabscor() {
+		return Trabscor;
+	}
+
+	public void setTrabscor(String trabscor) {
+		Trabscor = trabscor;
+	}
+
+	public String getRavlt_immediate() {
+		return Ravlt_immediate;
+	}
+
+	public void setRavlt_immediate(String ravlt_immediate) {
+		Ravlt_immediate = ravlt_immediate;
+	}
+
+	public String getRavlt_learning() {
+		return Ravlt_learning;
+	}
+
+	public void setRavlt_learning(String ravlt_learning) {
+		Ravlt_learning = ravlt_learning;
+	}
+
+	public String getRavlt_forgetting() {
+		return Ravlt_forgetting;
+	}
+
+	public void setRavlt_forgetting(String ravlt_forgetting) {
+		Ravlt_forgetting = ravlt_forgetting;
+	}
+
+	public String getRavlt_perc_forgetting() {
+		return Ravlt_perc_forgetting;
+	}
+
+	public void setRavlt_perc_forgetting(String ravlt_perc_forgetting) {
+		Ravlt_perc_forgetting = ravlt_perc_forgetting;
+	}
+
+	public String getExamdate() {
+		return Examdate;
+	}
+
+	public void setExamdate(String examdate) {
+		Examdate = examdate;
+	}
+
+	public String getDspanfor() {
+		return Dspanfor;
+	}
+
+	public void setDspanfor(String dspanfor) {
+		Dspanfor = dspanfor;
+	}
+
+	public String getDspanflth() {
+		return Dspanflth;
+	}
+
+	public void setDspanflth(String dspanflth) {
+		Dspanflth = dspanflth;
+	}
+
+	public String getDspanbac() {
+		return Dspanbac;
+	}
+
+	public void setDspanbac(String dspanbac) {
+		Dspanbac = dspanbac;
+	}
+
+	public String getDspanblth() {
+		return Dspanblth;
+	}
+
+	public void setDspanblth(String dspanblth) {
+		Dspanblth = dspanblth;
+	}
+
 	public String getAnart_Nd() {
 		return Anart_Nd;
 	}
