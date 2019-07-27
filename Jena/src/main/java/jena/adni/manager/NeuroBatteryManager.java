@@ -30,18 +30,31 @@ public class NeuroBatteryManager {
 			try {
 				
 				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, RDF.type.getURI(), prefix + "CDR");
-//				tdbConnection.addStatement(modelName, prefix + cdrBean.getSubjectDataBean().getRID(), RDF.type.getURI(), prefix + "Subject");
-//				tdbConnection.addStatement(modelName, prefix + cdrBean.getSubjectDataBean().getRID(), RDF.type.getURI(), "http://www.w3.org/2002/07/owl#NamedIndividual");
-//				tdbConnection.addStatement(modelName, prefix + cdrBean.getSubjectDataBean().getRID(), prefix + "hasStandardizedAssesment", prefix + "CDR_" + count);
-//							
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_CommunityAffairsItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_HomeAndHobbiesItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_JudgementAndProblemSolvingItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_OrientationItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_MemoryItem_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_Sob_" + count);
-//				tdbConnection.addStatement(modelName, prefix + "CDR_" + count, prefix + "hasAssesmentItem", prefix + "CDR_Global_" + count);
-//				
+				tdbConnection.addStatement(modelName, prefix + neuroBatteryBean.getSubjectDataBean().getRID(), RDF.type.getURI(), prefix + "Subject");
+				tdbConnection.addStatement(modelName, prefix + neuroBatteryBean.getSubjectDataBean().getRID(), RDF.type.getURI(), "http://www.w3.org/2002/07/owl#NamedIndividual");
+				tdbConnection.addStatement(modelName, prefix + neuroBatteryBean.getSubjectDataBean().getRID(), prefix + "hasStandardizedAssesment", prefix + "NEUROBAT_" + count);
+							
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_AmericanNationalAdultReadingTestItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_AmericanNationalAdultReadingTestItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_BostonNamingTestItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_BostonNamingTestItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_BostonNamingTestItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_BostonNamingTestItem_4_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_BostonNamingTestItem_5_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_BostonNamingTestItem_6_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_CategoryFluencyTestItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_CategoryFluencyTestItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_CategoryFluencyTestItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_CategoryFluencyTestVegetablesItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_CategoryFluencyTestVegetablesItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_CategoryFluencyTestVegetablesItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_ClockCopyingItem_1_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_ClockCopyingItem_2_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_ClockCopyingItem_3_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_ClockCopyingItem_4_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_ClockCopyingItem_5_" + count);
+				tdbConnection.addStatement(modelName, prefix + "NEUROBAT_" + count, prefix + "hasAssesmentItem", prefix + "NB_ClockCopyingItem_6_" + count);
+				
 //				tdbConnection.addStatement(modelName, prefix + "CDR_CommunityAffairsItem_" + count, RDF.type.getURI(), prefix + "CDR_CommunityAffairsItem");
 //				tdbConnection.addStatement(modelName, prefix + "CDR_HomeAndHobbiesItem_" + count, RDF.type.getURI(), prefix + "CDR_HomeAndHobbiesItem");
 //				tdbConnection.addStatement(modelName, prefix + "CDR_JudgementAndProblemSolvingItem_" + count, RDF.type.getURI(), prefix + "CDR_JudgementAndProblemSolvingItem");
