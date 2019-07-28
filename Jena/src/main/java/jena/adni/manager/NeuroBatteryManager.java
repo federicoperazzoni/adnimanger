@@ -7,6 +7,7 @@ import com.hp.hpl.jena.vocabulary.RDF;
 import jena.adni.bean.CDRBean;
 import jena.adni.bean.NeuroBatteryBean;
 import jena.adni.constants.ADNIExternalResource;
+import jena.adni.constants.Constants;
 import jena.adni.main.LoadCsv;
 import jena.adni.util.TDBUtil;
 import jena.test1.TDBConnection;
@@ -174,13 +175,13 @@ public class NeuroBatteryManager {
 				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestBItem_2_" + count, RDF.type.getURI(), prefix + "NB_TrailMakingTestBItem_2");
 				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestBItem_3_" + count, RDF.type.getURI(), prefix + "NB_TrailMakingTestBItem_3");
 				
-//				tdbConnection.addStatement(modelName, prefix + "CDR_CommunityAffairsItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDCommunityAffair());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_HomeAndHobbiesItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDHome());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_JudgementAndProblemSolvingItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDJudge());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_OrientationItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDOrient());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_MemoryItem_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDMemory());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_Sob_" + count, prefix + "totalScore", prefix + cdrBean.getCDSob());
-//				tdbConnection.addStatement(modelName, prefix + "CDR_Global_" + count, prefix + "0_05_1_2_3_score", prefix + cdrBean.getCDGlobal());
+				if (!Constants.PHASE_ADNI3.equals(neuroBatteryBean.getPhase())) {
+					tdbConnection.addStatement(modelName, prefix + "NB_AmericanNationalAdultReadingTestItem_1_" + count, prefix + "yesNoAnswer", prefix + neuroBatteryBean.getAnart_Nd());
+					tdbConnection.addStatement(modelName, prefix + "NB_AmericanNationalAdultReadingTestItem_2_" + count, prefix + "yesNoAnswer", prefix + neuroBatteryBean.getAnart_Err());
+				} else {
+					//TODO in questo caso?
+				}
+				
 			} catch (Exception e) {
 				
 				e.printStackTrace();
