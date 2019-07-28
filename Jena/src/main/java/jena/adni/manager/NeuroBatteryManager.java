@@ -201,6 +201,21 @@ public class NeuroBatteryManager {
 				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_17_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot5());
 				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_18_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot6());
 				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_19_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtotB());
+				tdbConnection.addStatement(modelName, prefix + "NB_CategoryFluencyTestVegetablesItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getCatanimsc());
+				tdbConnection.addStatement(modelName, prefix + "NB_CategoryFluencyTestVegetablesItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getCatanintr());
+				tdbConnection.addStatement(modelName, prefix + "NB_CategoryFluencyTestVegetablesItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getCatanpers());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockDrawingTestItem_1_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getClockcirc());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockDrawingTestItem_2_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getClockhand());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockDrawingTestItem_3_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getClocknum());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockDrawingTestItem_4_" + count, prefix + "totalScore", prefix + neuroBatteryBean.getClockscor());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockDrawingTestItem_5_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getClocksym());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockDrawingTestItem_6_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getClocktime());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_1_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getCopycirc());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_2_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getCopyhand());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_3_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getCopynum());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_4_" + count, prefix + "totalScore", prefix + neuroBatteryBean.getCopyscor());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_5_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getCopysym());
+				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_6_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getCopytime());
 				
 			} catch (Exception e) {
 				
