@@ -181,6 +181,26 @@ public class NeuroBatteryManager {
 				} else {
 					//TODO in questo caso?
 				}
+				//TODO numeric score è corretto? Se si va inserito nell'ontologia
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvdel30_Min());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvdel_Err1());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvdel_Err2());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_4_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvdel_Tot());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_5_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvended());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_6_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAverr1());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_7_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAverr2());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_8_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAverr3());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_9_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAverr4());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_10_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAverr5());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_11_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAverr6());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_12_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAverrB());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_13_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot1());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_14_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot2());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_15_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot3());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_16_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot4());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_17_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot5());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_18_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtot6());
+				tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryVerbalLearningTestItem_19_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getAvtotB());
 				
 			} catch (Exception e) {
 				
