@@ -216,6 +216,13 @@ public class NeuroBatteryManager {
 				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_4_" + count, prefix + "totalScore", prefix + neuroBatteryBean.getCopyscor());
 				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_5_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getCopysym());
 				tdbConnection.addStatement(modelName, prefix + "NB_ClockCopyingItem_6_" + count, prefix + "0_1_score", prefix + neuroBatteryBean.getCopytime());
+				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getLdelbegin());
+				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_2_" + count, prefix + "yesNoAnswer", prefix + neuroBatteryBean.getLdelcue());
+				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_3_" + count, prefix + "totalScore", prefix + neuroBatteryBean.getLdeltotal());
+				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_4_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getLimmend());
+				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_5_" + count, prefix + "totalScore", prefix + neuroBatteryBean.getLimmtotal());
+				//TODO 0_1_2_score non esiste nell'ontologia
+				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_6_" + count, prefix + "0_1_2_score", prefix + neuroBatteryBean.getLmstory());
 				
 			} catch (Exception e) {
 				
