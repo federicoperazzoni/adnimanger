@@ -178,6 +178,12 @@ public class NeuroBatteryManager {
 				if (!Constants.PHASE_ADNI3.equals(neuroBatteryBean.getPhase())) {
 					tdbConnection.addStatement(modelName, prefix + "NB_AmericanNationalAdultReadingTestItem_1_" + count, prefix + "yesNoAnswer", prefix + neuroBatteryBean.getAnart_Nd());
 					tdbConnection.addStatement(modelName, prefix + "NB_AmericanNationalAdultReadingTestItem_2_" + count, prefix + "yesNoAnswer", prefix + neuroBatteryBean.getAnart_Err());
+					tdbConnection.addStatement(modelName, prefix + "NB_BostonNamingTestItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getBntspont());
+					tdbConnection.addStatement(modelName, prefix + "NB_BostonNamingTestItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getBntstim());
+					tdbConnection.addStatement(modelName, prefix + "NB_BostonNamingTestItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getBntcstim());
+					tdbConnection.addStatement(modelName, prefix + "NB_BostonNamingTestItem_4_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getBntphon());
+					tdbConnection.addStatement(modelName, prefix + "NB_BostonNamingTestItem_5_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getBntcphon());
+					tdbConnection.addStatement(modelName, prefix + "NB_BostonNamingTestItem_6_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getBnttotal());
 				} else {
 					//TODO in questo caso?
 				}
@@ -223,6 +229,39 @@ public class NeuroBatteryManager {
 				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_5_" + count, prefix + "totalScore", prefix + neuroBatteryBean.getLimmtotal());
 				//TODO 0_1_2_score non esiste nell'ontologia
 				tdbConnection.addStatement(modelName, prefix + "NB_LogicalMemoryTestItem_6_" + count, prefix + "0_1_2_score", prefix + neuroBatteryBean.getLmstory());
+				if (Constants.PHASE_ADNI3.equals(neuroBatteryBean.getPhase())) {
+					tdbConnection.addStatement(modelName, prefix + "NB_MultilingualNamingTestItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getMintsemcue());
+					tdbConnection.addStatement(modelName, prefix + "NB_MultilingualNamingTestItem_2_" + count, prefix + "totalScore", prefix + neuroBatteryBean.getMinttotal());
+					tdbConnection.addStatement(modelName, prefix + "NB_MultilingualNamingTestItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getMintuncued());
+					tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryLearningTestItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getRavlt_immediate());
+					tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryLearningTestItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getRavlt_learning());
+					tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryLearningTestItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getRavlt_forgetting());
+					tdbConnection.addStatement(modelName, prefix + "NB_ReyAuditoryLearningTestItem_4_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getRavlt_perc_forgetting());
+				} else {
+					//TODO in questo caso?
+				}
+				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestAItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getTraaerrcom());
+				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestAItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getTraaerrom());
+				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestAItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getTraascor());
+				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestBItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getTraberrcom());
+				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestBItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getTraberrom());
+				tdbConnection.addStatement(modelName, prefix + "NB_TrailMakingTestBItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getTrabscor());
+				tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanForwardItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanfor());
+				tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanForwardItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanflth());
+				tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanBackwardItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanbac());
+				tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanBackwardItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanblth());
+				if (Constants.PHASE_ADNI1.equals(neuroBatteryBean.getPhase())) {
+					tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanForwardItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanfor());
+					tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanForwardItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanflth());
+					tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanBackwardItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanbac());
+					tdbConnection.addStatement(modelName, prefix + "NB_DigitSpanBackwardItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDspanblth());
+					tdbConnection.addStatement(modelName, prefix + "NB_CategoryFluencyTestVegetablesItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getCatvegesc());
+					tdbConnection.addStatement(modelName, prefix + "NB_CategoryFluencyTestVegetablesItem_2_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getCatvgpers());
+					tdbConnection.addStatement(modelName, prefix + "NB_CategoryFluencyTestVegetablesItem_3_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getCatvgintr());
+					tdbConnection.addStatement(modelName, prefix + "NB_DigitSymbolSubstitutionItem_1_" + count, prefix + "numeric_score", prefix + neuroBatteryBean.getDigitscor());
+				} else {
+					//TODO in questo caso?
+				}
 				
 			} catch (Exception e) {
 				
