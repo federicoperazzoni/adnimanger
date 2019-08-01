@@ -110,4 +110,40 @@ public class NPIBean extends ADNIBean {
 	//Frequency x Severity (0-12) (37) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPIBTOT
 	private String Npibtot;
+	
+	//Does the patient have periods when he/she refuses to cooperate or won’t let people help him/her? Is he/she hard to handle? (Yes/No) (38) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC
+	private String Npic;
+	
+	//Does the patient get upset with those trying to care for him/her or resist activities such as bathing or changing clothes? (Yes/No) (39) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC1
+	private String Npic1;
+	
+	//Is the patient stubborn, having to have things his/her way? (Yes/No) (40) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC2
+	private String Npic2;
+	
+	//Is the patient uncooperative, resistive to help from others? (Yes/No) (41) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC3
+	private String Npic3;
+	
+	//Does the patient have any other behaviors that make him/her hard to handle? (Yes/No) (42) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC4
+	private String Npic4;
+	
+	//Does the patient shout or curse angrily? (Yes/No) (43) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC5
+	private String Npic5;
+	
+	//Does the patient slam doors, kick furniture, throw things? (Yes/No) (44) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC6
+	private String Npic6;
+	
+	//Does the patient attempt to hurt or hit others? (Yes/No) (45) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC7
+	private String Npic7;
+	
+	//Does the patient have any other aggressive or agitated behaviors? (Yes/No) (46) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC8
+	private String Npic8;
 }
