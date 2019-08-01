@@ -59,4 +59,55 @@ public class NPIBean extends ADNIBean {
 	//Frequency x Severity (0-12) (25) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPIATOT
 	private String Npiatot;
+	
+	//Does the patient have hallucinations such as seeing false visions or hearing imaginary voices? Does he/she seem to see, hear 
+	//or experience things that are not present? By this question we do not mean just mistaken beliefs such as stating that someone who has died 
+	//is still alive; rather we are asking if the patient actually has abnormal experiences of sounds or visions. (Yes/No) (26) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB
+	private String Npib;
+	
+	//Hallucinations - Question 1 (Yes/No) (27) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB1
+	private String Npib1;
+	
+	//Hallucinations - Question 2 (Yes/No) (28) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB2
+	private String Npib2;
+	
+	//Hallucinations - Question 3 (Yes/No) (29) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB3
+	private String Npib3;
+	
+	//Hallucinations - Question 4 (Yes/No) (30) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB4
+	private String Npib4;
+	
+	//Hallucinations - Question 5 (Yes/No) (31) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB5
+	private String Npib5;
+	
+	//Hallucinations - Question 6 (Yes/No) (32) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB6
+	private String Npib6;
+	
+	//Hallucinations - Question 7 (Yes/No) (33) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB7
+	private String Npib7;
+	
+	//Hallucinations - Frequency (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (34) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB8A
+	private String Npib8a;
+	
+	//Hallucinations -  Severity - Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (35) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB8B
+	private String Npib8b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) 
+	//(36) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIB8C
+	private String Npib8c;
+	
+	//Frequency x Severity (0-12) (37) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIBTOT
+	private String Npibtot;
 }
