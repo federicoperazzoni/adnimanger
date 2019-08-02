@@ -146,4 +146,56 @@ public class NPIBean extends ADNIBean {
 	//Does the patient have any other aggressive or agitated behaviors? (Yes/No) (46) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPIC8
 	private String Npic8;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (47) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC9A
+	private String Npic9a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (48) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC9B
+	private String Npic9b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (49) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIC9C
+	private String Npic9c;
+	
+	//Frequency x Severity (0-12) (50) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPICTOT
+	private String Npictot;
+	
+	//Does the patient seem sad or depressed? Does he/she say that he/she feels sad or depressed? (Yes/No) (51) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID
+	private String Npid;
+	
+	//Does the patient have periods of tearfulness or sobbing that seem to indicate sadness? (Yes/No) (52) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID1
+	private String Npid1;
+	
+	//Does the patient say or act as if he/she is sad or in low spirits? (Yes/No) (53) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID2
+	private String Npid2;
+	
+	//Does the patient put him/herself down or say that he/she feels like a failure? (Yes/No) (54) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID3
+	private String Npid3;
+	
+	//Does the patient say that he/she is a bad person or deserves to be punished? (Yes/No) (55) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID4
+	private String Npid4;
+	
+	//Does the patient seem very discouraged or say that he/she has no future? (Yes/No) (56) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID5
+	private String Npid5;
+	
+	//Does the patient say he/she is a burden to the family or that the family would be better (Yes/No) (57) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID6
+	private String Npid6;
+	
+	//Does the patient express a wish for death or talk about killing him/herself? (Yes/No) (58) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID7
+	private String Npid7;
+	
+	//Does the patient show any other signs of depression or sadness? (Yes/No) (59) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID8
+	private String Npid8;
 }
