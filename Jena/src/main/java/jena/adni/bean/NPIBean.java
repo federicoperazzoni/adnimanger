@@ -303,4 +303,106 @@ public class NPIBean extends ADNIBean {
 	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (84) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPIF8A
 	private String Npif8a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (85) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF8B
+	private String Npif8b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) 
+	//(86) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF8C
+	private String Npif8c;
+	
+	//Frequency x Severity (0-12) (87) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIFTOT
+	private String Npiftot;
+	
+	//Has the patient lost interest in the world around him/her? Has he/she lost interest in doing things or does 
+	//he/she lack motivation for starting new activities? Is he/she more difficult to engage in conversation or in doing chores? 
+	//Is the patient apathetic or indifferent? 
+	//(Yes/No) (88) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG
+	private String Npig;
+	
+	//Does the patient seem less spontaneous and less active than usual? (Yes/No) (89) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG1
+	private String Npig1;
+	
+	//Is the patient less likely to initiate a conversation? (Yes/No) (90) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG2
+	private String Npig2;
+	
+	//Is the patient less affectionate or lacking in emotions when compared to his/her usual self? (Yes/No) (91) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG3
+	private String Npig3;
+	
+	//Does the patient contribute less to household chores? (Yes/No) (92) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG4
+	private String Npig4;
+	
+	//Does the patient seem less interested in the activities and plans of others? (Yes/No) (93) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG5
+	private String Npig5;
+	
+	//Has the patient lost interest in friends and family members? (Yes/No) (94) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG6
+	private String Npig6;
+	
+	//Is the patient less enthusiastic about his/her usual interests? (Yes/No) (95) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG7
+	private String Npig7;
+	
+	//Does the patient show any other signs that he/she doesn’t care about doing new things? (Yes/No) (96) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG8
+	private String Npig8;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (97) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG9A
+	private String Npig9a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (98) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG9B
+	private String Npig9b;
+	
+	//Distress experienced by Caregiver due to the symptom 
+	//(0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (99) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIG9C
+	private String Npig9c;
+	
+	//Frequency x Severity (0-12) (100) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIGTOT
+	private String Npigtot;
+	
+	//Does the patient seem to act impulsively without thinking? Does he/she do or say things that are not usually 
+	//done or said in public? Does he/she do things that are embarrassing to you or others? (Yes/No) (101) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH
+	private String Npih;
+	
+	//Does the patient act impulsively without appearing to consider the consequences? (Yes/No) (102) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH1
+	private String Npih1;
+	
+	//Does the patient talk to total strangers as if he/she knew them? (Yes/No) (103) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH2
+	private String Npih2;
+	
+	//Does the patient say things to people that are insensitive or hurt their feelings? (Yes/No) (104) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH3
+	private String Npih3;
+	
+	//Does the patient say crude things or make sexual remarks that he/she would not usually have said? (Yes/No) (105) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH4
+	private String Npih4;
+	
+	//Does the patient talk openly about very personal or private matters not usually discussed in public? (Yes/No) (106) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH5
+	private String Npih5;
+	
+	//Does the patient take liberties or touch or hug others in way that is out of character for him/her? (Yes/No) (107) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH6
+	private String Npih6;
+	
+	//Does the patient show any other signs of loss of control of his/her impulses? (Yes/No) (108) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH7
+	private String Npih7;
 }
