@@ -198,4 +198,56 @@ public class NPIBean extends ADNIBean {
 	//Does the patient show any other signs of depression or sadness? (Yes/No) (59) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPID8
 	private String Npid8;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (60) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID9A
+	private String Npid9a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (61) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID9B
+	private String Npid9b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (62) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPID9C
+	private String Npid9c;
+	
+	//Frequency x Severity (0-12) (63) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIDTOT
+	private String Npidtot;
+	
+	//Is the patient very nervous, worried, or frightened for no apparent reason? Does he/she seem (Yes/No) (64) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE
+	private String Npie;
+	
+	//Does the patient say that he/she is worried about planned events? (Yes/No) (65) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE1
+	private String Npie1;
+	
+	//Does the patient have periods of feeling shaky, unable to relax, or feeling excessively (Yes/No) (66) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE2
+	private String Npie2;
+	
+	//Does the patient have periods of [or complain of] shortness of breath, gasping, or
+	//sighing for no apparent reason other than nervousness? (Yes/No) (67) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE3
+	private String Npie3;
+	
+	//Does the patient complain of butterflies in his/her stomach, or of racing or pounding
+	//of the heart in association with nervousness? [Symptoms not explained by ill health (Yes/No) (68) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE4
+	private String Npie4;
+	
+	//Does the patient avoid certain places or situations that make him/her more nervous
+	//such as riding in the car, meeting with friends, or being in crowds? (Yes/No) (69) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE5
+	private String Npie5;
+	
+	//Does the patient become nervous and upset when separated from you [or his/her
+	//caregiver]? [Does he/she cling to you to keep from being separated? (Yes/No) (70) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE6
+	private String Npie6;
+	
+	//Does the patient show any other signs of anxiety? (Yes/No) (71) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE7
+	private String Npie7;
 }
