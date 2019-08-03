@@ -250,4 +250,57 @@ public class NPIBean extends ADNIBean {
 	//Does the patient show any other signs of anxiety? (Yes/No) (71) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPIE7
 	private String Npie7;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (72) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE8A
+	private String Npie8a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (73) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE8B
+	private String Npie8b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (74) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIE8C
+	private String Npie8c;
+	
+	//Frequency x Severity (0-12) (75) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIETOT
+	private String Npietot;
+	
+	//Presence of Elation/Euphoria (Yes/No) (76) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF
+	private String Npif;
+	
+	//Does the patient appear to feel too good or to be too happy, different from his/her usual self? (Yes/No) (77) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF1
+	private String Npif1;
+	
+	//Does the patient find humor and laugh at things that others do not find funny? (Yes/No) (78) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF2
+	private String Npif2;
+	
+	//Does the patient seem to have a childish sense of humor with a tendency to giggle or laugh 
+	//inappropriately (such as when something unfortunate happens to others)? (Yes/No) (79) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF3
+	private String Npif3;
+	
+	//Does the patient tell jokes or make remarks that have little humor for others but seem funny to him/her? (Yes/No) (80) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF4
+	private String Npif4;
+	
+	//Does he/she play childish pranks such as pinching or playing “keep away” for the fun of it? (Yes/No) (81) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF5
+	private String Npif5;
+	
+	//Does the patient “talk big” or claim to have more abilities or wealth than is true? (Yes/No) (82) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF6
+	private String Npif6;
+	
+	//Does the patient show any other signs of feeling too good or being too happy? (Yes/No) (83) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF7
+	private String Npif7;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (84) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIF8A
+	private String Npif8a;
 }
