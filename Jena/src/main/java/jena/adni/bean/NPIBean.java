@@ -559,4 +559,1317 @@ public class NPIBean extends ADNIBean {
 	//Does the patient have any other nighttime behaviors that bother you that we haven't talked about? (Yes/No) (145) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPIK8
 	private String Npik8;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (146) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK9A
+	private String Npik9a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (147) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK9B
+	private String Npik9b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (148) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK9C
+	private String Npik9c;
+	
+	//Frequency x Severity (0-12) (149) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIKTOT
+	private String Npiktot;
+	
+	//Has he/she had any change in appetite, weight, or eating habits (count as NA if the patient is incapacitated and 
+	//has to be fed)? Has there been any change in type of food he/she prefers? (Yes/No) (150) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL
+	private String Npil;
+	
+	//Has he/she had a loss of appetite? (Yes/No) (151) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL1
+	private String Npil1;
+	
+	//Has he/she had an increase in appetite? (Yes/No) (152) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL2
+	private String Npil2;
+	
+	//Has he/she had a loss of weight? (Yes/No) (153) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL3
+	private String Npil3;
+	
+	//Has he/she gained weight? (Yes/No) (154) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL4
+	private String Npil4;
+	
+	//Has he/she had a change in eating behavior such as putting too much food in his/her mouth at once? (Yes/No) (155) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL5
+	private String Npil5;
+	
+	//Has he/she had a change in the kind of food he/she likes such as eating too many sweets or other specific types of food? (Yes/No) (156) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL6
+	private String Npil6;
+	
+	//Has he/she developed eating behaviors such as eating exactly the same types of food each day or eating the food in exactly the same order? (Yes/No) (157) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL6
+	private String Npil7;
+	
+	//Have there been any other changes in appetite or eating that I haven’t asked about? (Yes/No) (158) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL8
+	private String Npil8;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (159) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL9A
+	private String Npil9a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (160) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL9B
+	private String Npil9b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (161) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIL9C
+	private String Npil9c;
+	
+	//Frequency x Severity (0-12) (162) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPILTOT
+	private String Npiltot;
+	
+	//N.A. (N.A.) (10) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPISOURC
+	private String Npisourc;
+	
+	//Sum of the  scores of the first 10 domain scores (0-144) (163) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPITOTAL
+	private String Npitotal;
+	
+	//N.A. (N.A.) (11) ADNI1 ADNIGO ADNI2 ADNI3
+	//SPID
+	private String Spid;
+
+	public String getNpia() {
+		return Npia;
+	}
+
+	public void setNpia(String npia) {
+		Npia = npia;
+	}
+
+	public String getNpia1() {
+		return Npia1;
+	}
+
+	public void setNpia1(String npia1) {
+		Npia1 = npia1;
+	}
+
+	public String getNpia10a() {
+		return Npia10a;
+	}
+
+	public void setNpia10a(String npia10a) {
+		Npia10a = npia10a;
+	}
+
+	public String getNpia10b() {
+		return Npia10b;
+	}
+
+	public void setNpia10b(String npia10b) {
+		Npia10b = npia10b;
+	}
+
+	public String getNpia10c() {
+		return Npia10c;
+	}
+
+	public void setNpia10c(String npia10c) {
+		Npia10c = npia10c;
+	}
+
+	public String getNpia2() {
+		return Npia2;
+	}
+
+	public void setNpia2(String npia2) {
+		Npia2 = npia2;
+	}
+
+	public String getNpia3() {
+		return Npia3;
+	}
+
+	public void setNpia3(String npia3) {
+		Npia3 = npia3;
+	}
+
+	public String getNpia4() {
+		return Npia4;
+	}
+
+	public void setNpia4(String npia4) {
+		Npia4 = npia4;
+	}
+
+	public String getNpia5() {
+		return Npia5;
+	}
+
+	public void setNpia5(String npia5) {
+		Npia5 = npia5;
+	}
+
+	public String getNpia6() {
+		return Npia6;
+	}
+
+	public void setNpia6(String npia6) {
+		Npia6 = npia6;
+	}
+
+	public String getNpia7() {
+		return Npia7;
+	}
+
+	public void setNpia7(String npia7) {
+		Npia7 = npia7;
+	}
+
+	public String getNpia8() {
+		return Npia8;
+	}
+
+	public void setNpia8(String npia8) {
+		Npia8 = npia8;
+	}
+
+	public String getNpia9() {
+		return Npia9;
+	}
+
+	public void setNpia9(String npia9) {
+		Npia9 = npia9;
+	}
+
+	public String getNpiatot() {
+		return Npiatot;
+	}
+
+	public void setNpiatot(String npiatot) {
+		Npiatot = npiatot;
+	}
+
+	public String getNpib() {
+		return Npib;
+	}
+
+	public void setNpib(String npib) {
+		Npib = npib;
+	}
+
+	public String getNpib1() {
+		return Npib1;
+	}
+
+	public void setNpib1(String npib1) {
+		Npib1 = npib1;
+	}
+
+	public String getNpib2() {
+		return Npib2;
+	}
+
+	public void setNpib2(String npib2) {
+		Npib2 = npib2;
+	}
+
+	public String getNpib3() {
+		return Npib3;
+	}
+
+	public void setNpib3(String npib3) {
+		Npib3 = npib3;
+	}
+
+	public String getNpib4() {
+		return Npib4;
+	}
+
+	public void setNpib4(String npib4) {
+		Npib4 = npib4;
+	}
+
+	public String getNpib5() {
+		return Npib5;
+	}
+
+	public void setNpib5(String npib5) {
+		Npib5 = npib5;
+	}
+
+	public String getNpib6() {
+		return Npib6;
+	}
+
+	public void setNpib6(String npib6) {
+		Npib6 = npib6;
+	}
+
+	public String getNpib7() {
+		return Npib7;
+	}
+
+	public void setNpib7(String npib7) {
+		Npib7 = npib7;
+	}
+
+	public String getNpib8a() {
+		return Npib8a;
+	}
+
+	public void setNpib8a(String npib8a) {
+		Npib8a = npib8a;
+	}
+
+	public String getNpib8b() {
+		return Npib8b;
+	}
+
+	public void setNpib8b(String npib8b) {
+		Npib8b = npib8b;
+	}
+
+	public String getNpib8c() {
+		return Npib8c;
+	}
+
+	public void setNpib8c(String npib8c) {
+		Npib8c = npib8c;
+	}
+
+	public String getNpibtot() {
+		return Npibtot;
+	}
+
+	public void setNpibtot(String npibtot) {
+		Npibtot = npibtot;
+	}
+
+	public String getNpic() {
+		return Npic;
+	}
+
+	public void setNpic(String npic) {
+		Npic = npic;
+	}
+
+	public String getNpic1() {
+		return Npic1;
+	}
+
+	public void setNpic1(String npic1) {
+		Npic1 = npic1;
+	}
+
+	public String getNpic2() {
+		return Npic2;
+	}
+
+	public void setNpic2(String npic2) {
+		Npic2 = npic2;
+	}
+
+	public String getNpic3() {
+		return Npic3;
+	}
+
+	public void setNpic3(String npic3) {
+		Npic3 = npic3;
+	}
+
+	public String getNpic4() {
+		return Npic4;
+	}
+
+	public void setNpic4(String npic4) {
+		Npic4 = npic4;
+	}
+
+	public String getNpic5() {
+		return Npic5;
+	}
+
+	public void setNpic5(String npic5) {
+		Npic5 = npic5;
+	}
+
+	public String getNpic6() {
+		return Npic6;
+	}
+
+	public void setNpic6(String npic6) {
+		Npic6 = npic6;
+	}
+
+	public String getNpic7() {
+		return Npic7;
+	}
+
+	public void setNpic7(String npic7) {
+		Npic7 = npic7;
+	}
+
+	public String getNpic8() {
+		return Npic8;
+	}
+
+	public void setNpic8(String npic8) {
+		Npic8 = npic8;
+	}
+
+	public String getNpic9a() {
+		return Npic9a;
+	}
+
+	public void setNpic9a(String npic9a) {
+		Npic9a = npic9a;
+	}
+
+	public String getNpic9b() {
+		return Npic9b;
+	}
+
+	public void setNpic9b(String npic9b) {
+		Npic9b = npic9b;
+	}
+
+	public String getNpic9c() {
+		return Npic9c;
+	}
+
+	public void setNpic9c(String npic9c) {
+		Npic9c = npic9c;
+	}
+
+	public String getNpictot() {
+		return Npictot;
+	}
+
+	public void setNpictot(String npictot) {
+		Npictot = npictot;
+	}
+
+	public String getNpid() {
+		return Npid;
+	}
+
+	public void setNpid(String npid) {
+		Npid = npid;
+	}
+
+	public String getNpid1() {
+		return Npid1;
+	}
+
+	public void setNpid1(String npid1) {
+		Npid1 = npid1;
+	}
+
+	public String getNpid2() {
+		return Npid2;
+	}
+
+	public void setNpid2(String npid2) {
+		Npid2 = npid2;
+	}
+
+	public String getNpid3() {
+		return Npid3;
+	}
+
+	public void setNpid3(String npid3) {
+		Npid3 = npid3;
+	}
+
+	public String getNpid4() {
+		return Npid4;
+	}
+
+	public void setNpid4(String npid4) {
+		Npid4 = npid4;
+	}
+
+	public String getNpid5() {
+		return Npid5;
+	}
+
+	public void setNpid5(String npid5) {
+		Npid5 = npid5;
+	}
+
+	public String getNpid6() {
+		return Npid6;
+	}
+
+	public void setNpid6(String npid6) {
+		Npid6 = npid6;
+	}
+
+	public String getNpid7() {
+		return Npid7;
+	}
+
+	public void setNpid7(String npid7) {
+		Npid7 = npid7;
+	}
+
+	public String getNpid8() {
+		return Npid8;
+	}
+
+	public void setNpid8(String npid8) {
+		Npid8 = npid8;
+	}
+
+	public String getNpid9a() {
+		return Npid9a;
+	}
+
+	public void setNpid9a(String npid9a) {
+		Npid9a = npid9a;
+	}
+
+	public String getNpid9b() {
+		return Npid9b;
+	}
+
+	public void setNpid9b(String npid9b) {
+		Npid9b = npid9b;
+	}
+
+	public String getNpid9c() {
+		return Npid9c;
+	}
+
+	public void setNpid9c(String npid9c) {
+		Npid9c = npid9c;
+	}
+
+	public String getNpidtot() {
+		return Npidtot;
+	}
+
+	public void setNpidtot(String npidtot) {
+		Npidtot = npidtot;
+	}
+
+	public String getNpie() {
+		return Npie;
+	}
+
+	public void setNpie(String npie) {
+		Npie = npie;
+	}
+
+	public String getNpie1() {
+		return Npie1;
+	}
+
+	public void setNpie1(String npie1) {
+		Npie1 = npie1;
+	}
+
+	public String getNpie2() {
+		return Npie2;
+	}
+
+	public void setNpie2(String npie2) {
+		Npie2 = npie2;
+	}
+
+	public String getNpie3() {
+		return Npie3;
+	}
+
+	public void setNpie3(String npie3) {
+		Npie3 = npie3;
+	}
+
+	public String getNpie4() {
+		return Npie4;
+	}
+
+	public void setNpie4(String npie4) {
+		Npie4 = npie4;
+	}
+
+	public String getNpie5() {
+		return Npie5;
+	}
+
+	public void setNpie5(String npie5) {
+		Npie5 = npie5;
+	}
+
+	public String getNpie6() {
+		return Npie6;
+	}
+
+	public void setNpie6(String npie6) {
+		Npie6 = npie6;
+	}
+
+	public String getNpie7() {
+		return Npie7;
+	}
+
+	public void setNpie7(String npie7) {
+		Npie7 = npie7;
+	}
+
+	public String getNpie8a() {
+		return Npie8a;
+	}
+
+	public void setNpie8a(String npie8a) {
+		Npie8a = npie8a;
+	}
+
+	public String getNpie8b() {
+		return Npie8b;
+	}
+
+	public void setNpie8b(String npie8b) {
+		Npie8b = npie8b;
+	}
+
+	public String getNpie8c() {
+		return Npie8c;
+	}
+
+	public void setNpie8c(String npie8c) {
+		Npie8c = npie8c;
+	}
+
+	public String getNpietot() {
+		return Npietot;
+	}
+
+	public void setNpietot(String npietot) {
+		Npietot = npietot;
+	}
+
+	public String getNpif() {
+		return Npif;
+	}
+
+	public void setNpif(String npif) {
+		Npif = npif;
+	}
+
+	public String getNpif1() {
+		return Npif1;
+	}
+
+	public void setNpif1(String npif1) {
+		Npif1 = npif1;
+	}
+
+	public String getNpif2() {
+		return Npif2;
+	}
+
+	public void setNpif2(String npif2) {
+		Npif2 = npif2;
+	}
+
+	public String getNpif3() {
+		return Npif3;
+	}
+
+	public void setNpif3(String npif3) {
+		Npif3 = npif3;
+	}
+
+	public String getNpif4() {
+		return Npif4;
+	}
+
+	public void setNpif4(String npif4) {
+		Npif4 = npif4;
+	}
+
+	public String getNpif5() {
+		return Npif5;
+	}
+
+	public void setNpif5(String npif5) {
+		Npif5 = npif5;
+	}
+
+	public String getNpif6() {
+		return Npif6;
+	}
+
+	public void setNpif6(String npif6) {
+		Npif6 = npif6;
+	}
+
+	public String getNpif7() {
+		return Npif7;
+	}
+
+	public void setNpif7(String npif7) {
+		Npif7 = npif7;
+	}
+
+	public String getNpif8a() {
+		return Npif8a;
+	}
+
+	public void setNpif8a(String npif8a) {
+		Npif8a = npif8a;
+	}
+
+	public String getNpif8b() {
+		return Npif8b;
+	}
+
+	public void setNpif8b(String npif8b) {
+		Npif8b = npif8b;
+	}
+
+	public String getNpif8c() {
+		return Npif8c;
+	}
+
+	public void setNpif8c(String npif8c) {
+		Npif8c = npif8c;
+	}
+
+	public String getNpiftot() {
+		return Npiftot;
+	}
+
+	public void setNpiftot(String npiftot) {
+		Npiftot = npiftot;
+	}
+
+	public String getNpig() {
+		return Npig;
+	}
+
+	public void setNpig(String npig) {
+		Npig = npig;
+	}
+
+	public String getNpig1() {
+		return Npig1;
+	}
+
+	public void setNpig1(String npig1) {
+		Npig1 = npig1;
+	}
+
+	public String getNpig2() {
+		return Npig2;
+	}
+
+	public void setNpig2(String npig2) {
+		Npig2 = npig2;
+	}
+
+	public String getNpig3() {
+		return Npig3;
+	}
+
+	public void setNpig3(String npig3) {
+		Npig3 = npig3;
+	}
+
+	public String getNpig4() {
+		return Npig4;
+	}
+
+	public void setNpig4(String npig4) {
+		Npig4 = npig4;
+	}
+
+	public String getNpig5() {
+		return Npig5;
+	}
+
+	public void setNpig5(String npig5) {
+		Npig5 = npig5;
+	}
+
+	public String getNpig6() {
+		return Npig6;
+	}
+
+	public void setNpig6(String npig6) {
+		Npig6 = npig6;
+	}
+
+	public String getNpig7() {
+		return Npig7;
+	}
+
+	public void setNpig7(String npig7) {
+		Npig7 = npig7;
+	}
+
+	public String getNpig8() {
+		return Npig8;
+	}
+
+	public void setNpig8(String npig8) {
+		Npig8 = npig8;
+	}
+
+	public String getNpig9a() {
+		return Npig9a;
+	}
+
+	public void setNpig9a(String npig9a) {
+		Npig9a = npig9a;
+	}
+
+	public String getNpig9b() {
+		return Npig9b;
+	}
+
+	public void setNpig9b(String npig9b) {
+		Npig9b = npig9b;
+	}
+
+	public String getNpig9c() {
+		return Npig9c;
+	}
+
+	public void setNpig9c(String npig9c) {
+		Npig9c = npig9c;
+	}
+
+	public String getNpigtot() {
+		return Npigtot;
+	}
+
+	public void setNpigtot(String npigtot) {
+		Npigtot = npigtot;
+	}
+
+	public String getNpih() {
+		return Npih;
+	}
+
+	public void setNpih(String npih) {
+		Npih = npih;
+	}
+
+	public String getNpih1() {
+		return Npih1;
+	}
+
+	public void setNpih1(String npih1) {
+		Npih1 = npih1;
+	}
+
+	public String getNpih2() {
+		return Npih2;
+	}
+
+	public void setNpih2(String npih2) {
+		Npih2 = npih2;
+	}
+
+	public String getNpih3() {
+		return Npih3;
+	}
+
+	public void setNpih3(String npih3) {
+		Npih3 = npih3;
+	}
+
+	public String getNpih4() {
+		return Npih4;
+	}
+
+	public void setNpih4(String npih4) {
+		Npih4 = npih4;
+	}
+
+	public String getNpih5() {
+		return Npih5;
+	}
+
+	public void setNpih5(String npih5) {
+		Npih5 = npih5;
+	}
+
+	public String getNpih6() {
+		return Npih6;
+	}
+
+	public void setNpih6(String npih6) {
+		Npih6 = npih6;
+	}
+
+	public String getNpih7() {
+		return Npih7;
+	}
+
+	public void setNpih7(String npih7) {
+		Npih7 = npih7;
+	}
+
+	public String getNpih8a() {
+		return Npih8a;
+	}
+
+	public void setNpih8a(String npih8a) {
+		Npih8a = npih8a;
+	}
+
+	public String getNpih8b() {
+		return Npih8b;
+	}
+
+	public void setNpih8b(String npih8b) {
+		Npih8b = npih8b;
+	}
+
+	public String getNpih8c() {
+		return Npih8c;
+	}
+
+	public void setNpih8c(String npih8c) {
+		Npih8c = npih8c;
+	}
+
+	public String getNpihtot() {
+		return Npihtot;
+	}
+
+	public void setNpihtot(String npihtot) {
+		Npihtot = npihtot;
+	}
+
+	public String getNpii() {
+		return Npii;
+	}
+
+	public void setNpii(String npii) {
+		Npii = npii;
+	}
+
+	public String getNpii1() {
+		return Npii1;
+	}
+
+	public void setNpii1(String npii1) {
+		Npii1 = npii1;
+	}
+
+	public String getNpii2() {
+		return Npii2;
+	}
+
+	public void setNpii2(String npii2) {
+		Npii2 = npii2;
+	}
+
+	public String getNpii3() {
+		return Npii3;
+	}
+
+	public void setNpii3(String npii3) {
+		Npii3 = npii3;
+	}
+
+	public String getNpii4() {
+		return Npii4;
+	}
+
+	public void setNpii4(String npii4) {
+		Npii4 = npii4;
+	}
+
+	public String getNpii5() {
+		return Npii5;
+	}
+
+	public void setNpii5(String npii5) {
+		Npii5 = npii5;
+	}
+
+	public String getNpii6() {
+		return Npii6;
+	}
+
+	public void setNpii6(String npii6) {
+		Npii6 = npii6;
+	}
+
+	public String getNpii7() {
+		return Npii7;
+	}
+
+	public void setNpii7(String npii7) {
+		Npii7 = npii7;
+	}
+
+	public String getNpii8a() {
+		return Npii8a;
+	}
+
+	public void setNpii8a(String npii8a) {
+		Npii8a = npii8a;
+	}
+
+	public String getNpii8b() {
+		return Npii8b;
+	}
+
+	public void setNpii8b(String npii8b) {
+		Npii8b = npii8b;
+	}
+
+	public String getNpii8c() {
+		return Npii8c;
+	}
+
+	public void setNpii8c(String npii8c) {
+		Npii8c = npii8c;
+	}
+
+	public String getNpiitot() {
+		return Npiitot;
+	}
+
+	public void setNpiitot(String npiitot) {
+		Npiitot = npiitot;
+	}
+
+	public String getNpij() {
+		return Npij;
+	}
+
+	public void setNpij(String npij) {
+		Npij = npij;
+	}
+
+	public String getNpij1() {
+		return Npij1;
+	}
+
+	public void setNpij1(String npij1) {
+		Npij1 = npij1;
+	}
+
+	public String getNpij2() {
+		return Npij2;
+	}
+
+	public void setNpij2(String npij2) {
+		Npij2 = npij2;
+	}
+
+	public String getNpij3() {
+		return Npij3;
+	}
+
+	public void setNpij3(String npij3) {
+		Npij3 = npij3;
+	}
+
+	public String getNpij4() {
+		return Npij4;
+	}
+
+	public void setNpij4(String npij4) {
+		Npij4 = npij4;
+	}
+
+	public String getNpij5() {
+		return Npij5;
+	}
+
+	public void setNpij5(String npij5) {
+		Npij5 = npij5;
+	}
+
+	public String getNpij6() {
+		return Npij6;
+	}
+
+	public void setNpij6(String npij6) {
+		Npij6 = npij6;
+	}
+
+	public String getNpij7() {
+		return Npij7;
+	}
+
+	public void setNpij7(String npij7) {
+		Npij7 = npij7;
+	}
+
+	public String getNpij8a() {
+		return Npij8a;
+	}
+
+	public void setNpij8a(String npij8a) {
+		Npij8a = npij8a;
+	}
+
+	public String getNpij8b() {
+		return Npij8b;
+	}
+
+	public void setNpij8b(String npij8b) {
+		Npij8b = npij8b;
+	}
+
+	public String getNpij8c() {
+		return Npij8c;
+	}
+
+	public void setNpij8c(String npij8c) {
+		Npij8c = npij8c;
+	}
+
+	public String getNpijtot() {
+		return Npijtot;
+	}
+
+	public void setNpijtot(String npijtot) {
+		Npijtot = npijtot;
+	}
+
+	public String getNpik() {
+		return Npik;
+	}
+
+	public void setNpik(String npik) {
+		Npik = npik;
+	}
+
+	public String getNpik1() {
+		return Npik1;
+	}
+
+	public void setNpik1(String npik1) {
+		Npik1 = npik1;
+	}
+
+	public String getNpik2() {
+		return Npik2;
+	}
+
+	public void setNpik2(String npik2) {
+		Npik2 = npik2;
+	}
+
+	public String getNpik3() {
+		return Npik3;
+	}
+
+	public void setNpik3(String npik3) {
+		Npik3 = npik3;
+	}
+
+	public String getNpik4() {
+		return Npik4;
+	}
+
+	public void setNpik4(String npik4) {
+		Npik4 = npik4;
+	}
+
+	public String getNpik5() {
+		return Npik5;
+	}
+
+	public void setNpik5(String npik5) {
+		Npik5 = npik5;
+	}
+
+	public String getNpik6() {
+		return Npik6;
+	}
+
+	public void setNpik6(String npik6) {
+		Npik6 = npik6;
+	}
+
+	public String getNpik7() {
+		return Npik7;
+	}
+
+	public void setNpik7(String npik7) {
+		Npik7 = npik7;
+	}
+
+	public String getNpik8() {
+		return Npik8;
+	}
+
+	public void setNpik8(String npik8) {
+		Npik8 = npik8;
+	}
+
+	public String getNpik9a() {
+		return Npik9a;
+	}
+
+	public void setNpik9a(String npik9a) {
+		Npik9a = npik9a;
+	}
+
+	public String getNpik9b() {
+		return Npik9b;
+	}
+
+	public void setNpik9b(String npik9b) {
+		Npik9b = npik9b;
+	}
+
+	public String getNpik9c() {
+		return Npik9c;
+	}
+
+	public void setNpik9c(String npik9c) {
+		Npik9c = npik9c;
+	}
+
+	public String getNpiktot() {
+		return Npiktot;
+	}
+
+	public void setNpiktot(String npiktot) {
+		Npiktot = npiktot;
+	}
+
+	public String getNpil() {
+		return Npil;
+	}
+
+	public void setNpil(String npil) {
+		Npil = npil;
+	}
+
+	public String getNpil1() {
+		return Npil1;
+	}
+
+	public void setNpil1(String npil1) {
+		Npil1 = npil1;
+	}
+
+	public String getNpil2() {
+		return Npil2;
+	}
+
+	public void setNpil2(String npil2) {
+		Npil2 = npil2;
+	}
+
+	public String getNpil3() {
+		return Npil3;
+	}
+
+	public void setNpil3(String npil3) {
+		Npil3 = npil3;
+	}
+
+	public String getNpil4() {
+		return Npil4;
+	}
+
+	public void setNpil4(String npil4) {
+		Npil4 = npil4;
+	}
+
+	public String getNpil5() {
+		return Npil5;
+	}
+
+	public void setNpil5(String npil5) {
+		Npil5 = npil5;
+	}
+
+	public String getNpil6() {
+		return Npil6;
+	}
+
+	public void setNpil6(String npil6) {
+		Npil6 = npil6;
+	}
+
+	public String getNpil7() {
+		return Npil7;
+	}
+
+	public void setNpil7(String npil7) {
+		Npil7 = npil7;
+	}
+
+	public String getNpil8() {
+		return Npil8;
+	}
+
+	public void setNpil8(String npil8) {
+		Npil8 = npil8;
+	}
+
+	public String getNpil9a() {
+		return Npil9a;
+	}
+
+	public void setNpil9a(String npil9a) {
+		Npil9a = npil9a;
+	}
+
+	public String getNpil9b() {
+		return Npil9b;
+	}
+
+	public void setNpil9b(String npil9b) {
+		Npil9b = npil9b;
+	}
+
+	public String getNpil9c() {
+		return Npil9c;
+	}
+
+	public void setNpil9c(String npil9c) {
+		Npil9c = npil9c;
+	}
+
+	public String getNpiltot() {
+		return Npiltot;
+	}
+
+	public void setNpiltot(String npiltot) {
+		Npiltot = npiltot;
+	}
+
+	public String getNpisourc() {
+		return Npisourc;
+	}
+
+	public void setNpisourc(String npisourc) {
+		Npisourc = npisourc;
+	}
+
+	public String getNpitotal() {
+		return Npitotal;
+	}
+
+	public void setNpitotal(String npitotal) {
+		Npitotal = npitotal;
+	}
+
+	public String getSpid() {
+		return Spid;
+	}
+
+	public void setSpid(String spid) {
+		Spid = spid;
+	}
 }
