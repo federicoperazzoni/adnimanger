@@ -405,4 +405,158 @@ public class NPIBean extends ADNIBean {
 	//Does the patient show any other signs of loss of control of his/her impulses? (Yes/No) (108) ADNI1 ADNIGO ADNI2 ADNI3
 	//NPIH7
 	private String Npih7;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (109) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH8A
+	private String Npih8a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (110) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH8B
+	private String Npih8b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (111) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIH8C
+	private String Npih8c;
+	
+	//Frequency x Severity (0-12) (112) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIHTOT
+	private String Npihtot;
+	
+	//Does the patient get irritated and easily disturbed? Are his/her moods very changeable? Is he/she abnormally 
+	//impatient? We do not mean frustration over memory loss or inability 
+	//to perform usual tasks; we are interested to know if the patient has abnormal irritability, impatience, or rapid emotional 
+	//changes different from his/her usual self. (Yes/No) (113) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII
+	private String Npii;
+	
+	//Does the patient have a bad temper, flying “off the handle” easily over little things? (Yes/No) (114) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII1
+	private String Npii1;
+	
+	//Does the patient rapidly change moods from one to another, being fine one minute and angry the next? (Yes/No) (115) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII2
+	private String Npii2;
+	
+	//Does the patient have sudden flashes of anger? (Yes/No) (116) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII3
+	private String Npii3;
+	
+	//Is the patient impatient, having trouble coping with delays or waiting for planned activities? (Yes/No) (117) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII4
+	private String Npii4;
+	
+	//Is the patient cranky and irritable? (Yes/No) (118) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII5
+	private String Npii5;
+	
+	//Is the patient argumentative and difficult to get along with? (Yes/No) (119) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII6
+	private String Npii6;
+	
+	//Does the patient show any other signs of irritability? (Yes/No) (120) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII7
+	private String Npii7;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (121) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII8A
+	private String Npii8a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (122) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII8B
+	private String Npii8b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (123) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPII8C
+	private String Npii8c;
+	
+	//Frequency x Severity (0-12) (124) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIITOT
+	private String Npiitot;
+	
+	//Does the patient pace, do things over and over such as opening closets or drawers, or repeatedly pick at things or wind string or threads? (Yes/No) (125) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ
+	private String Npij;
+	
+	//Does the patient pace around the house without apparent purpose? (Yes/No) (126) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ1
+	private String Npij1;
+	
+	//Does the patient rummage around opening and unpacking drawers or closets? (Yes/No) (127) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ2
+	private String Npij2;
+	
+	//Does the patient repeatedly put on and take off clothing? (Yes/No) (128) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ3
+	private String Npij3;
+	
+	//Does the patient have repetitive activities or "habits" that he/she performs over and over? (Yes/No) (129) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ4
+	private String Npij4;
+	
+	//Does the patient engage in repetitive activities such as handling buttons, picking, wrapping string, etc? (Yes/No) (130) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ5
+	private String Npij5;
+	
+	//Does the patient fidget excessively, seem unable to sit still, or bounce his/her feet or tap his/her fingers a lot? (Yes/No) (131) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ6
+	private String Npij6;
+	
+	//Does the patient do any other activities over and over? (Yes/No) (132) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ7
+	private String Npij7;
+	
+	//Frequency of the symptom (1: Occasionally; 2: Often; 3: Frequently; 4: Very frequently) (133) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ8A
+	private String Npij8a;
+	
+	//Severity of the symptom (1: Mild; 2: Moderate; 3: Marked) (134) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ8B
+	private String Npij8b;
+	
+	//Distress experienced by Caregiver due to the symptom (0 :Not distressing at all;  1: Minimal; 2:Mild; 3 : Moderate; 4 : Severe 5 :Extreme or Very Severe) (135) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJ8C
+	private String Npij8c;
+	
+	//Frequency x Severity (0-12) (136) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIJTOT
+	private String Npijtot;
+	
+	//Does the patient have difficulty sleeping (do not count as present if the patient simply gets up once or twice per night only to go to the bathroom 
+	//and falls back asleep immediately)? Is he/she up at night? Does he/she wander at night, 
+	//get dressed, or disturb your sleep? (Yes/No) (137) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK
+	private String Npik;
+	
+	//Does the patient have difficulty falling asleep? (Yes/No) (138) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK1
+	private String Npik1;
+	
+	//Does the patient get up during the night (do not count if the patient gets up once or twice per night 
+	//only to go to the bathroom and falls back asleep immediately)? (Yes/No) (139) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK2
+	private String Npik2;
+	
+	//Does the patient wander, pace, or get involved in inappropriate activities at night? (Yes/No) (140) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK3
+	private String Npik3;
+	
+	//Does the patient awaken you during the night? (Yes/No) (141) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK4
+	private String Npik4;
+	
+	//Does the patient awaken at night, dress, and plan to go out thinking that it is morning and time to start the day? (Yes/No) (142) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK5
+	private String Npik5;
+	
+	//Does the patient awaken too early in the morning (earlier that was his/her habit)? (Yes/No) (143) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK6
+	private String Npik6;
+	
+	//Does the patient sleep excessively during the day? (Yes/No) (144) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK7
+	private String Npik7;
+	
+	//Does the patient have any other nighttime behaviors that bother you that we haven't talked about? (Yes/No) (145) ADNI1 ADNIGO ADNI2 ADNI3
+	//NPIK8
+	private String Npik8;
 }
