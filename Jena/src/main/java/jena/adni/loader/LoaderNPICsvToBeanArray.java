@@ -43,6 +43,7 @@ public class LoaderNPICsvToBeanArray {
 				npiBean.setNpia1(row[12]);
 				npiBean.setNpia10a(row[21]);
 				npiBean.setNpia10b(row[22]);
+				npiBean.setNpia10c(row[23]);
 				
 				npiBean.setSubjectDataBean(new SubjectDataBean());
 				
