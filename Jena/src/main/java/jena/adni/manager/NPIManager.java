@@ -113,6 +113,24 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_5_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_6_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_7_" + count);
+			//Sleep Disorders
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_1_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_2_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_3_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_4_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_5_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_6_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_7_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_SleepQuestionItem_8_" + count);
+			//Eating Disorders
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_1_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_2_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_3_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_4_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_5_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_6_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_7_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_EatingDisordersQuestionItem_8_" + count);
 			
 			//Delusion type
 			tdbConnection.addStatement(modelName, prefix + "NPI_DelusionsQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_DelusionsQuestionItem_1");
@@ -199,6 +217,24 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_5");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_6");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_7");
+			//Sleep Disorders type
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_1");
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_2");
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_3");
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_4_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_4");
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_5");
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_6");
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_7");
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_8_" + count, RDF.type.getURI(), prefix + "NPI_SleepQuestionItem_8");
+			//Eating Disorders type
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_1");
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_2");
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_3");
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_4_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_4");
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_5");
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_6");
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_7");
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_8_" + count, RDF.type.getURI(), prefix + "NPI_EatingDisordersQuestionItem_8");
 			
 			//Delusion insert value
 			tdbConnection.addStatement(modelName, prefix + "NPI_DelusionsQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpia1());
@@ -278,13 +314,31 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii6());
 			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii7());
 			//Aberrant Motor Behaviour insert value
-			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij1());
-			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij2());
-			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij3());
-			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij4());
-			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij5());
-			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij6());
-			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij7());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij1());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij2());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij3());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij4());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij5());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij6());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij7());
+			//Sleep Disorders insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik1());
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik2());
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik3());
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik4());
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik5());
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik6());
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik7());
+			tdbConnection.addStatement(modelName, prefix + "NPI_SleepQuestionItem_8_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpik8());
+			//Eating Disorders insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil1());
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil2());
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil3());
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil4());
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil5());
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil6());
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil7());
+			tdbConnection.addStatement(modelName, prefix + "NPI_EatingDisordersQuestionItem_8_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpil8());
 			
 		} catch (Exception e) {
 
