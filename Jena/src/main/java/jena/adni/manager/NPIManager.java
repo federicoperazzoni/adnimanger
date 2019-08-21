@@ -89,6 +89,30 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_6_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_7_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_8_" + count);
+			//Disinhibition
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_DisinhibitionQuestionItem_1_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_DisinhibitionQuestionItem_2_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_DisinhibitionQuestionItem_3_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_DisinhibitionQuestionItem_4_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_DisinhibitionQuestionItem_5_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_DisinhibitionQuestionItem_6_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_DisinhibitionQuestionItem_7_" + count);
+			//Irritability/ Lability
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_1_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_2_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_3_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_4_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_5_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count);
+			//Aberrant Motor Behaviour
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_1_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_2_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_3_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_4_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_5_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_6_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_7_" + count);
 			
 			//Delusion type
 			tdbConnection.addStatement(modelName, prefix + "NPI_DelusionsQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_DelusionsQuestionItem_1");
@@ -142,6 +166,39 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_ElationEuphoriaQuestionItem_5");
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_ElationEuphoriaQuestionItem_6");
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_ElationEuphoriaQuestionItem_7");
+			//Apathy / Indifference type
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_1");
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_2");
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_3");
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_4_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_4");
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_5");
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_6");
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_7");
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_8_" + count, RDF.type.getURI(), prefix + "NPI_ApathyIndifferenceQuestionItem_8");
+			//Disinhibition type
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_DisinhibitionQuestionItem_1");
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_DisinhibitionQuestionItem_2");
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_DisinhibitionQuestionItem_3");
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_4_" + count, RDF.type.getURI(), prefix + "NPI_DisinhibitionQuestionItem_4");
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_DisinhibitionQuestionItem_5");
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_DisinhibitionQuestionItem_6");
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_DisinhibitionQuestionItem_7");
+			//Irritability/ Lability type
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_1");
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_2");
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_3");
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_4_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_4");
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_5");
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_6");
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_7");
+			//Aberrant Motor Behaviour type
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_1");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_2");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_3");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_4_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_4");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_5_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_5");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_6");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_7");
 			
 			//Delusion insert value
 			tdbConnection.addStatement(modelName, prefix + "NPI_DelusionsQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpia1());
@@ -195,6 +252,39 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpif5());
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpif6());
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpif7());
+			//Apathy / Indifference insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig1());
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig2());
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig3());
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig4());
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig5());
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig6());
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig7());
+			tdbConnection.addStatement(modelName, prefix + "NPI_ApathyIndifferenceQuestionItem_8_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpig8());
+			//Disinhibition insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpih1());
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpih2());
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpih3());
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpih4());
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpih5());
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpih6());
+			tdbConnection.addStatement(modelName, prefix + "NPI_DisinhibitionQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpih7());
+			//Irritability/ Lability insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii1());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii2());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii3());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii4());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii5());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii6());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii7());
+			//Aberrant Motor Behaviour insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij1());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij2());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij3());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_4_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij4());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij5());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij6());
+			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij7());
 			
 		} catch (Exception e) {
 
