@@ -80,6 +80,15 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ElationEuphoriaQuestionItem_5_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ElationEuphoriaQuestionItem_6_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ElationEuphoriaQuestionItem_7_" + count);
+			//Apathy / Indifference
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_1_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_2_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_3_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_4_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_5_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_6_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_7_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_ApathyIndifferenceQuestionItem_8_" + count);
 			
 			//Delusion type
 			tdbConnection.addStatement(modelName, prefix + "NPI_DelusionsQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_DelusionsQuestionItem_1");
@@ -178,7 +187,7 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_AnxietyQuestionItem_5_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpie5());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AnxietyQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpie6());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AnxietyQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpie7());
-			//Anxiety insert value
+			//Elation/Euphoria insert value
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpif1());
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpif2());
 			tdbConnection.addStatement(modelName, prefix + "NPI_ElationEuphoriaQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpif3());
