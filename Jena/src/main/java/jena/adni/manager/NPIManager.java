@@ -47,6 +47,11 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_HallucinationsQuestionItem_6_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_HallucinationsQuestionItem_7_" + count);
 			//Agitation/Aggression
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionPresenceItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionFrequencyItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionSeverityItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionDistressItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionTotItem_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionQuestionItem_1_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionQuestionItem_2_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AgitationAggressionQuestionItem_3_" + count);
@@ -105,7 +110,12 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_5_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count);
-			//Aberrant Motor Behaviour
+			//Aberrant Motor Behaviour			
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourPresenceItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourFrequencyItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourSeverityItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourDistressItem_" + count);
+			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourTotItem_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_1_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_2_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPI_" + count, prefix + "hasAssesmentItem", prefix + "NPI_AberrantMotorBehaviourQuestionItem_3_" + count);
@@ -151,6 +161,11 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_HallucinationsQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_HallucinationsQuestionItem_6");
 			tdbConnection.addStatement(modelName, prefix + "NPI_HallucinationsQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_HallucinationsQuestionItem_7");
 			//Agitation/Aggression type
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionPresenceItem_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionPresenceItem");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionFrequencyItem_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionFrequencyItem");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionSeverityItem_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionSeverityItem");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionDistressItem_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionDistressItem");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionTotItem_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionTotItem");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionQuestionItem_1");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionQuestionItem_2");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_AgitationAggressionQuestionItem_3");
@@ -210,6 +225,11 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_6");
 			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count, RDF.type.getURI(), prefix + "NPI_IrritabilityLabilityQuestionItem_7");
 			//Aberrant Motor Behaviour type
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourPresenceItem_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourPresenceItem");			
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourFrequencyItem_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourFrequencyItem");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourSeverityItem_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourSeverityItem");
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourDistressItem_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourDistressItem");			
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourTotItem_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourTotItem");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_1_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_1");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_2_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_2");
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_3_" + count, RDF.type.getURI(), prefix + "NPI_AberrantMotorBehaviourQuestionItem_3");
@@ -255,6 +275,11 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_HallucinationsQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpib6());
 			tdbConnection.addStatement(modelName, prefix + "NPI_HallucinationsQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpib7());
 			//Agitation/Aggression insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionPresenceItem_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpic());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionFrequencyItem_" + count, prefix + "1_2_3_4_NPI_score_3", prefix + npiBean.getNpic9a());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionSeverityItem_" + count, prefix + "1_2_3_NPI_score_2", prefix + npiBean.getNpic9b());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionDistressItem_" + count, prefix + "0_1_2_3_4_5_NPI_score", prefix + npiBean.getNpic9c());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionTotItem_" + count, prefix + "totalScore", prefix + npiBean.getNpictot());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpic1());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpic2());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AgitationAggressionQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpic3());
@@ -314,6 +339,11 @@ public class NPIManager {
 			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_6_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii6());
 			tdbConnection.addStatement(modelName, prefix + "NPI_IrritabilityLabilityQuestionItem_7_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpii7());
 			//Aberrant Motor Behaviour insert value
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourPresenceItem_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourFrequencyItem_" + count, prefix + "1_2_3_4_NPI_score_3", prefix + npiBean.getNpij8a());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourSeverityItem_" + count, prefix + "1_2_3_NPI_score_2", prefix + npiBean.getNpij8b());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourDistressItem_" + count, prefix + "0_1_2_3_4_5_NPI_score", prefix + npiBean.getNpij8c());
+			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourTotItem_" + count, prefix + "totalScore", prefix + npiBean.getNpijtot());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_1_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij1());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_2_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij2());
 			tdbConnection.addStatement(modelName, prefix + "NPI_AberrantMotorBehaviourQuestionItem_3_" + count, prefix + "yesNoAnswer", prefix + npiBean.getNpij3());
