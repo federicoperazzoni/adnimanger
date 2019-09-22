@@ -97,6 +97,8 @@ public class QueryFactoryADNI {
 		try {
 			
 			LoadCsv.loadPercent = 0;
+			
+			LoadCsv.timeQuery = System.currentTimeMillis();
 
 			String modelName = ADNIExternalResource.getModelname();
 
@@ -128,7 +130,9 @@ public class QueryFactoryADNI {
 			LoadCsv.loadMex = "File completato";
 
 			LoadCsv.loadPercent = 100;
-
+			LoadCsv.timeQuery = (System.currentTimeMillis() - LoadCsv.timeQuery)/1000;
+			System.out.println("Time of query: " + (System.currentTimeMillis() - LoadCsv.timeQuery)/1000);
+			
 			qe.close();
 			TDBUtil.removeLock();
 		} catch (Exception e) {
@@ -145,6 +149,7 @@ public class QueryFactoryADNI {
 		try {
 			
 			LoadCsv.loadPercent = 0;
+			LoadCsv.timeQuery = System.currentTimeMillis();
 
 			String modelName = ADNIExternalResource.getModelname();
 
@@ -176,6 +181,8 @@ public class QueryFactoryADNI {
 
 			LoadCsv.loadPercent = 100;
 			LoadCsv.loadMex = ADNIExternalResource.MEX_EXTRACTION_COMPLETED;
+			LoadCsv.timeQuery = (System.currentTimeMillis() - LoadCsv.timeQuery)/1000;
+			System.out.println("Time of query: " + (System.currentTimeMillis() - LoadCsv.timeQuery)/1000);
 
 			qe.close();
 			TDBUtil.removeLock();

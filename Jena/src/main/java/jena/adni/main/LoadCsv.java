@@ -20,14 +20,18 @@ import jena.adni.manager.ontology.ADNIOntologyLoader;
 public class LoadCsv {
 
 	public static int loadPercent;
+	public static Long timeQuery;
 	public static String loadMex;
 	public static int status;
 	
 	public static final int PERCENT_PRE = 2;
 	public static final int PERCENT_CDR = 4;
 	public static final int PERCENT_FAQ = 4;
-	public static final int PERCENT_MMSE = 45;
-	public static final int PERCENT_NEUROBAT = 45;
+	public static final int PERCENT_MMSE = 15;
+	public static final int PERCENT_NPIQ = 15;
+	public static final int PERCENT_NPI = 25;
+	public static final int PERCENT_GDS = 20;
+	public static final int PERCENT_NEUROBAT = 20;
 
 	public static void loadCsvWithReset() {
 
