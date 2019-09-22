@@ -35,19 +35,21 @@ public class LoadCSVForm extends JPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	public final static JButton[] fields = new JButton[4];
-	public final static JCheckBox[] fieldsCB = new JCheckBox[4];
-	public final static JLabel[] fieldsL = new JLabel[4];
+	public final static JButton[] fields = new JButton[7];
+	public final static JCheckBox[] fieldsCB = new JCheckBox[7];
+	public final static JLabel[] fieldsL = new JLabel[7];
 	private static JFrame f = new JFrame("Load CSV form");
 	private static final JFileChooser fc = new JFileChooser();
 
-	public static String[] labels = {"CDR","FAQ","MMSE","NEUROBAT" };
-	public static String[] labelButton = {"             Select file","             Select file","             Select file","             Select file"};
+	public static String[] labels = {"CDR","GDS","FAQ","MMSE","NEUROBAT","NPI","NPIQ" };
+	public static String[] labelButton = {"             Select file","             Select file","             Select file",
+			"             Select file","             Select file","             Select file","             Select file"};
 	
-	public static File[] files = new File[4];
-	public static char[] mnemonics = {'C','F','M','N'};
-	public static int[] widths = { 25, 25, 25, 25 };
-	public static String[] descs = {"Clinical dementia rating","Functional assessment question","Mini mental state exam","Neuro Battery"};
+	public static File[] files = new File[7];
+	public static char[] mnemonics = {'C','G','F','M','N','P','Q'};
+	public static int[] widths = { 25, 25, 25, 25, 25, 25 };
+	public static String[] descs = {"Clinical dementia rating","Geriatric Depression Scale","Functional assessment question",
+			"Mini mental state exam","Neuro Battery","Neuropsychiatric Inventory","Neuropsychiatric Inventory Questionnaire"};
 	
 	int i = 0;
 
