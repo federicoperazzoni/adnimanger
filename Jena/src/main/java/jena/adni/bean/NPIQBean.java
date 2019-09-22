@@ -2,85 +2,85 @@ package jena.adni.bean;
 
 public class NPIQBean extends ADNIBean {
 
-	//NPIA
+	//NPIA 11
 	private String Npia;
 	
-	//NPIASEV
+	//NPIASEV 12
 	private String Npiasev;
 	
-	//NPIB
+	//NPIB 13
 	private String Npib;
 	
-	//NPIBSEV
+	//NPIBSEV 14
 	private String Npibsev;
 	
-	//NPIC
+	//NPIC 15
 	private String Npic;
 	
-	//NPICSEV
+	//NPICSEV 16
 	private String Npicsev;
 	
-	//NPID
+	//NPID 17
 	private String Npid;
 	
-	//NPIDSEV
+	//NPIDSEV 18
 	private String Npidsev;
 	
-	//NPIE
+	//NPIE 19
 	private String Npie;
 	
-	//NPIESEV
+	//NPIESEV 20
 	private String Npiesev;
 	
-	//NPIF
+	//NPIF 21
 	private String Npif;
 	
-	//NPIFSEV
+	//NPIFSEV 22
 	private String Npifsev;
 	
-	//NPIG
+	//NPIG 23
 	private String Npig;
 	
-	//NPIGSEV
+	//NPIGSEV 24
 	private String Npigsev;
 	
-	//NPIH
+	//NPIH 25
 	private String Npih;
 	
-	//NPIHSEV
+	//NPIHSEV 26
 	private String Npihsev;
 	
-	//NPII
+	//NPII 27
 	private String Npii;
 	
-	//NPIISEV
+	//NPIISEV 28
 	private String Npiisev;
 	
-	//NPIJ
+	//NPIJ 29
 	private String Npij;
 	
-	//NPIJSEV
+	//NPIJSEV 30
 	private String Npijsev;
 	
-	//NPIK
+	//NPIK 31
 	private String Npik;
 	
-	//NPIKSEV
+	//NPIKSEV 32
 	private String Npiksev;
 	
-	//NPIL
+	//NPIL 33
 	private String Npil;
 	
-	//NPILSEV
+	//NPILSEV 34
 	private String Npilsev;
 	
-	//EXAMDATE
+	//EXAMDATE 9
 	private String Examdate;
 	
-	//SITEID
+	//SITEID 4
 	private String Siteid;
 	
-	//VISCODE
+	//VISCODE 5
 	private String Viscode;
 
 	public String getNpia() {
