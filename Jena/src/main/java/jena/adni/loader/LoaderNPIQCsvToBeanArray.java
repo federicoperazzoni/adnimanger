@@ -81,7 +81,7 @@ public class LoaderNPIQCsvToBeanArray {
 				npiqManager.insertInADNIOntology(npiqBean, count);
 			}
 		
-			LoadCsv.loadPercent = ((LoadCsv.PERCENT_CDR*count)/total) + LoadCsv.PERCENT_PRE;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_NPIQ*count)/total) + LoadCsv.PERCENT_PRE;
 			
 			count++;
 		}
