@@ -46,11 +46,34 @@ public class LoaderGDSCsvToBeanArray {
 			if (count > 0) {
 
 				GDSBean gdsBean = new GDSBean();
-				
 
 				gdsBean.setSubjectDataBean(new SubjectDataBean());
 				
 				gdsBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
+				
+				gdsBean.setGdafraid(row[17].replaceAll("\"", ""));
+				gdsBean.setGdalive(row[22].replaceAll("\"", ""));
+				gdsBean.setGdbetter(row[26].replaceAll("\"", ""));
+				gdsBean.setGdbored(row[15].replaceAll("\"", ""));
+				gdsBean.setGddrop(row[13].replaceAll("\"", ""));
+				gdsBean.setGdempty(row[14].replaceAll("\"", ""));
+				gdsBean.setGdenergy(row[24].replaceAll("\"", ""));
+				gdsBean.setGdhappy(row[18].replaceAll("\"", ""));
+				gdsBean.setGdhelp(row[19].replaceAll("\"", ""));
+				gdsBean.setGdhome(row[20].replaceAll("\"", ""));
+				gdsBean.setGdhope(row[25].replaceAll("\"", ""));
+				gdsBean.setGdmemory(row[21].replaceAll("\"", ""));
+				gdsBean.setGdsatis(row[12].replaceAll("\"", ""));
+				gdsBean.setGdspirit(row[16].replaceAll("\"", ""));
+				gdsBean.setGdtotal(row[27].replaceAll("\"", ""));
+				gdsBean.setGdunabl(row[10].replaceAll("\"", ""));
+				gdsBean.setGdunabsp(row[11].replaceAll("\"", ""));
+				gdsBean.setGdworth(row[23].replaceAll("\"", ""));
+				//gdsBean.setSource(row[9].replaceAll("\"", ""));
+				gdsBean.setExamdate(row[8].replaceAll("\"", ""));
+				gdsBean.setGdsource(row[9].replaceAll("\"", ""));
+				//gdsBean.setOrigprot(row[9].replaceAll("\"", ""));
+				gdsBean.setViscode(row[4].replaceAll("\"", ""));
 				
 				gdsManager.insertInADNIOntology(gdsBean, count);
 			}

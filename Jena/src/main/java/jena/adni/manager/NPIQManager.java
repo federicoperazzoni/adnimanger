@@ -22,7 +22,7 @@ public class NPIQManager {
 			tdbConnection.addStatement(modelName, prefix + "NPIQ_" + count, RDF.type.getURI(), prefix + "NPIQ");
 			tdbConnection.addStatement(modelName, prefix + npiqBean.getSubjectDataBean().getRID(), RDF.type.getURI(), prefix + "Subject");
 			tdbConnection.addStatement(modelName, prefix + npiqBean.getSubjectDataBean().getRID(), RDF.type.getURI(), "http://www.w3.org/2002/07/owl#NamedIndividual");
-			tdbConnection.addStatement(modelName, prefix + npiqBean.getSubjectDataBean().getRID(), prefix + "hasStandardizedAssesment", prefix + "NPI_" + count);
+			tdbConnection.addStatement(modelName, prefix + npiqBean.getSubjectDataBean().getRID(), prefix + "hasStandardizedAssesment", prefix + "NPIQ_" + count);
 			
 			tdbConnection.addStatement(modelName, prefix + "NPIQ_" + count, prefix + "hasAssesmentItem", prefix + "NPIQ_PresenceOfAberrantMotorBehaviorItem_" + count);
 			tdbConnection.addStatement(modelName, prefix + "NPIQ_" + count, prefix + "hasAssesmentItem", prefix + "NPIQ_PresenceOfAgitationAggressionItem_" + count);
