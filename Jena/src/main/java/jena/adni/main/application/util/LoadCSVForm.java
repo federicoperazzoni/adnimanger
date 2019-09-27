@@ -41,7 +41,7 @@ public class LoadCSVForm extends JPanel {
 	private static JFrame f = new JFrame("Load CSV form");
 	private static final JFileChooser fc = new JFileChooser();
 
-	public static String[] labels = {"CDR","GDS","FAQ","MMSE","NEUROBAT","NPI","NPIQ" };
+	public static String[] labels = {"CDR", "FAQ", "MMSE", "NEUROBAT", "GDS", "NPI", "NPIQ" };
 	public static String[] labelButton = {"             Select file","             Select file","             Select file",
 			"             Select file","             Select file","             Select file","             Select file"};
 	

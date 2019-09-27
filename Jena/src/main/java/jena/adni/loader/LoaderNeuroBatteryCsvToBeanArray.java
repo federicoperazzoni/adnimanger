@@ -19,12 +19,12 @@ import com.opencsv.CSVReaderBuilder;
 import jena.adni.bean.CDRBean;
 import jena.adni.bean.NeuroBatteryBean;
 import jena.adni.bean.SubjectDataBean;
+import jena.adni.main.LoadCsv;
+import jena.adni.manager.NeuroBatteryManager;
 
 public class LoaderNeuroBatteryCsvToBeanArray {
 
-	public ArrayList<NeuroBatteryBean> load(String pathCsv) {
-
-		ArrayList<NeuroBatteryBean> neuroBatteryTestList = new ArrayList<NeuroBatteryBean>();
+	public void load(String pathCsv) {
 
 		Path myPath = Paths.get(pathCsv);
 
@@ -38,6 +38,10 @@ public class LoaderNeuroBatteryCsvToBeanArray {
 		List<String[]> rows = reader.readAll();
 
 		int count = 0;
+		
+		NeuroBatteryManager neuroBatteryManager = new NeuroBatteryManager();
+		
+		int total = rows.size();
 
 		for (String[] row : rows) {
 
@@ -122,17 +126,17 @@ public class LoaderNeuroBatteryCsvToBeanArray {
 				
 				neuroBatteryBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
 
-				neuroBatteryTestList.add(neuroBatteryBean);
+				neuroBatteryManager.insertInADNIOntology(neuroBatteryBean,count);
 			}
 			
 			count++;
+			
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_NEUROBAT*count)/total) + LoadCsv.loadPast;
 		}
 
 		} catch (IOException e) {
 
 			e.printStackTrace();
 		}
-
-		return neuroBatteryTestList;
 	}
 }

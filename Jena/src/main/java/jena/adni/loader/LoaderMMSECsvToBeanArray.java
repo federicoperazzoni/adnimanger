@@ -19,6 +19,8 @@ import com.opencsv.CSVReaderBuilder;
 import jena.adni.bean.CDRBean;
 import jena.adni.bean.MMSEBean;
 import jena.adni.bean.SubjectDataBean;
+import jena.adni.main.LoadCsv;
+import jena.adni.manager.MMSEManager;
 
 public class LoaderMMSECsvToBeanArray {
 
@@ -38,6 +40,10 @@ public class LoaderMMSECsvToBeanArray {
 				.build();
 
 		List<String[]> rows = reader.readAll();
+		
+		MMSEManager mmseManager = new MMSEManager();
+		
+		int total = rows.size();
 
 		for (String[] row : rows) {
 
@@ -113,9 +119,13 @@ public class LoaderMMSECsvToBeanArray {
 				mmseBean.setSubjectDataBean(new SubjectDataBean());
 				mmseBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
 				mmseTestList.add(mmseBean);
+
+				mmseManager.insertInADNIOntology(mmseBean,count);
 			}
 
 			count++;
+			
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_MMSE*count)/total) + LoadCsv.loadPast;
 		}
 
 		} catch (Exception e) {

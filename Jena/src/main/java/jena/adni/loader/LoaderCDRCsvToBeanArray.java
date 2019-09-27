@@ -18,12 +18,12 @@ import com.opencsv.CSVReaderBuilder;
 
 import jena.adni.bean.CDRBean;
 import jena.adni.bean.SubjectDataBean;
+import jena.adni.main.LoadCsv;
+import jena.adni.manager.CDRManager;
 
 public class LoaderCDRCsvToBeanArray {
 
-	public ArrayList<CDRBean> load(String pathCsv) {
-
-		ArrayList<CDRBean> cdrTestList = new ArrayList<CDRBean>();
+	public void load(String pathCsv) {
 
 		Path myPath = Paths.get(pathCsv);
 
@@ -37,6 +37,8 @@ public class LoaderCDRCsvToBeanArray {
 		List<String[]> rows = reader.readAll();
 
 		int count = 0;
+		int total = rows.size();
+		CDRManager cdrManager = new CDRManager();
 
 		for (String[] row : rows) {
 
@@ -57,17 +59,16 @@ public class LoaderCDRCsvToBeanArray {
 				
 				cdrBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
 
-				cdrTestList.add(cdrBean);
+				cdrManager.insertInADNIOntology(cdrBean,count);
 			}
 			
 			count++;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_CDR*count)/total) + LoadCsv.PERCENT_PRE;
 		}
 
 		} catch (IOException e) {
 
 			e.printStackTrace();
 		}
-
-		return cdrTestList;
 	}
 }

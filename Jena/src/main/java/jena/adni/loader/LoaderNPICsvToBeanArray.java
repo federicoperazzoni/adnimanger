@@ -205,7 +205,7 @@ public class LoaderNPICsvToBeanArray {
 				npiManager.insertInADNIOntology(npiBean, count);
 			}
 		
-			LoadCsv.loadPercent = ((LoadCsv.PERCENT_NPI*count)/total) + LoadCsv.PERCENT_PRE;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_NPI*count)/total) + LoadCsv.loadPast;
 			
 			count++;
 		}

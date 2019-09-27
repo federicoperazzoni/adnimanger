@@ -17,6 +17,8 @@ import com.opencsv.CSVReaderBuilder;
 import jena.adni.bean.CDRBean;
 import jena.adni.bean.FAQBean;
 import jena.adni.bean.SubjectDataBean;
+import jena.adni.main.LoadCsv;
+import jena.adni.manager.FAQManager;
 
 public class LoaderFAQCsvToBeanArray {
 
@@ -36,7 +38,9 @@ public class LoaderFAQCsvToBeanArray {
 		List<String[]> rows = reader.readAll();
 
 		int count = 0;
-
+		int total = rows.size();
+		FAQManager faqManager = new FAQManager();
+		
 		for (String[] row : rows) {
 
 			if (count > 0) {
@@ -60,10 +64,11 @@ public class LoaderFAQCsvToBeanArray {
 				
 				faqBean.getSubjectDataBean().setRID(row[2].replaceAll("\"", ""));
 
-				cdrTestList.add(faqBean);
+				faqManager.insertInADNIOntology(faqBean,count);
 			}
 			
 			count++;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_FAQ*count)/total) + LoadCsv.PERCENT_PRE;
 		}
 
 		} catch (IOException e) {
