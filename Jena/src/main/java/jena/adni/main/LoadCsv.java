@@ -48,7 +48,7 @@ public class LoadCsv {
 		adniOntologyLoader.resetADNIOntologyTDB();
 		adniOntologyLoader.loadADNIOntology();
 		loadMex = "Fine caricamento ontologia ADNI";
-		status = 2;
+		status = 1;
 		loadMex = "Caricamento CSV";
 
 		//Carica i CSV in un Array list
@@ -102,7 +102,7 @@ public class LoadCsv {
 			if (LoadCSVForm.files[4] != null && LoadCSVForm.files[4].exists())
 				gdsCsvToBeanArray.load(LoadCSVForm.files[4].getAbsolutePath());
 			else
-				gdsCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\GDS.csv");
+				gdsCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\GDSCALE.csv");
 		} else {
 			loadPercent += PERCENT_GDS;
 		}
@@ -130,9 +130,9 @@ public class LoadCsv {
 		}
 
 		loadMex = "Fine caricamento CSV";
-		loadPercent = 1;
+		status = 100;
 
-		status = 3;
+		status = 2;
 
 		loadMex = "Fine caricamento CSV nell'ontologia";
 	}

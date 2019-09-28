@@ -22,9 +22,7 @@ import jena.adni.manager.FAQManager;
 
 public class LoaderFAQCsvToBeanArray {
 
-	public ArrayList<FAQBean> load(String pathCsv) {
-
-		ArrayList<FAQBean> cdrTestList = new ArrayList<FAQBean>();
+	public void load(String pathCsv) {
 
 		Path myPath = Paths.get(pathCsv);
 
@@ -75,7 +73,5 @@ public class LoaderFAQCsvToBeanArray {
 
 			e.printStackTrace();
 		}
-
-		return cdrTestList;
 	}
 }

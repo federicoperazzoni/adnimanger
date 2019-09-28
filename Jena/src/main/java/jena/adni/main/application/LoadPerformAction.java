@@ -47,7 +47,7 @@ public class LoadPerformAction {
 
 					label1.setText(LoadCsv.loadMex);
 
-					if (LoadCsv.status == 3) {
+					if (LoadCsv.status == 1) {
 
 						progressBar.setValue(LoadCsv.loadPercent);
 					}
