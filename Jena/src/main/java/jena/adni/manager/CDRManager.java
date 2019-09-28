@@ -1,5 +1,6 @@
 package jena.adni.manager;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import com.hp.hpl.jena.vocabulary.RDF;
@@ -15,7 +16,7 @@ public class CDRManager {
 
 	public void insertInADNIOntology(CDRBean cdrBean,int count) {
 
-		TDBConnection tdbConnection = new TDBConnection(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNIONTOLOGYSOURCE\\TDBDatabase");
+		TDBConnection tdbConnection = new TDBConnection(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNIONTOLOGYSOURCE" + File.separator + "TDBDatabase");
 
 		String prefix = ADNIExternalResource.getPrefix();
 		String modelName = ADNIExternalResource.getModelname();

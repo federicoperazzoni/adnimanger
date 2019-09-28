@@ -34,7 +34,7 @@ public class QueryFactoryADNI {
 
 			String sparql = "CONSTRUCT { ?x ?y ?z } WHERE { ?x  ?y  ?z }";
 
-			Dataset dataset = TDBFactory.createDataset(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNIONTOLOGYSOURCE\\TDBDatabase");
+			Dataset dataset = TDBFactory.createDataset(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNIONTOLOGYSOURCE" + File.separator + "TDBDatabase");
 			dataset.begin(ReadWrite.READ);
 			Model model = dataset.getNamedModel(modelName);
 
@@ -51,7 +51,7 @@ public class QueryFactoryADNI {
 			//		
 			//		LoadCsv.loadPercent = 40;
 			//
-			File fileExport = new File(ADNIExternalResource.getInstance().getADNI_HOME() + "\\EXPORT\\Export_RDF_Adni.rdf");
+			File fileExport = new File(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "EXPORT" + File.separator + "Export_RDF_Adni.rdf");
 
 			FileWriter fileWriterExport = null;
 
@@ -104,7 +104,7 @@ public class QueryFactoryADNI {
 
 			LoadCsv.loadMex = "inizio export: caricamento model";
 
-			Dataset dataset = TDBFactory.createDataset(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNIONTOLOGYSOURCE\\TDBDatabase");
+			Dataset dataset = TDBFactory.createDataset(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNIONTOLOGYSOURCE" + File.separator + "TDBDatabase");
 			dataset.begin(ReadWrite.READ);
 			Model model = dataset.getNamedModel(modelName);
 
@@ -117,7 +117,7 @@ public class QueryFactoryADNI {
 
 			Model model2 = qe.execConstruct();
 
-			File fileExport = new File(ADNIExternalResource.getInstance().getADNI_HOME() + "\\EXPORT\\Export_RDF_Query_Adni.rdf");
+			File fileExport = new File(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "EXPORT" + File.separator + "Export_RDF_Query_Adni.rdf");
 
 			FileWriter fileWriterExport = null;
 
@@ -155,7 +155,7 @@ public class QueryFactoryADNI {
 
 			LoadCsv.loadMex = "inizio export: caricamento model";
 
-			Dataset dataset = TDBFactory.createDataset(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNIONTOLOGYSOURCE\\TDBDatabase");
+			Dataset dataset = TDBFactory.createDataset(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNIONTOLOGYSOURCE" + File.separator + "TDBDatabase");
 			dataset.begin(ReadWrite.READ);
 			Model model = dataset.getNamedModel(modelName);
 
@@ -168,7 +168,7 @@ public class QueryFactoryADNI {
 
 			ResultSet rs = qe.execSelect();
 
-			File fileExport = new File(ADNIExternalResource.getInstance().getADNI_HOME() + "\\EXPORT\\Export_SimpleQuery_Adni.csv");
+			File fileExport = new File(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "EXPORT" + File.separator + "Export_SimpleQuery_Adni.csv");
 
 			FileOutputStream fileWriterExport = null;
 

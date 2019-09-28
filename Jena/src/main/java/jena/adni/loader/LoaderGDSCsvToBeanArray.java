@@ -78,7 +78,7 @@ public class LoaderGDSCsvToBeanArray {
 				gdsManager.insertInADNIOntology(gdsBean, count);
 			}
 		
-			LoadCsv.loadPercent = ((LoadCsv.PERCENT_GDS*count)/total) + LoadCsv.PERCENT_PRE;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_GDS*count)/total) + LoadCsv.loadPast;
 			
 			count++;
 		}

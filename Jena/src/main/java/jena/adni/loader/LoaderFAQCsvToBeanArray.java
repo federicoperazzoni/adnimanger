@@ -66,7 +66,7 @@ public class LoaderFAQCsvToBeanArray {
 			}
 			
 			count++;
-			LoadCsv.loadPercent = ((LoadCsv.PERCENT_FAQ*count)/total) + LoadCsv.PERCENT_PRE;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_FAQ*count)/total) + LoadCsv.loadPast;
 		}
 
 		} catch (IOException e) {

@@ -1,5 +1,7 @@
 package jena.adni.manager;
 
+import java.io.File;
+
 import com.hp.hpl.jena.vocabulary.RDF;
 
 import jena.adni.bean.NPIQBean;
@@ -12,7 +14,7 @@ public class NPIQManager {
 
 	public void insertInADNIOntology(NPIQBean npiqBean, int count) {
 
-		TDBConnection tdbConnection = new TDBConnection(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNIONTOLOGYSOURCE\\TDBDatabase");
+		TDBConnection tdbConnection = new TDBConnection(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNIONTOLOGYSOURCE" + File.separator + "TDBDatabase");
 
 		String prefix = ADNIExternalResource.getPrefix();
 		String modelName = ADNIExternalResource.getModelname();

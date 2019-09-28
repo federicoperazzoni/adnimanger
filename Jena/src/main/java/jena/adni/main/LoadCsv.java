@@ -1,5 +1,6 @@
 package jena.adni.main;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import jena.adni.bean.CDRBean;
@@ -42,14 +43,14 @@ public class LoadCsv {
 	public static void loadCsvWithReset() {
 
 		status = 0;
-		loadMex = "Caricamento ontologia ADNI";
+		loadMex = "Load ADNI ontology";
 		//Carica l'ontologia
 		ADNIOntologyLoader adniOntologyLoader = new ADNIOntologyLoader();
 		adniOntologyLoader.resetADNIOntologyTDB();
 		adniOntologyLoader.loadADNIOntology();
-		loadMex = "Fine caricamento ontologia ADNI";
+		loadMex = "End load ADNI ontology";
 		status = 1;
-		loadMex = "Caricamento CSV";
+		loadMex = "Load CSV";
 
 		//Carica i CSV in un Array list
 		if (LoadCSVForm.fieldsCB[0].isSelected()) {
@@ -58,7 +59,8 @@ public class LoadCsv {
 			if (LoadCSVForm.files[0] != null && LoadCSVForm.files[0].exists())
 				cdrCsvToBeanArray.load(LoadCSVForm.files[2].getAbsolutePath());
 			else
-				cdrCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\CDR.csv");
+				cdrCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNICSV" + File.separator + "CDR.csv");
+			loadMex = "CDR loaded";
 		} else {
 			loadPercent += PERCENT_CDR;
 		}
@@ -69,7 +71,8 @@ public class LoadCsv {
 			if (LoadCSVForm.files[1] != null && LoadCSVForm.files[1].exists())
 				faqCsvToBeanArray.load(LoadCSVForm.files[2].getAbsolutePath());
 			else
-				faqCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\FAQ.csv");
+				faqCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNICSV" + File.separator + "FAQ.csv");
+			loadMex = "FAQ loaded";
 		} else {
 			loadPercent += PERCENT_FAQ;
 		}	
@@ -80,7 +83,8 @@ public class LoadCsv {
 			if (LoadCSVForm.files[2] != null && LoadCSVForm.files[2].exists())
 				mmseCsvToBeanArray.load(LoadCSVForm.files[2].getAbsolutePath());
 			else
-				mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\MMSE.csv");
+				mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNICSV" + File.separator + "MMSE.csv");
+			loadMex = "MMSE loaded";
 		} else {
 			loadPercent += PERCENT_MMSE;
 		}
@@ -91,7 +95,8 @@ public class LoadCsv {
 			if (LoadCSVForm.files[3] != null && LoadCSVForm.files[3].exists())
 				mmseCsvToBeanArray.load(LoadCSVForm.files[3].getAbsolutePath());
 			else
-				mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\NEUROBAT.csv");
+				mmseCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNICSV" + File.separator + "NEUROBAT.csv");
+			loadMex = "NEUROBATTERY loaded";
 		} else {
 			loadPercent += PERCENT_NEUROBAT;
 		}
@@ -102,7 +107,8 @@ public class LoadCsv {
 			if (LoadCSVForm.files[4] != null && LoadCSVForm.files[4].exists())
 				gdsCsvToBeanArray.load(LoadCSVForm.files[4].getAbsolutePath());
 			else
-				gdsCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\GDSCALE.csv");
+				gdsCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNICSV" + File.separator + "GDS.csv");
+			loadMex = "GDS loaded";
 		} else {
 			loadPercent += PERCENT_GDS;
 		}
@@ -113,7 +119,8 @@ public class LoadCsv {
 			if (LoadCSVForm.files[5] != null && LoadCSVForm.files[5].exists())
 				npiCsvToBeanArray.load(LoadCSVForm.files[5].getAbsolutePath());
 			else
-				npiCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\NPI.csv");
+				npiCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNICSV" + File.separator + "NPI.csv");
+			loadMex = "NPI loaded";
 		} else {
 			loadPercent += PERCENT_NPI;
 		}
@@ -124,15 +131,16 @@ public class LoadCsv {
 			if (LoadCSVForm.files[6] != null && LoadCSVForm.files[6].exists())
 				npiqCsvToBeanArray.load(LoadCSVForm.files[5].getAbsolutePath());
 			else
-				npiqCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + "\\ADNICSV\\NPIQ.csv");
+				npiqCsvToBeanArray.load(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNICSV" + File.separator + "NPIQ.csv");
+			loadMex = "NPIQ loaded";
 		} else {
 			loadPercent += PERCENT_NPIQ;
 		}
 
-		loadMex = "Fine caricamento CSV";
-		status = 100;
+		loadMex = "End load CSV";
+		loadPercent = 1;
 
-		status = 2;
+		status = 3;
 
 		loadMex = "Fine caricamento CSV nell'ontologia";
 	}

@@ -63,7 +63,7 @@ public class LoaderCDRCsvToBeanArray {
 			}
 			
 			count++;
-			LoadCsv.loadPercent = ((LoadCsv.PERCENT_CDR*count)/total) + LoadCsv.PERCENT_PRE;
+			LoadCsv.loadPercent = ((LoadCsv.PERCENT_CDR*count)/total) + LoadCsv.loadPast;
 		}
 
 		} catch (IOException e) {

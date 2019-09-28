@@ -8,6 +8,7 @@ import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.Label;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -74,7 +75,7 @@ public class ApplicationUtil {
 
 			Object[] columnnames;
 			CSVReader CSVFileReader;
-			CSVFileReader = new CSVReader(new FileReader(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\Saved_Query.csv"));
+			CSVFileReader = new CSVReader(new FileReader(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "SAVED_QUERY" + File.separator + "Saved_Query.csv"));
 			List myEntries = CSVFileReader.readAll();
 			columnnames = (String[]) myEntries.get(0);
 			DefaultTableModel tableModel = new DefaultTableModel(columnnames, myEntries.size()); 
@@ -147,7 +148,7 @@ public class ApplicationUtil {
 
 			Object[] columnnames;
 			CSVReader CSVFileReader;
-			CSVFileReader = new CSVReader(new FileReader(ADNIExternalResource.getInstance().getADNI_HOME() + "\\EXPORT\\Export_SimpleQuery_Adni.csv"));
+			CSVFileReader = new CSVReader(new FileReader(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "EXPORT" + File.separator + "Export_SimpleQuery_Adni.csv"));
 			List myEntries = CSVFileReader.readAll();
 			columnnames = (String[]) myEntries.get(0);
 			DefaultTableModel tableModel = new DefaultTableModel(columnnames, myEntries.size()); 

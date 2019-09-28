@@ -216,7 +216,7 @@ public class QueryPerformAction {
 
 					LoadCsv.loadPercent = 0;
 
-					FileWriter fileWriter = new FileWriter(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\Saved_Query.csv", true);
+					FileWriter fileWriter = new FileWriter(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "SAVED_QUERY" + File.separator + "Saved_Query.csv", true);
 
 					CSVWriter cSVFileWriter;
 					cSVFileWriter = new CSVWriter(fileWriter,
@@ -233,7 +233,7 @@ public class QueryPerformAction {
 						
 						String nomeFile = "query_"+date+".txt";
 						String textQuery = textAreaForQuery.getText();
-						FileWriter fileWriterQuery = new FileWriter(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\"+nomeFile);
+						FileWriter fileWriterQuery = new FileWriter(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "SAVED_QUERY" + File.separator + nomeFile);
 						fileWriterQuery.write(textQuery);
 						fileWriterQuery.close();
 						cSVFileWriter.writeNext(new String[]{SaveQueryForm.fields[0].getText().replaceAll(",", " "), SaveQueryForm.fields[1].getText().replaceAll(",", " "), nomeFile});
@@ -277,7 +277,7 @@ public class QueryPerformAction {
 					try {
 						String fileQuery = (String) csvAdniTable.getModel().getValueAt(selectedRow, 2);
 						fileQuery = "Query_" + fileQuery.replaceAll(":", "").replaceAll(" ", "").replaceAll("/", "")+".txt";
-						byte[] encoded = Files.readAllBytes(Paths.get(ADNIExternalResource.getInstance().getADNI_HOME() + "\\SAVED_QUERY\\"+fileQuery));
+						byte[] encoded = Files.readAllBytes(Paths.get(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "SAVED_QUERY" + File.separator + fileQuery));
 						textAreaForQuery.setText(new String(encoded));
 						frame.dispose();
 					} catch (IOException e1) {
