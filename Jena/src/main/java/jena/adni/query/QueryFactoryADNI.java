@@ -23,6 +23,8 @@ import jena.adni.util.TDBUtil;
 public class QueryFactoryADNI {
 
 	public static void allItem() {
+		
+		
 
 		try {
 			
@@ -145,26 +147,31 @@ public class QueryFactoryADNI {
 	}
 
 	public static void executeQueryWithoutConstruct(String sparql) {
+		
+		QueryExecution qe = null;
 
 		try {
 			
 			LoadCsv.loadPercent = 0;
 			LoadCsv.timeQuery = System.currentTimeMillis();
+			LoadCsv.statusQuery = 0;
 
 			String modelName = ADNIExternalResource.getModelname();
 
-			LoadCsv.loadMex = "inizio export: caricamento model";
+			LoadCsv.loadMex = "start export: load model";
 
 			Dataset dataset = TDBFactory.createDataset(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "ADNIONTOLOGYSOURCE" + File.separator + "TDBDatabase");
 			dataset.begin(ReadWrite.READ);
 			Model model = dataset.getNamedModel(modelName);
 
-			LoadCsv.loadMex = "fine caricamento model -> Esecuzione query";
+			LoadCsv.loadMex = "end load model -> Execute query";
 
 			LoadCsv.loadPercent = 20;
 
 			Query qry = QueryFactory.create(sparql);
-			QueryExecution qe = QueryExecutionFactory.create(qry, model);
+			qe = QueryExecutionFactory.create(qry, model);
+			
+			LoadCsv.statusQuery = 1;
 
 			ResultSet rs = qe.execSelect();
 
@@ -179,19 +186,24 @@ public class QueryFactoryADNI {
 
 			ResultSetFormatter.outputAsCSV(System.out, rs);
 
+			LoadCsv.statusQuery = 2;
 			LoadCsv.loadPercent = 100;
-			LoadCsv.loadMex = ADNIExternalResource.MEX_EXTRACTION_COMPLETED;
-			LoadCsv.timeQuery = (System.currentTimeMillis() - LoadCsv.timeQuery)/1000;
-			System.out.println("Time of query: " + (System.currentTimeMillis() - LoadCsv.timeQuery)/1000);
-
-			qe.close();
-			TDBUtil.removeLock();
-
+			LoadCsv.loadMex = "Time of query (seconds): " + ((System.currentTimeMillis() - LoadCsv.timeQuery)/1000);
+			System.out.println("Time of query: " + ((System.currentTimeMillis() - LoadCsv.timeQuery)/1000));
 		} catch (Exception e) {
 
+			LoadCsv.statusQuery = 3;
 			LoadCsv.loadPercent = 100;
-			LoadCsv.loadMex = "Query errata: " + e.getMessage();
-			System.out.println("query errata executeQueryWithoutCostruct");
+			LoadCsv.loadMex = "Query error: " + e.getMessage();
+			System.out.println("query error executeQueryWithoutCostruct");
+		} finally {
+			
+			if (qe != null) {
+				
+				qe.close();
+			}
+			TDBUtil.removeLock();
 		}
+
 	}
 }

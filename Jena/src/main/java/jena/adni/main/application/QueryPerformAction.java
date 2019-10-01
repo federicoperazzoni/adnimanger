@@ -55,6 +55,7 @@ public class QueryPerformAction {
 
 							if (LoadCsv.loadPercent == 100) {
 
+								label1.setText(LoadCsv.loadMex);
 								ApplicationUtil.enableButton();
 								return;
 							}
@@ -115,9 +116,10 @@ public class QueryPerformAction {
 
 							if (LoadCsv.loadPercent == 100) {
 
+								label1.setText(LoadCsv.loadMex);
 								ApplicationUtil.enableButton();
 
-								if (ADNIExternalResource.MEX_EXTRACTION_COMPLETED.equals(LoadCsv.loadMex))
+								if (LoadCsv.statusQuery == 2)
 									ApplicationUtil.openFrameCsv();
 
 								return;

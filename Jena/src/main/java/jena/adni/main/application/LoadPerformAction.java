@@ -27,12 +27,75 @@ public class LoadPerformAction {
 
 		buttonLoadWithReset.addActionListener(new ActionListener(){  
 			public void actionPerformed(ActionEvent e){  
-				LoadCSVForm.visualize(progressBar, label1);
+				LoadCSVForm.visualize(true,progressBar, label1);
+			}
+		});
+	}
+
+	public static void performLoadWithoutResetAction(JButton buttonLoadWithReset, final JProgressBar progressBar, final JLabel label1) {
+
+		buttonLoadWithReset.addActionListener(new ActionListener(){  
+			public void actionPerformed(ActionEvent e){  
+				LoadCSVForm.visualize(false,progressBar, label1);
 			}
 		});
 	}
 
 	public static void performLoadWithResetActionPerm(JButton buttonLoadWithReset, final JProgressBar progressBar, final JLabel label1) {
+
+		Thread thread = new Thread( new Runnable() {
+
+			@Override
+			public void run() {
+
+				LoadCsv.loadPercent = 0;
+				progressBar.setValue(LoadCsv.loadPercent);
+				ApplicationUtil.disableButton();
+
+				while(true) {
+
+					label1.setText(LoadCsv.loadMex);
+
+					if (LoadCsv.status == 1) {
+
+						progressBar.setValue(LoadCsv.loadPercent);
+					}
+
+
+					if (LoadCsv.loadPercent == 100) {
+
+						ApplicationUtil.enableButton();
+						label1.setText("End load");
+						break;
+					}
+
+					try {
+
+						Thread.sleep(5000);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+
+			}
+
+		});
+		thread.start();
+
+		Thread thread2 = new Thread( new Runnable() {
+
+			@Override
+			public void run() {
+
+				LoadCsv.loadCsvWithReset();
+			}
+
+		});
+		thread2.start();
+	}
+
+	public static void performLoadWithoutResetActionPerm(JButton buttonLoadNoReset, final JProgressBar progressBar, final JLabel label1) {
 
 		Thread thread = new Thread( new Runnable() {
 
@@ -62,7 +125,7 @@ public class LoadPerformAction {
 
 					try {
 
-						Thread.sleep(100);
+						Thread.sleep(5000);
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
@@ -79,69 +142,10 @@ public class LoadPerformAction {
 			@Override
 			public void run() {
 
-				LoadCsv.loadCsvWithReset();
+				LoadCsv.loadCsvNoReset();;
 			}
 
 		});
 		thread2.start();
-	}
-
-	public static void performLoadWithoutResetAction(JButton buttonLoadNoReset, final JProgressBar progressBar, final JLabel label1) {
-
-		buttonLoadNoReset.addActionListener(new ActionListener(){  
-			public void actionPerformed(ActionEvent e){  
-
-				Thread thread = new Thread( new Runnable() {
-
-					@Override
-					public void run() {
-
-						LoadCsv.loadPercent = 0;
-						progressBar.setValue(LoadCsv.loadPercent);
-						ApplicationUtil.disableButton();
-
-						while(true) {
-
-							label1.setText(LoadCsv.loadMex);
-
-							if (LoadCsv.status == 3) {
-
-								progressBar.setValue(LoadCsv.loadPercent);
-							}
-
-
-							if (LoadCsv.loadPercent == 100) {
-
-								ApplicationUtil.enableButton();
-								label1.setText("Fine caricamento");
-								break;
-							}
-
-							try {
-
-								Thread.sleep(5000);
-							} catch (InterruptedException e) {
-								// TODO Auto-generated catch block
-								e.printStackTrace();
-							}
-						}
-
-					}
-
-				});
-				thread.start();
-
-				Thread thread2 = new Thread( new Runnable() {
-
-					@Override
-					public void run() {
-
-						LoadCsv.loadCsvNoReset();;
-					}
-
-				});
-				thread2.start();
-			}  
-		});  
-	}
+	}  
 }

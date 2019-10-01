@@ -151,16 +151,29 @@ public class ApplicationUtil {
 			CSVFileReader = new CSVReader(new FileReader(ADNIExternalResource.getInstance().getADNI_HOME() + File.separator + "EXPORT" + File.separator + "Export_SimpleQuery_Adni.csv"));
 			List myEntries = CSVFileReader.readAll();
 			columnnames = (String[]) myEntries.get(0);
-			DefaultTableModel tableModel = new DefaultTableModel(columnnames, myEntries.size()); 
+			Object[] columnnamesFin = new Object[columnnames.length+1];
+			columnnamesFin[0] = "Count";
+			int count=1;
+			for (Object name : columnnames) {
+				columnnamesFin[count] = name;
+				count++;
+			}
+			DefaultTableModel tableModel = new DefaultTableModel(columnnamesFin, myEntries.size()); 
 			int rowcount = tableModel.getRowCount();
 			for (int x = 0; x<rowcount; x++)
 			{
 				int columnnumber = 0;
-
 				if (x>=0)
 				{
 					for (String thiscellvalue : (String[])myEntries.get(x))
 					{
+						if (columnnumber == 0) {
+							if (x==0)
+								tableModel.setValueAt(columnnamesFin[0] + "", x, columnnumber);
+							else
+								tableModel.setValueAt(x + "", x, columnnumber);
+							columnnumber++;
+						}
 						tableModel.setValueAt(thiscellvalue.replaceAll(ADNIExternalResource.getInstance().getPrefix(), ""), x, columnnumber);
 						columnnumber++;
 					}

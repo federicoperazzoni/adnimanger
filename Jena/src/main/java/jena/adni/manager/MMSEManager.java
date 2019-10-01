@@ -123,20 +123,20 @@ public class MMSEManager {
 			tdbConnection.addStatement(modelName, prefix + "MMSE_LanguageItem_9_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getClock_Drawing()));//E' corretto?
 			//Per gli orientation item non ho messo le risposte verbose
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_1_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Date()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_1_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getMm_Date_Cm()));
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_1_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getMm_Date_Cm());
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_2_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Year()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_2_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getMm_Year_Cm()));
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_2_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getMm_Year_Cm());
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_3_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Month()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_3_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getMm_Month_Cm()));
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_3_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getMm_Month_Cm());
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_4_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Day()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_4_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getMm_Day_Cm()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_5_" + count, prefix + "0_1_score", prefix +convert01Score( mmseBean.getMm_Season()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_5_" + count, prefix + "verbatimAnswer", prefix +convert01Score( mmseBean.getMm_Sesn_Cm()));
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_4_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getMm_Day_Cm());
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_5_" + count, prefix + "0_1_score", prefix + convert01Score( mmseBean.getMm_Season()));
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_5_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getMm_Sesn_Cm());
 			//TODO Controllare se presenti su ADNI3
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_6_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Hospit()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_6_" + count, prefix + "verbatimAnswer", prefix +convert01Score( mmseBean.getMm_Hosp_Cm()));
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_6_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getMm_Hosp_Cm());
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_7_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Floor()));
-			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_7_" + count, prefix + "verbatimAnswer", prefix +convert01Score( mmseBean.getMm_Flr_Cm()));
+			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_7_" + count, prefix + "verbatimAnswer", prefix + mmseBean.getMm_Flr_Cm());
 
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_8_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_City()));
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_8_" + count, prefix + "verbatimAnswer", prefix +convert01Score( mmseBean.getMm_City_Cm()));
@@ -146,18 +146,18 @@ public class MMSEManager {
 			tdbConnection.addStatement(modelName, prefix + "MMSE_OrientationItem_10_" + count, prefix + "verbatimAnswer", prefix +convert01Score( mmseBean.getMm_St_Cm()));
 			if ("ADNI1".equals(mmseBean.getPhase()) || "ADNIGO".equals(mmseBean.getPhase()) || "ADNI2".equals(mmseBean.getPhase())) {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Ball()));
-				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getMm_Ball_Dl()));
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Ball_Dl()));
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Flag()));
-				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getMm_Flag_Dl()));
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Flag_Dl()));
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Tree()));
-				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getMm_Tree_Dl()));
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Tree_Dl()));
 			} else {
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord1()));
-				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getWord1_Dl()));
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_1_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord1_Dl()));
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord2()));
-				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getWord2_Dl()));
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_2_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord2_Dl()));
 				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord3()));
-				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "verbatimAnswer", prefix + convert01Score(mmseBean.getWord3_Dl()));
+				tdbConnection.addStatement(modelName, prefix + "MMSE_RecallItem_3_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getWord3_Dl()));
 			}
 			//Cosa metto in questi item?
 			tdbConnection.addStatement(modelName, prefix + "MMSE_RegistrationItem_1_" + count, prefix + "0_1_score", prefix + convert01Score(mmseBean.getMm_Floor()));

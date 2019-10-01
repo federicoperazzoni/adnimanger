@@ -132,13 +132,16 @@ public class LoadCSVForm extends JPanel {
 		return (fields[i].getText());
 	}
 
-	public static void visualize(JProgressBar progressBar, JLabel label1) {
+	public static void visualize(Boolean reset, JProgressBar progressBar, JLabel label1) {
 
 		JButton submit = new JButton("Load");
 		submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				LoadCsv.loadPercent = 0;
-				LoadPerformAction.performLoadWithResetActionPerm(ApplicationDesktop.buttonLoadWithReset, progressBar, label1);
+				if (reset)
+					LoadPerformAction.performLoadWithResetActionPerm(ApplicationDesktop.buttonLoadWithReset, progressBar, label1);
+				else 
+					LoadPerformAction.performLoadWithoutResetActionPerm(ApplicationDesktop.buttonLoadNoReset, progressBar, label1);
 				f.dispose();
 			}
 		});
